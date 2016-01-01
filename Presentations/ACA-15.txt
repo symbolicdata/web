@@ -1,0 +1,165 @@
+Demos at the SymbolicData Hands on Session at ACA-2015
+======================================================
+
+###########################################
+Our resources
+###########################################
+
+* http://wiki.symbolicdata.org -- the SD Wiki
+* http://symbolicdata.org/XMLResources -- the SD XML Resources
+* http://symbolicdata.org/RDFData -- the SD RDF Data Turtle Files
+* http://symbolicdata.org/Data -- the SD OntoWiki view on the basic RDF data
+* http://symbolicdata.org/casn -- the SD OntoWiki view on the CASN RDF data
+
+Due to slow wifi connection I use a local RDF store http://localhost/OntoWiki
+for my presentations
+
+See http://wiki.symbolicdata.org/LocalSparqlEndpoint how to set up such a loacl
+store 
+
+###################################################
+The remote database 
+###################################################
+
+Demonstration of Systems
+http://symbolicdata.org/Data/Systems/
+
+   This is Linked Data - the URI points to valuable information retrieved by
+   HTTP (don't forget the trailing / - it is part of the URI)
+
+16 Systems, most of them uplinked to the swmath project http://swmath.org/
+
+The Systems part is mere a redirection to swmath using the owl:sameAs
+predicate. 
+
+###################################################
+CASN: Upcoming and Past Conferences
+###################################################
+
+Demonstration of Upcoming conferences
+http://symbolicdata.org/casn/UpcomingConferences/
+
+(Note that UpcomingConferences is regularly updated, outdated conferences are
+moved to the PastConferences database)
+
+Closer look at the entry of ISSAC-2105
+
+-----------------------------------------------------
+
+What about joining forces with other places that collect information about
+Upcoming Conferences? 
+
+This is the list of Upcoming Conferences at
+http://www.sigsam.org/Resources/Upcoming.html (as of 2015-07-21)
+
+19-25 July 2015: Combinatorics and Computer Algebra (CoCoA15) will be held in Fort Collins, Colorado, USA.
+
+20-23 July 2015: Applications of Computer Algebra (ACA 2015) will be held in Kalamata, Greece.
+
+3-7 August 2015: The SIAM Conference on Applied Algebraic Geometry (SIAM AG:15) will be held in Daejeon, South Korea.
+
+14-18 September 2015: The 17th International Workshop on Computer Algebra in Scientific Computing (CASC 2015) will be held in Kassel, Germany.
+
+3 October 2015: The 2015 East Coast Computer Algebra Day (ECCAD 2015) will be held in Toronto, Ontario, Canada.
+
+11-13 November 2015: The 6th International Conference on Mathematical Aspects of Computer and Information Sciences (MACIS 2015) will be held in Berlin, Germany.
+
+18-21 January 2016: The Third EACA International School on Computer Algebra and its Applications will be held in Seville, Spain. 
+
+-----------------------------------------------------
+In the current lists (as of 2015-07-25) of our UpcomingConferences and
+PastConferences we included information from the sources
+* http://www.sigsam.org/Resources/Upcoming.html
+* http://www.computeralgebra.de/index.php?option=com_content&view=article&id=84&Itemid=38
+
+-----------------------------------------------------
+This information is used to compile web views from that, e.g., at the Wordpress
+driven web site of the German CA Fachgruppe
+
+Show http://www.fachgruppe-computeralgebra.de/tagungsankuendigungen/
+
+run tagungsankuendigungen.php in the fg-plugin dir
+Look at the code
+
+-----------------------------------------------------
+Look at the "Past Conferences"
+run pastconferences.php in the fg-plugin dir
+
+###################################################
+More about the People
+###################################################
+
+http://symbolicdata.org/Data/People/ - URIs of people active in the CA fields,
+extracted from different sources (mainly Conference Announcements and detailed
+Conference Reports)
+
+Our goal is to jointly build up a decentralized information structure with
+locally operated nodes - people should provide more information about their
+research activities through their FOAF Profiles (well maintained either on a
+private or a group level as, e.g., http://aksw.org/Groups.html. Note that all
+information on the AKSW web site is directly produced from their RDF data base,
+e.g., at http://aksw.org/view?r=http%3A%2F%2Faksw.org%2FGroups)
+
+This local information is referenced by the 
+http://symbolicdata.org/Data/PersonalProfiles/
+
+At the moment this reference contains links to the FOAF Profiles of the members
+of the German CA Fachgruppe at
+http://www.fachgruppe-computeralgebra.de/rdf/FOAF-Profiles/ 
+
+This information is used to compile 
+http://www.fachgruppe-computeralgebra.de/fachgruppenleitung/
+
+#########################################################
+More about querying the information with SPARQL Queries
+#########################################################
+
+Load required information into a local store.
+
+Query: What people are involved in what roles with the Upcoming Conferences?
+
+A SPARQL Query:
+----------------------------------
+PREFIX sd: <http://symbolicdata.org/Data/Model#> 
+SELECT 
+distinct ?a ?b ?name
+from <http://symbolicdata.org/casn/UpcomingConferences/>
+from  <http://symbolicdata.org/Data/People/>
+where {
+?a a sd:UpcomingConference; ?b ?p .
+?p a foaf:Person; foaf:name ?name .
+} order by ?a
+----------------------------------
+
+###########################################
+Demo of the SymbolicData Tools
+###########################################
+
+Requires a local git clone of 
+https://github.com/hg-graebe/symbolicdata
+with branch "develop" to be checked out.
+
+-----------------------------------------------------
+SDEval demo
+http://wiki.symbolicdata.org/SDEval
+-----------------------------------------------------
+change to the sdeval dir
+run "python create_tasks_gui.py"
+Use "Singular" and "time"
+change to the EXPORT folder
+run "python runTasks.py --help" and then without --help
+open "*.html" in the results dir
+
+-----------------------------------------------------
+SDSage demo
+http://wiki.symbolicdata.org/PolynomialSystems.Sage
+-----------------------------------------------------
+change to the sdsage dir 
+run "sage"
+sage: 
+import sdsage
+sd = sdsage.SymbolicData('local')
+sd.list_ideals()
+bb = sd.get_ideal('Buchberger-87.Homog')
+bb
+bb.groebner_basis()

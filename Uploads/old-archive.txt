@@ -1,0 +1,114 @@
+From graebe at informatik.uni-leipzig.de  Tue Jul 15 10:13:01 2003
+From: graebe at informatik.uni-leipzig.de
+Date: Thu Oct 16 12:13:28 2003
+Subject: [SD] Re: CATS (Computer Algebra Test Suite)
+In-Reply-To: <200307141629.h6EGT1217810@localhost.localdomain>
+References: <200307141629.h6EGT1217810@localhost.localdomain>
+Message-ID: <200307150913.01067.graebe@informatik.uni-leipzig.de>
+
+Am Montag, 14. Juli 2003 18:29 Tim Daly wrote:
+> One of the results of the meeting was an agreement to pool some of
+> our resources in the area of Computer Algebra systems. CA systems
+> have tasks that are not central to the computer algebra problem itself
+> such as graphics, help browsers, etc. They also need test suites. ...
+
+We started such a project some years ago, but there was no much response yet. 
+Please have a look at http://www.symbolicdata.org. The CVS is located on the 
+UMS medicis server and you can easily join the project (with read/write 
+access) if you have an account there and belong to the group 'polydata'. The 
+main philosophy is -- at least in the current stage -- that of Open Source: 
+collect data that _you_ use in _your_ projects and put them on the Web. Agree 
+with other _interested_ people on common questions. Hence using and managing 
+these data requires some programming efforts and experience, that interested 
+people are usually familiar with. 
+
+We developed some Perl tools that support the management of data (read 
+sd-files and create hashes, manipulate content etc.). Please consult the Web 
+documentation for more information. 
+
+I think it is desirable to evaluate these efforts for CATS (and -- may be -- 
+even to make CATS on top of SymbolicData). 
+
+Please note that I will be out of office for about 2 months starting next 
+week.
+
+-- 
+Best regards, Hans-Gert Graebe
+
+From graebe at informatik.uni-leipzig.de  Wed Sep 15 15:15:33 2004
+From: graebe at informatik.uni-leipzig.de
+Date: Wed Sep 15 14:11:33 2004
+Subject: [SD] Translation to XML
+Message-ID: <41483265.5020303@informatik.uni-leipzig.de>
+
+Hi friends,
+
+I think it is time to reactivate the symbolicdata mailing list, even if 
+there are only 7 people subscribed at the moment.
+
+I made some efforts to translate the whole SymbolicData data base to 
+true XML. When the project started (and XML was yet at the very 
+beginning) we had much nice ideas to organize data in a way similar to 
+nowadays XML standards but missed some important points (e.g., taking 
+only a flat 2-level structure). Meanwhile XML and XSchema as the XML 
+description language are well established and I translated most of the 
+Data to that standard (please 'cvs update -dP' your sources).  Olaf 
+Bachmann payed much attention to the development of tools to manage our 
+data. These efforts are mainly out of date, since XML data can be 
+managed with any appropriate XML-tools. Hence I propose to develop (and 
+started such a part in the new xml-bin directory) only sample tools in 
+the future and to focus on the collection of data.
+
+In another project we had discussions about the legal status of data 
+collections. At the moment we use the GPL to address all such questions. 
+This rule is good for code but neither for documentation nor for data. 
+Meanwhile there is a profound discussion of such topics at 
+http://creativecommons.org (CC) and they propose different licenses.
+
+Our discussions in the other project ended up in the proposal to license 
+data under the CC Attribution license (i.e. essentially to put the data 
+into the Public Domain). For the project relevant documentation the CC 
+Attribution-ShareAlike license is best suited, as does the Linux 
+GenToo-Project for their docu. And the SD-code is best passed under the 
+GPL as it was before.
+
+How do you think about such a change also of our legal rules?
+
+Best regards, Hans-Gert Graebe
+
+From graebe at informatik.uni-leipzig.de  Mon Mar 13 16:52:10 2006
+From: graebe at informatik.uni-leipzig.de
+Date: Mon Mar 13 16:49:47 2006
+Subject: [SD] New release of SymbolicData
+Message-ID: <4415952A.5080502@informatik.uni-leipzig.de>
+
+Dear collaborators,
+
+during my 2 weeks staying at the Special Semester on Groebner bases I
+had several talks about the future of the SymbolicData Project. One of
+my proposals was to further incorporate XML and OWL concepts beyond the
+XML transcription of all the former data that I completed a year ago.
+
+I used the time of the stay to prepare a first prototype of such a
+design, dividing the sources in "instant data" contained in the
+XMLResources subdirectory and "relational and describing data" contained
+in the OWL subdirectory of the Data directory. I think this is a really
+good point to start further discussion and work. There are also two
+OWL-ontologies (SymbolicData.owl and Publications.owl) that can be seen
+as starting point to incorporate more ontology concepts into the
+OWLResources part.
+
+Please find at the web site http://www.symbolicdata.org an updated
+documentation and (in the download section) a bundle with the currently
+availabe newly formatted data (I did not yet transcript the Geometry
+Proof Scheme, the TestSets and the GAlgebra examples). I did also not
+yet succeed to have a good Web presentation of the Data.
+
+If on the CVS please check out a fresh copy of the data since I
+reorganized the repository to remove old stuff (I backed it up on a
+local machine for any case). Please contact me also to get a CVS login
+or in the case you don't remember your password.
+
+I hope this is a point of really relaunch of the Project.
+
+Enjoy. Hans-Gert
