@@ -12,7 +12,7 @@ $content='
 <h1 align="center">Past Conferences</h1>
 
 <p>The following list of Past CA Conferences is extracted from the <a
-href="http://symbolicdata.org/casn/PastConferences/" >CASN Past Conferences
+href="http://symbolicdata.org/Data/PastConferences/" >CASN Past Conferences
 Database</a>. The heading of each conference entry links to the corresponding
 CASN Database entry that may contain more information (organizers, invited
 speakers, deadlines etc.) about the conference. </p>

@@ -10,11 +10,11 @@ function upcomingConferences() {
 PREFIX sd: <http://symbolicdata.org/Data/Model#>
 PREFIX ical: <http://www.w3.org/2002/12/cal/ical#>
 construct { ?a ?b ?c . }
-from <http://symbolicdata.org/casn/UpcomingConferences/>
+from <http://symbolicdata.org/Data/UpcomingConferences/>
 Where { ?a a sd:UpcomingConference ; ?b ?c . } 
 ';
   
-  $sparql = new EasyRdf_Sparql_Client('http://symbolicdata.org:8891/sparql');
+  $sparql = new EasyRdf_Sparql_Client('http://symbolicdata.org:8890/sparql');
   $result=$sparql->query($query); // a CONSTRUCT query returns an EasyRdf_Graph
   //echo $result->dump("turtle");
   /* generate data structure for output table */
@@ -49,11 +49,11 @@ function pastConferences() {
 PREFIX sd: <http://symbolicdata.org/Data/Model#>
 PREFIX ical: <http://www.w3.org/2002/12/cal/ical#>
 construct { ?a ?b ?c . }
-from <http://symbolicdata.org/casn/PastConferences/>
+from <http://symbolicdata.org/Data/PastConferences/>
 Where { ?a a sd:Event ; ?b ?c . } 
 ';
   
-  $sparql = new EasyRdf_Sparql_Client('http://symbolicdata.org:8891/sparql');
+  $sparql = new EasyRdf_Sparql_Client('http://symbolicdata.org:8890/sparql');
   $result=$sparql->query($query); // a CONSTRUCT query returns an EasyRdf_Graph
   //echo $result->dump("turtle");
   /* generate data structure for output table */
