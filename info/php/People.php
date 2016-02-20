@@ -14,7 +14,6 @@ from <http://symbolicdata.org/Data/PersonalProfiles/>
 Where { 
 ?a a foaf:Person ; ?b ?c; foaf:name $n . 
 optional { ?a sd:affiliation $f . } 
-optional { ?a sd:hasZMathSearchString $z . } 
 filter regex(?n, "'.$name.'","i")
 filter regex(?f, "'.$affil.'","i")
 }  
@@ -29,19 +28,21 @@ LIMIT 100';
     $a=$v->getUri();
     $label=$v->get('foaf:name');
     $loc=$v->get('sd:affiliation');
+    $hp=$v->get('foaf:homepage');
     $zb=$v->get('sd:hasZMathSearchString');
     $pp=$v->get('sd:hasPersonalProfile');
     $out='<p><dl> <dt><strong><a href="'.$a.'">'.$label.'</a></strong></dt>
 ';
     if (!empty($loc)) { $out.='<dd>Affiliation: '.$loc.'.</dd>'; }
-    if (!empty($zb)) { $out.='<dd>ZBMath Author Code: <a href="'.$zb.'">'.$zb.'</a></dd>'; }
+    if (!empty($hp)) { $out.='<dd>Homepage: <a href="'.$hp.'">'.$hp.'</a></dd>'; }
     if (!empty($pp)) { $out.='<dd>Personal FOAF Profile: <a href="'.$pp.'">'.$pp.'</a></dd>'; }
+    if (!empty($zb)) { $out.='<dd>ZBMath Author Code: <a href="'.$zb.'">'.$zb.'</a></dd>'; }
     $out.='</dl></p>';
     $s["$a"]=$out;
   }
   ksort($s);
-  return '<p>Search for entries with foaf:name contains "'.$name
-      .'" and sd:affiliation contains "'.$affil.'"</p>'. join($s,"\n") ; 		
+  return '<h4>List of entries with foaf:name containing "'.$name
+      .'" and sd:affiliation containing "'.$affil.'"</h4>'. join($s,"\n") ; 		
 }
 
 // ---- test ----

@@ -16,7 +16,7 @@ extracted from the SymbolicData <a href="http://symbolicdata.org/Data/People/"
 >CASN People Database</a>.  </p>
 
 <p>The CASN Database contains more than 1000 instances of foaf:Person (as of
-Febr. 2016).  In 2013 we identified in a joint effort with ZBMath (Wolfram
+Febr. 2016).  In 2014 we identified in a joint effort with ZBMath (Wolfram
 Sperber) the author strings of 347 persons within the author disambiguation
 system of the Zentralblatt.  </p>
 
