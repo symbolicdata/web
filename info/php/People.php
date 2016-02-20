@@ -10,6 +10,7 @@ PREFIX sd: <http://symbolicdata.org/Data/Model#>
 construct { ?a ?b ?c . }
 from <http://symbolicdata.org/Data/People/>
 from <http://symbolicdata.org/Data/ZBMathPeople/>
+from <http://symbolicdata.org/Data/PersonalProfiles/>
 Where { 
 ?a a foaf:Person ; ?b ?c; foaf:name $n . 
 optional { ?a sd:affiliation $f . } 
@@ -29,10 +30,12 @@ LIMIT 100';
     $label=$v->get('foaf:name');
     $loc=$v->get('sd:affiliation');
     $zb=$v->get('sd:hasZMathSearchString');
+    $pp=$v->get('sd:hasPersonalProfile');
     $out='<p><dl> <dt><strong><a href="'.$a.'">'.$label.'</a></strong></dt>
 ';
     if (!empty($loc)) { $out.='<dd>Affiliation: '.$loc.'.</dd>'; }
     if (!empty($zb)) { $out.='<dd>ZBMath Author Code: <a href="'.$zb.'">'.$zb.'</a></dd>'; }
+    if (!empty($pp)) { $out.='<dd>Personal FOAF Profile: <a href="'.$pp.'">'.$pp.'</a></dd>'; }
     $out.='</dl></p>';
     $s["$a"]=$out;
   }
@@ -43,4 +46,4 @@ LIMIT 100';
 
 // ---- test ----
 // echo getPeople($_GET['name'],$_GET['affil']);
-//echo getPeople("G","U");
+// echo getPeople("G","U");
