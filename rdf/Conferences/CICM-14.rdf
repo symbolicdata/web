@@ -1,0 +1,720 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+   xmlns:dcterms="http://purl.org/dc/terms/"
+   xmlns:foaf="http://xmlns.com/foaf/0.1/"
+   xmlns:ical="http://www.w3.org/2002/12/cal/ical#"
+   xmlns:owl="http://www.w3.org/2002/07/owl#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+   xmlns:sd="http://symbolicdata.org/Data/Model#"
+   xmlns:sdp="http://symbolicdata.org/Data/Person/"
+   xmlns:swc="http://data.semanticweb.org/ns/swc/ontology#"
+   xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+   xmlns="http://cicm-conference.org/2014/rdf/">
+  <swc:Chair rdf:about="http://cicm-conference.org/2014/rdf/Calculemus-Chair">
+    <swc:heldBy rdf:resource="http://symbolicdata.org/Data/Person/Davenport_JH"/>
+    <rdfs:label>Calculemus Chair</rdfs:label>
+  </swc:Chair>
+  <swc:Chair rdf:about="http://cicm-conference.org/2014/rdf/DML-Chair">
+    <swc:heldBy rdf:resource="http://symbolicdata.org/Data/Person/Sojka_P"/>
+    <rdfs:label>DML Chair</rdfs:label>
+  </swc:Chair>
+  <swc:Chair rdf:about="http://cicm-conference.org/2014/rdf/DoctoralProgramme-Chair">
+    <swc:heldBy rdf:resource="http://symbolicdata.org/Data/Person/Wilson_D"/>
+    <rdfs:label>Doctoral Program Chair</rdfs:label>
+  </swc:Chair>
+  <swc:ConferenceEvent rdf:about="http://cicm-conference.org/2014/rdf/General">
+    <swc:hasAcronym>CICM 2014</swc:hasAcronym>
+    <swc:hasLocation rdf:resource="http://dbpedia.org/resource/Coimbra"/>
+    <swc:hasProgramme rdf:resource="http://cicm-conference.org/2014/cicm.php?menu=talks"/>
+    <swc:hasRole rdf:resource="http://cicm-conference.org/2014/rdf/GeneralProgramChair"/>
+    <swc:hasRole rdf:resource="http://cicm-conference.org/2014/rdf/LocalArrangementsChair"/>
+    <swc:hasRole rdf:resource="http://cicm-conference.org/2014/rdf/PublicityWorkshopChair"/>
+    <swc:isSuperEventOf rdf:resource="http://cicm-conference.org/2014/rdf/track_Calculemus"/>
+    <swc:isSuperEventOf rdf:resource="http://cicm-conference.org/2014/rdf/track_DML"/>
+    <swc:isSuperEventOf rdf:resource="http://cicm-conference.org/2014/rdf/track_DoctoralProgramme"/>
+    <swc:isSuperEventOf rdf:resource="http://cicm-conference.org/2014/rdf/track_InvitedTalks"/>
+    <swc:isSuperEventOf rdf:resource="http://cicm-conference.org/2014/rdf/track_MKM"/>
+    <swc:isSuperEventOf rdf:resource="http://cicm-conference.org/2014/rdf/track_MathUI"/>
+    <swc:isSuperEventOf rdf:resource="http://cicm-conference.org/2014/rdf/track_NotionOfProof"/>
+    <swc:isSuperEventOf rdf:resource="http://cicm-conference.org/2014/rdf/track_OpenMath"/>
+    <swc:isSuperEventOf rdf:resource="http://cicm-conference.org/2014/rdf/track_SystemsAndProjects"/>
+    <swc:isSuperEventOf rdf:resource="http://cicm-conference.org/2014/rdf/track_ThEdu"/>
+    <swc:isSuperEventOf rdf:resource="http://cicm-conference.org/2014/rdf/track_WorkInProgress"/>
+    <rdfs:label>CICM 2014 - Conferences on Intelligent Computer Mathematics</rdfs:label>
+    <ical:description>As computers and communications technology advance, greater opportunities arise for intelligent mathematical computation. While computer algebra, automated deduction, mathematical publishing and novel user interfaces individually have long and successful histories, we are now seeing increasing opportunities for synergy among these areas. The  Conferences on  Intelligent  Computer Mathematics  (CICM) offer a venue for discussing these areas and their synergy.</ical:description>
+    <ical:dtend rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2014-07-11</ical:dtend>
+    <ical:dtstart rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2014-07-07</ical:dtstart>
+    <ical:location>University of Coimbra, Portugal</ical:location>
+    <ical:url rdf:resource="http://www.cicm-conference.org/2014"/>
+  </swc:ConferenceEvent>
+  <swc:Role rdf:about="http://cicm-conference.org/2014/rdf/GeneralProgramChair">
+    <swc:heldBy rdf:resource="http://symbolicdata.org/Data/Person/Watt_S"/>
+    <rdfs:label>General Program Chair</rdfs:label>
+  </swc:Role>
+  <swc:Role rdf:about="http://cicm-conference.org/2014/rdf/LocalArrangementsChair">
+    <swc:heldBy rdf:resource="http://symbolicdata.org/Data/Person/Quaresma_P"/>
+    <rdfs:label>Local Arrangements Chair</rdfs:label>
+  </swc:Role>
+  <swc:Chair rdf:about="http://cicm-conference.org/2014/rdf/MKM-Chair">
+    <swc:heldBy rdf:resource="http://symbolicdata.org/Data/Person/Urban_J"/>
+    <rdfs:label>MKM Chair</rdfs:label>
+  </swc:Chair>
+  <swc:Chair rdf:about="http://cicm-conference.org/2014/rdf/MathUI-Chair">
+    <swc:heldBy rdf:resource="http://symbolicdata.org/Data/Person/Kohlhase_A"/>
+    <swc:heldBy rdf:resource="http://symbolicdata.org/Data/Person/Libbrecht_P"/>
+    <rdfs:label>MathUI Chair</rdfs:label>
+  </swc:Chair>
+  <swc:Chair rdf:about="http://cicm-conference.org/2014/rdf/OpenMath-Chair">
+    <swc:heldBy rdf:resource="http://symbolicdata.org/Data/Person/Davenport_JH"/>
+    <rdfs:label>OpenMath Chair</rdfs:label>
+  </swc:Chair>
+  <sd:Reference rdf:about="http://cicm-conference.org/2014/rdf/Paper_1002">
+    <swc:relatedToEvent rdf:resource="http://cicm-conference.org/2014/rdf/track_InvitedTalks"/>
+    <dcterms:abstract>Homotopy Type Theory is a recent evolution of Type Theory, where homotopy equivalence is used to give a new understanding to the notion of equality. This approach also makes it possible change the point of view we can have about inductive types and provides better tools to master the notion of quotients, which play a pervasive role in modern mathematics.</dcterms:abstract>
+    <dcterms:creator rdf:resource="http://symbolicdata.org/Data/Person/Bertot_Y"/>
+    <dcterms:title>A naive view of Homotopy Type Theory and its relation to the calculus of constructions</dcterms:title>
+  </sd:Reference>
+  <sd:Reference rdf:about="http://cicm-conference.org/2014/rdf/Paper_1003">
+    <swc:relatedToEvent rdf:resource="http://cicm-conference.org/2014/rdf/track_InvitedTalks"/>
+    <dcterms:abstract>The use of technology in schools has been one of the most debated topics around mathematics education. In some countries there is a huge investment, in others there is a downscaling. Malaysia decided in 2013 to put its 10 million students to use Google laptops and Google apps, while Australia in the same year decided it would not continue funding their own high school laptop program. Who is right from the educational point of view? The last major curriculum document written in the world to date, the Common Core State Standards-CCSS in the United States, whose mathematics part is coordinated by the well known mathematician William McCallum, sets as one of its standards for mathematical practice: &amp;quot;Mathematically proficient students consider the available tools when solving a mathematical problem. These tools might include pencil and paper, concrete models, a ruler, a protractor, a calculator, a spreadsheet, a computer algebra system, a statistical package, or dynamic geometry software.&amp;quot; Strong moves need substantiation from research, including the analysis of the existing situation in different countries. What does research say about the use of computers in schools in present time and the use of different pieces of software from spreadsheets to computer algebra systems?</dcterms:abstract>
+    <dcterms:creator rdf:resource="http://symbolicdata.org/Data/Person/CarvalhoeSilva_J"/>
+    <dcterms:identifier rdf:resource="http://dx.doi.org/10.1007/978-3-319-08434-3_1"/>
+    <dcterms:title>What international studies say about the importance and limitations of using computers to teach mathematics in secondary schools</dcterms:title>
+    <sd:slidesURL rdf:resource="http://cicm-conference.org/2014/slides/talk-jaime-c-s.pdf"/>
+  </sd:Reference>
+  <sd:Reference rdf:about="http://cicm-conference.org/2014/rdf/Paper_1004">
+    <swc:relatedToEvent rdf:resource="http://cicm-conference.org/2014/rdf/track_InvitedTalks"/>
+    <dcterms:creator rdf:resource="http://symbolicdata.org/Data/Person/Duarte_AL"/>
+    <dcterms:title>Teaching Tiles</dcterms:title>
+  </sd:Reference>
+  <sd:Reference rdf:about="http://cicm-conference.org/2014/rdf/Paper_1005">
+    <swc:relatedToEvent rdf:resource="http://cicm-conference.org/2014/rdf/track_InvitedTalks"/>
+    <dcterms:abstract>The use of technology in schools has been one of the most debated topics around mathematics education. In some countries there is a huge investment, in others there is a downscaling. Malaysia decided in 2013 to put its 10 million students to use Google laptops and Google apps, while Australia in the same year decided it would not continue funding their own high school laptop program. Who is right from the educational point of view? The last major curriculum document written in the world to date, the Common Core State Standards-CCSS in the United States, whose mathematics part is coordinated by the well known mathematician William McCallum, sets as one of its standards for mathematical practice: &amp;quot;Mathematically proficient students consider the available tools when solving a mathematical problem. These tools might include pencil and paper, concrete models, a ruler, a protractor, a calculator, a spreadsheet, a computer algebra system, a statistical package, or dynamic geometry software.&amp;quot; Strong moves need substantiation from research, including the analysis of the existing situation in different countries. What does research say about the use of computers in schools in present time and the use of different pieces of software from spreadsheets to computer algebra systems?</dcterms:abstract>
+    <dcterms:creator rdf:resource="http://symbolicdata.org/Data/Person/vandeSompel_H"/>
+    <dcterms:identifier rdf:resource="http://dx.doi.org/10.1007/978-3-319-08434-3_2"/>
+    <dcterms:title>Towards Robust Hyperlinks for Web-Based Scholarly Communication</dcterms:title>
+  </sd:Reference>
+  <sd:Reference rdf:about="http://cicm-conference.org/2014/rdf/Paper_1006">
+    <swc:relatedToEvent rdf:resource="http://cicm-conference.org/2014/rdf/track_InvitedTalks"/>
+    <dcterms:abstract>The use of technology in schools has been one of the most debated topics around mathematics education. In some countries there is a huge investment, in others there is a downscaling. Malaysia decided in 2013 to put its 10 million students to use Google laptops and Google apps, while Australia in the same year decided it would not continue funding their own high school laptop program. Who is right from the educational point of view? The last major curriculum document written in the world to date, the Common Core State Standards-CCSS in the United States, whose mathematics part is coordinated by the well known mathematician William McCallum, sets as one of its standards for mathematical practice: &amp;quot;Mathematically proficient students consider the available tools when solving a mathematical problem. These tools might include pencil and paper, concrete models, a ruler, a protractor, a calculator, a spreadsheet, a computer algebra system, a statistical package, or dynamic geometry software.&amp;quot; Strong moves need substantiation from research, including the analysis of the existing situation in different countries. What does research say about the use of computers in schools in present time and the use of different pieces of software from spreadsheets to computer algebra systems?</dcterms:abstract>
+    <dcterms:creator rdf:resource="http://symbolicdata.org/Data/Person/Weisstein_E"/>
+    <dcterms:identifier rdf:resource="http://dx.doi.org/10.1007/978-3-319-08434-3_3"/>
+    <dcterms:title>Computable data, mathematics, and digital libraries in Mathematica and Wolfram|Alpha</dcterms:title>
+  </sd:Reference>
+  <sd:Reference rdf:about="http://cicm-conference.org/2014/rdf/Paper_1007">
+    <swc:relatedToEvent rdf:resource="http://cicm-conference.org/2014/rdf/track_Calculemus"/>
+    <dcterms:creator rdf:resource="http://symbolicdata.org/Data/Person/Ahmed_W"/>
+    <dcterms:creator rdf:resource="http://symbolicdata.org/Data/Person/Hamdi_MS"/>
+    <dcterms:creator rdf:resource="http://symbolicdata.org/Data/Person/Hasan_O"/>
+    <dcterms:creator rdf:resource="http://symbolicdata.org/Data/Person/Tahar_S"/>
+    <dcterms:identifier rdf:resource="http://dx.doi.org/10.1007/978-3-319-08434-3_4"/>
+    <dcterms:title>Towards the Formal Reliability Analysis of Oil and Gas Pipelines</dcterms:title>
+  </sd:Reference>
+  <sd:Reference rdf:about="http://cicm-conference.org/2014/rdf/Paper_1008">
+    <swc:relatedToEvent rdf:resource="http://cicm-conference.org/2014/rdf/track_Calculemus"/>
+    <dcterms:creator rdf:resource="http://symbolicdata.org/Data/Person/Cerna_D"/>
+    <dcterms:identifier rdf:resource="http://dx.doi.org/10.1007/978-3-319-08434-3_6"/>
+    <dcterms:title>A Tableaux Based Decision Procedure for Multi-Parameter Propositional Schemata</dcterms:title>
+    <sd:slidesURL rdf:resource="http://cicm-conference.org/2014/slides/DavidCernaPortugal.pdf"/>
+  </sd:Reference>
+  <sd:Reference rdf:about="http://cicm-conference.org/2014/rdf/Paper_1009">
+    <swc:relatedToEvent rdf:resource="http://cicm-conference.org/2014/rdf/track_Calculemus"/>
+    <dcterms:creator rdf:resource="http://symbolicdata.org/Data/Person/Bradford_R"/>
+    <dcterms:creator rdf:resource="http://symbolicdata.org/Data/Person/Chen_C"/>
+    <dcterms:creator rdf:resource="http://symbolicdata.org/Data/Person/Davenport_JH"/>
+    <dcterms:creator rdf:resource="http://symbolicdata.org/Data/Person/England_M"/>
+    <dcterms:creator rdf:resource="http://symbolicdata.org/Data/Person/MorenoMaza_M"/>
+    <dcterms:creator rdf:resource="http://symbolicdata.org/Data/Person/Wilson_D"/>
+    <dcterms:identifier rdf:resource="http://dx.doi.org/10.1007/978-3-319-08434-3_5"/>
+    <dcterms:title>Problem formulation for truth-table invariant cylindrical algebraic decomposition by incremental triangular decomposition</dcterms:title>
+    <sd:paperURL rdf:resource="http://arxiv.org/abs/1404.6371"/>
+    <sd:slidesURL rdf:resource="http://cicm-conference.org/2014/slides/England-CICMSlides.pdf"/>
+  </sd:Reference>
+  <sd:Reference rdf:about="http://cicm-conference.org/2014/rdf/Paper_1010">
+    <swc:relatedToEvent rdf:resource="http://cicm-conference.org/2014/rdf/track_Calculemus"/>
+    <dcterms:creator rdf:resource="http://symbolicdata.org/Data/Person/Fish_A"/>
+    <dcterms:creator rdf:resource="http://symbolicdata.org/Data/Person/Lisitsa_A"/>
+    <dcterms:identifier rdf:resource="http://dx.doi.org/10.1007/978-3-319-08434-3_7"/>
+    <dcterms:title>Detecting unknots via equational reasoning, I: Exploration</dcterms:title>
+  </sd:Reference>
+  <sd:Reference rdf:about="http://cicm-conference.org/2014/rdf/Paper_1011">
+    <swc:relatedToEvent rdf:resource="http://cicm-conference.org/2014/rdf/track_Calculemus"/>
+    <dcterms:creator rdf:resource="http://symbolicdata.org/Data/Person/Bridge_J"/>
+    <dcterms:creator rdf:resource="http://symbolicdata.org/Data/Person/Davenport_JH"/>
+    <dcterms:creator rdf:resource="http://symbolicdata.org/Data/Person/England_M"/>
+    <dcterms:creator rdf:resource="http://symbolicdata.org/Data/Person/Huang_Z"/>
+    <dcterms:creator rdf:resource="http://symbolicdata.org/Data/Person/Paulson_LC"/>
+    <dcterms:creator rdf:resource="http://symbolicdata.org/Data/Person/Wilson_D"/>
+    <dcterms:identifier rdf:resource="http://dx.doi.org/10.1007/978-3-319-08434-3_8"/>
+    <dcterms:title>Applying machine learning to the problem of choosing a heuristic to select the variable ordering for cylindrical algebraic decomposition</dcterms:title>
+    <sd:paperURL rdf:resource="http://arxiv.org/abs/1404.6369"/>
+    <sd:slidesURL rdf:resource="http://cicm-conference.org/2014/slides/Huang-CICMSlides.pdf"/>
+  </sd:Reference>
+  <sd:Reference rdf:about="http://cicm-conference.org/2014/rdf/Paper_1012">
+    <swc:relatedToEvent rdf:resource="http://cicm-conference.org/2014/rdf/track_Calculemus"/>
+    <dcterms:creator rdf:resource="http://symbolicdata.org/Data/Person/Aravantinos_V"/>
+    <dcterms:creator rdf:resource="http://symbolicdata.org/Data/Person/Hasan_O"/>
+    <dcterms:creator rdf:resource="http://symbolicdata.org/Data/Person/KhanAfshar_S"/>
+    <dcterms:creator rdf:resource="http://symbolicdata.org/Data/Person/Tahar_S"/>
+    <dcterms:identifier rdf:resource="http://dx.doi.org/10.1007/978-3-319-08434-3_10"/>
+    <dcterms:title>Formalization of Complex Vectors in Higher-Order Logic</dcterms:title>
+  </sd:Reference>
+  <sd:Reference rdf:about="http://cicm-conference.org/2014/rdf/Paper_1013">
+    <swc:relatedToEvent rdf:resource="http://cicm-conference.org/2014/rdf/track_Calculemus"/>
+    <dcterms:creator rdf:resource="http://symbolicdata.org/Data/Person/Claessen_K"/>
+    <dcterms:creator rdf:resource="http://symbolicdata.org/Data/Person/Johansson_M"/>
+    <dcterms:creator rdf:resource="http://symbolicdata.org/Data/Person/Rosen_D"/>
+    <dcterms:creator rdf:resource="http://symbolicdata.org/Data/Person/Smallbone_N"/>
+    <dcterms:identifier rdf:resource="http://dx.doi.org/10.1007/978-3-319-08434-3_9"/>
+    <dcterms:title>Hipster: Integrating Theory Exploration in a Proof Assistant</dcterms:title>
+    <sd:paperURL rdf:resource="http://arxiv.org/abs/1405.3426"/>
+    <sd:slidesURL rdf:resource="http://cicm-conference.org/2014/slides/JohanssonEtAl.pdf"/>
+  </sd:Reference>
+  <sd:Reference rdf:about="http://cicm-conference.org/2014/rdf/Paper_1014">
+    <swc:relatedToEvent rdf:resource="http://cicm-conference.org/2014/rdf/track_Calculemus"/>
+    <dcterms:creator rdf:resource="http://symbolicdata.org/Data/Person/Schindler_S"/>
+    <dcterms:creator rdf:resource="http://symbolicdata.org/Data/Person/Wegner_B"/>
+    <dcterms:identifier rdf:resource="http://dx.doi.org/10.1007/978-3-319-08434-3_11"/>
+    <dcterms:title>Mathematical structures enabling the decidability of the patentability and patent eligibility of a patent application</dcterms:title>
+  </sd:Reference>
+  <sd:Reference rdf:about="http://cicm-conference.org/2014/rdf/Paper_1015">
+    <swc:relatedToEvent rdf:resource="http://cicm-conference.org/2014/rdf/track_DML"/>
+    <dcterms:abstract>The use of technology in schools has been one of the most debated topics around mathematics education. In some countries there is a huge investment, in others there is a downscaling. Malaysia decided in 2013 to put its 10 million students to use Google laptops and Google apps, while Australia in the same year decided it would not continue funding their own high school laptop program. Who is right from the educational point of view? The last major curriculum document written in the world to date, the Common Core State Standards-CCSS in the United States, whose mathematics part is coordinated by the well known mathematician William McCallum, sets as one of its standards for mathematical practice: &amp;quot;Mathematically proficient students consider the available tools when solving a mathematical problem. These tools might include pencil and paper, concrete models, a ruler, a protractor, a calculator, a spreadsheet, a computer algebra system, a statistical package, or dynamic geometry software.&amp;quot; Strong moves need substantiation from research, including the analysis of the existing situation in different countries. What does research say about the use of computers in schools in present time and the use of different pieces of software from spreadsheets to computer algebra systems?</dcterms:abstract>
+    <dcterms:creator rdf:resource="http://symbolicdata.org/Data/Person/Kohlhase_A"/>
+    <dcterms:identifier rdf:resource="http://dx.doi.org/10.1007/978-3-319-08434-3_12"/>
+    <dcterms:title>Search Interfaces for Mathematicians</dcterms:title>
+    <sd:slidesURL rdf:resource="http://cicm-conference.org/2014/slides/a-kohlhase.pdf"/>
+  </sd:Reference>
+  <sd:Reference rdf:about="http://cicm-conference.org/2014/rdf/Paper_1016">
+    <swc:relatedToEvent rdf:resource="http://cicm-conference.org/2014/rdf/track_DML"/>
+    <dcterms:abstract>The use of technology in schools has been one of the most debated topics around mathematics education. In some countries there is a huge investment, in others there is a downscaling. Malaysia decided in 2013 to put its 10 million students to use Google laptops and Google apps, while Australia in the same year decided it would not continue funding their own high school laptop program. Who is right from the educational point of view? The last major curriculum document written in the world to date, the Common Core State Standards-CCSS in the United States, whose mathematics part is coordinated by the well known mathematician William McCallum, sets as one of its standards for mathematical practice: &amp;quot;Mathematically proficient students consider the available tools when solving a mathematical problem. These tools might include pencil and paper, concrete models, a ruler, a protractor, a calculator, a spreadsheet, a computer algebra system, a statistical package, or dynamic geometry software.&amp;quot; Strong moves need substantiation from research, including the analysis of the existing situation in different countries. What does research say about the use of computers in schools in present time and the use of different pieces of software from spreadsheets to computer algebra systems?</dcterms:abstract>
+    <dcterms:creator rdf:resource="http://symbolicdata.org/Data/Person/Kohlhase_M"/>
+    <dcterms:identifier rdf:resource="http://dx.doi.org/10.1007/978-3-319-08434-3_13"/>
+    <dcterms:title>A Data Model and Encoding for a Semantic, Multilingual Glossary of Mathematics</dcterms:title>
+  </sd:Reference>
+  <sd:Reference rdf:about="http://cicm-conference.org/2014/rdf/Paper_1017">
+    <swc:relatedToEvent rdf:resource="http://cicm-conference.org/2014/rdf/track_DML"/>
+    <dcterms:abstract>The use of technology in schools has been one of the most debated topics around mathematics education. In some countries there is a huge investment, in others there is a downscaling. Malaysia decided in 2013 to put its 10 million students to use Google laptops and Google apps, while Australia in the same year decided it would not continue funding their own high school laptop program. Who is right from the educational point of view? The last major curriculum document written in the world to date, the Common Core State Standards-CCSS in the United States, whose mathematics part is coordinated by the well known mathematician William McCallum, sets as one of its standards for mathematical practice: &amp;quot;Mathematically proficient students consider the available tools when solving a mathematical problem. These tools might include pencil and paper, concrete models, a ruler, a protractor, a calculator, a spreadsheet, a computer algebra system, a statistical package, or dynamic geometry software.&amp;quot; Strong moves need substantiation from research, including the analysis of the existing situation in different countries. What does research say about the use of computers in schools in present time and the use of different pieces of software from spreadsheets to computer algebra systems?</dcterms:abstract>
+    <dcterms:creator rdf:resource="http://symbolicdata.org/Data/Person/Moore_R"/>
+    <dcterms:identifier rdf:resource="http://dx.doi.org/10.1007/978-3-319-08434-3_14"/>
+    <dcterms:title>PDF/A-3u as an archival format for Accessible mathematics</dcterms:title>
+  </sd:Reference>
+  <sd:Reference rdf:about="http://cicm-conference.org/2014/rdf/Paper_1018">
+    <swc:relatedToEvent rdf:resource="http://cicm-conference.org/2014/rdf/track_DML"/>
+    <dcterms:abstract>The use of technology in schools has been one of the most debated topics around mathematics education. In some countries there is a huge investment, in others there is a downscaling. Malaysia decided in 2013 to put its 10 million students to use Google laptops and Google apps, while Australia in the same year decided it would not continue funding their own high school laptop program. Who is right from the educational point of view? The last major curriculum document written in the world to date, the Common Core State Standards-CCSS in the United States, whose mathematics part is coordinated by the well known mathematician William McCallum, sets as one of its standards for mathematical practice: &amp;quot;Mathematically proficient students consider the available tools when solving a mathematical problem. These tools might include pencil and paper, concrete models, a ruler, a protractor, a calculator, a spreadsheet, a computer algebra system, a statistical package, or dynamic geometry software.&amp;quot; Strong moves need substantiation from research, including the analysis of the existing situation in different countries. What does research say about the use of computers in schools in present time and the use of different pieces of software from spreadsheets to computer algebra systems?</dcterms:abstract>
+    <dcterms:creator rdf:resource="http://symbolicdata.org/Data/Person/Aizawa_A"/>
+    <dcterms:creator rdf:resource="http://symbolicdata.org/Data/Person/Kristianto_GY"/>
+    <dcterms:creator rdf:resource="http://symbolicdata.org/Data/Person/Nghiem_MQ"/>
+    <dcterms:creator rdf:resource="http://symbolicdata.org/Data/Person/Topic_G"/>
+    <dcterms:identifier rdf:resource="http://dx.doi.org/10.1007/978-3-319-08434-3_15"/>
+    <dcterms:title>Which one is better: presentation-based or content-based math search?</dcterms:title>
+    <sd:slidesURL rdf:resource="http://cicm-conference.org/2014/slides/nghiem.pdf"/>
+  </sd:Reference>
+  <sd:Reference rdf:about="http://cicm-conference.org/2014/rdf/Paper_1019">
+    <swc:relatedToEvent rdf:resource="http://cicm-conference.org/2014/rdf/track_DML"/>
+    <dcterms:abstract>The use of technology in schools has been one of the most debated topics around mathematics education. In some countries there is a huge investment, in others there is a downscaling. Malaysia decided in 2013 to put its 10 million students to use Google laptops and Google apps, while Australia in the same year decided it would not continue funding their own high school laptop program. Who is right from the educational point of view? The last major curriculum document written in the world to date, the Common Core State Standards-CCSS in the United States, whose mathematics part is coordinated by the well known mathematician William McCallum, sets as one of its standards for mathematical practice: &amp;quot;Mathematically proficient students consider the available tools when solving a mathematical problem. These tools might include pencil and paper, concrete models, a ruler, a protractor, a calculator, a spreadsheet, a computer algebra system, a statistical package, or dynamic geometry software.&amp;quot; Strong moves need substantiation from research, including the analysis of the existing situation in different countries. What does research say about the use of computers in schools in present time and the use of different pieces of software from spreadsheets to computer algebra systems?</dcterms:abstract>
+    <dcterms:creator rdf:resource="http://symbolicdata.org/Data/Person/Schoeneberg_U"/>
+    <dcterms:creator rdf:resource="http://symbolicdata.org/Data/Person/Sperber_W"/>
+    <dcterms:identifier rdf:resource="http://dx.doi.org/10.1007/978-3-319-08434-3_16"/>
+    <dcterms:title>POS Tagging and its Applications for Mathematics</dcterms:title>
+    <sd:slidesURL rdf:resource="http://www.tiefseh.de/cicm2014/"/>
+    <rdfs:comment>This paper has been awarded best DML paper prize</rdfs:comment>
+  </sd:Reference>
+  <sd:Reference rdf:about="http://cicm-conference.org/2014/rdf/Paper_1020">
+    <swc:relatedToEvent rdf:resource="http://cicm-conference.org/2014/rdf/track_DML"/>
+    <dcterms:abstract>The use of technology in schools has been one of the most debated topics around mathematics education. In some countries there is a huge investment, in others there is a downscaling. Malaysia decided in 2013 to put its 10 million students to use Google laptops and Google apps, while Australia in the same year decided it would not continue funding their own high school laptop program. Who is right from the educational point of view? The last major curriculum document written in the world to date, the Common Core State Standards-CCSS in the United States, whose mathematics part is coordinated by the well known mathematician William McCallum, sets as one of its standards for mathematical practice: &amp;quot;Mathematically proficient students consider the available tools when solving a mathematical problem. These tools might include pencil and paper, concrete models, a ruler, a protractor, a calculator, a spreadsheet, a computer algebra system, a statistical package, or dynamic geometry software.&amp;quot; Strong moves need substantiation from research, including the analysis of the existing situation in different countries. What does research say about the use of computers in schools in present time and the use of different pieces of software from spreadsheets to computer algebra systems?</dcterms:abstract>
+    <dcterms:creator rdf:resource="http://symbolicdata.org/Data/Person/Schubotz_M"/>
+    <dcterms:creator rdf:resource="http://symbolicdata.org/Data/Person/Wicke_G"/>
+    <dcterms:identifier rdf:resource="http://dx.doi.org/10.1007/978-3-319-08434-3_17"/>
+    <dcterms:title>Mathoid: Robust, Scalable, Fast and Accessible Math Rendering for Wikipedia</dcterms:title>
+    <sd:slidesURL rdf:resource="http://cicm-conference.org/2014/slides/mathoid.pdf"/>
+  </sd:Reference>
+  <sd:Reference rdf:about="http://cicm-conference.org/2014/rdf/Paper_1021">
+    <swc:relatedToEvent rdf:resource="http://cicm-conference.org/2014/rdf/track_MKM"/>
+    <dcterms:creator rdf:resource="http://symbolicdata.org/Data/Person/Caminati_MB"/>
+    <dcterms:creator rdf:resource="http://symbolicdata.org/Data/Person/Kerber_M"/>
+    <dcterms:creator rdf:resource="http://symbolicdata.org/Data/Person/Lange_C"/>
+    <dcterms:creator rdf:resource="http://symbolicdata.org/Data/Person/Rowat_C"/>
+    <dcterms:identifier rdf:resource="http://dx.doi.org/10.1007/978-3-319-08434-3_18"/>
+    <dcterms:title>Set Theory or Higher Order Logic to Represent Auction Concepts in Isabelle?</dcterms:title>
+  </sd:Reference>
+  <sd:Reference rdf:about="http://cicm-conference.org/2014/rdf/Paper_1022">
+    <swc:relatedToEvent rdf:resource="http://cicm-conference.org/2014/rdf/track_MKM"/>
+    <dcterms:creator rdf:resource="http://symbolicdata.org/Data/Person/Carette_J"/>
+    <dcterms:creator rdf:resource="http://symbolicdata.org/Data/Person/Farmer_WM"/>
+    <dcterms:creator rdf:resource="http://symbolicdata.org/Data/Person/Kohlhase_M"/>
+    <dcterms:identifier rdf:resource="http://dx.doi.org/10.1007/978-3-319-08434-3_19"/>
+    <dcterms:title>Realms: A Structure for Consolidating Knowledge about Mathematical Theories</dcterms:title>
+  </sd:Reference>
+  <sd:Reference rdf:about="http://cicm-conference.org/2014/rdf/Paper_1023">
+    <swc:relatedToEvent rdf:resource="http://cicm-conference.org/2014/rdf/track_MKM"/>
+    <dcterms:creator rdf:resource="http://symbolicdata.org/Data/Person/Gransden_T"/>
+    <dcterms:creator rdf:resource="http://symbolicdata.org/Data/Person/Raman_R"/>
+    <dcterms:creator rdf:resource="http://symbolicdata.org/Data/Person/Walkinshaw_N"/>
+    <dcterms:identifier rdf:resource="http://dx.doi.org/10.1007/978-3-319-08434-3_21"/>
+    <dcterms:title>Mining State-Based Models from Proof Corpora</dcterms:title>
+  </sd:Reference>
+  <sd:Reference rdf:about="http://cicm-conference.org/2014/rdf/Paper_1024">
+    <swc:relatedToEvent rdf:resource="http://cicm-conference.org/2014/rdf/track_MKM"/>
+    <dcterms:creator rdf:resource="http://symbolicdata.org/Data/Person/Gauthier_T"/>
+    <dcterms:creator rdf:resource="http://symbolicdata.org/Data/Person/Kaliszyk_C"/>
+    <dcterms:identifier rdf:resource="http://dx.doi.org/10.1007/978-3-319-08434-3_20"/>
+    <dcterms:title>Matching concepts across HOL libraries</dcterms:title>
+  </sd:Reference>
+  <sd:Reference rdf:about="http://cicm-conference.org/2014/rdf/Paper_1025">
+    <swc:relatedToEvent rdf:resource="http://cicm-conference.org/2014/rdf/track_MKM"/>
+    <dcterms:creator rdf:resource="http://symbolicdata.org/Data/Person/Haralambous_Y"/>
+    <dcterms:creator rdf:resource="http://symbolicdata.org/Data/Person/Quaresma_P"/>
+    <dcterms:identifier rdf:resource="http://dx.doi.org/10.1007/978-3-319-08434-3_22"/>
+    <dcterms:title>Querying Geometric Figures Using a Controlled Language, Ontological Graphs and Dependency Lattices</dcterms:title>
+  </sd:Reference>
+  <sd:Reference rdf:about="http://cicm-conference.org/2014/rdf/Paper_1026">
+    <swc:relatedToEvent rdf:resource="http://cicm-conference.org/2014/rdf/track_MKM"/>
+    <dcterms:creator rdf:resource="http://symbolicdata.org/Data/Person/Horozal_F"/>
+    <dcterms:creator rdf:resource="http://symbolicdata.org/Data/Person/Kohlhase_M"/>
+    <dcterms:creator rdf:resource="http://symbolicdata.org/Data/Person/Rabe_F"/>
+    <dcterms:identifier rdf:resource="http://dx.doi.org/10.1007/978-3-319-08434-3_23"/>
+    <dcterms:title>Flexary Operators for Formalized Mathematics</dcterms:title>
+    <sd:slidesURL rdf:resource="http://kwarc.info/frabe/Research/slides/HRK_sequences_14.pdf"/>
+  </sd:Reference>
+  <sd:Reference rdf:about="http://cicm-conference.org/2014/rdf/Paper_1027">
+    <swc:relatedToEvent rdf:resource="http://cicm-conference.org/2014/rdf/track_MKM"/>
+    <dcterms:creator rdf:resource="http://symbolicdata.org/Data/Person/Hupel_L"/>
+    <dcterms:identifier rdf:resource="http://dx.doi.org/10.1007/978-3-319-08434-3_24"/>
+    <dcterms:title>Interactive Simplifier Tracing and Debugging in Isabelle</dcterms:title>
+    <sd:paperURL rdf:resource="http://arxiv.org/abs/1406.0292"/>
+    <sd:slidesURL rdf:resource="http://cicm-conference.org/2014/slides/hupel2014interactive.pdf"/>
+  </sd:Reference>
+  <sd:Reference rdf:about="http://cicm-conference.org/2014/rdf/Paper_1028">
+    <swc:relatedToEvent rdf:resource="http://cicm-conference.org/2014/rdf/track_MKM"/>
+    <dcterms:creator rdf:resource="http://symbolicdata.org/Data/Person/Jucovschi_C"/>
+    <dcterms:identifier rdf:resource="http://dx.doi.org/10.1007/978-3-319-08434-3_25"/>
+    <dcterms:title>Towards an Interaction-based Integration of MKM Services into End-User Applications</dcterms:title>
+  </sd:Reference>
+  <sd:Reference rdf:about="http://cicm-conference.org/2014/rdf/Paper_1029">
+    <swc:relatedToEvent rdf:resource="http://cicm-conference.org/2014/rdf/track_MKM"/>
+    <dcterms:creator rdf:resource="http://symbolicdata.org/Data/Person/Kaliszyk_C"/>
+    <dcterms:creator rdf:resource="http://symbolicdata.org/Data/Person/Rabe_F"/>
+    <dcterms:identifier rdf:resource="http://dx.doi.org/10.1007/978-3-319-08434-3_26"/>
+    <dcterms:title>Towards Knowledge Management for HOL Light</dcterms:title>
+    <sd:slidesURL rdf:resource="http://kwarc.info/frabe/Research/slides/KR_hollight_14.pdf"/>
+  </sd:Reference>
+  <sd:Reference rdf:about="http://cicm-conference.org/2014/rdf/Paper_1030">
+    <swc:relatedToEvent rdf:resource="http://cicm-conference.org/2014/rdf/track_MKM"/>
+    <dcterms:creator rdf:resource="http://symbolicdata.org/Data/Person/Pak_K"/>
+    <dcterms:identifier rdf:resource="http://dx.doi.org/10.1007/978-3-319-08434-3_27"/>
+    <dcterms:title>Automated improving of proof legibility in the Mizar system</dcterms:title>
+  </sd:Reference>
+  <sd:Reference rdf:about="http://cicm-conference.org/2014/rdf/Paper_1031">
+    <swc:relatedToEvent rdf:resource="http://cicm-conference.org/2014/rdf/track_MKM"/>
+    <dcterms:creator rdf:resource="http://symbolicdata.org/Data/Person/Bezem_M"/>
+    <dcterms:creator rdf:resource="http://symbolicdata.org/Data/Person/Janicic_P"/>
+    <dcterms:creator rdf:resource="http://symbolicdata.org/Data/Person/Narboux_J"/>
+    <dcterms:creator rdf:resource="http://symbolicdata.org/Data/Person/Stojanovic_S"/>
+    <dcterms:identifier rdf:resource="http://dx.doi.org/10.1007/978-3-319-08434-3_28"/>
+    <dcterms:title>A Vernacular for Coherent Logic</dcterms:title>
+  </sd:Reference>
+  <sd:Reference rdf:about="http://cicm-conference.org/2014/rdf/Paper_1032">
+    <swc:relatedToEvent rdf:resource="http://cicm-conference.org/2014/rdf/track_MKM"/>
+    <dcterms:creator rdf:resource="http://symbolicdata.org/Data/Person/Youssef_A"/>
+    <dcterms:creator rdf:resource="http://symbolicdata.org/Data/Person/Zhang_Q"/>
+    <dcterms:identifier rdf:resource="http://dx.doi.org/10.1007/978-3-319-08434-3_29"/>
+    <dcterms:title>An Approach to Math-Similarity Search</dcterms:title>
+    <dcterms:title>Semantics-Sensitive Math-Similarity Search</dcterms:title>
+  </sd:Reference>
+  <sd:Reference rdf:about="http://cicm-conference.org/2014/rdf/Paper_1033">
+    <swc:relatedToEvent rdf:resource="http://cicm-conference.org/2014/rdf/track_SystemsAndProjects"/>
+    <dcterms:creator rdf:resource="http://symbolicdata.org/Data/Person/Cohl_HS"/>
+    <dcterms:creator rdf:resource="http://symbolicdata.org/Data/Person/McClain_MA"/>
+    <dcterms:creator rdf:resource="http://symbolicdata.org/Data/Person/Saunders_BV"/>
+    <dcterms:creator rdf:resource="http://symbolicdata.org/Data/Person/Schubotz_M"/>
+    <dcterms:creator rdf:resource="http://symbolicdata.org/Data/Person/Williams_JC"/>
+    <dcterms:identifier rdf:resource="http://dx.doi.org/10.1007/978-3-319-08434-3_30"/>
+    <dcterms:title>Digital Repository of Mathematical Formulae</dcterms:title>
+  </sd:Reference>
+  <sd:Reference rdf:about="http://cicm-conference.org/2014/rdf/Paper_1034">
+    <swc:relatedToEvent rdf:resource="http://cicm-conference.org/2014/rdf/track_SystemsAndProjects"/>
+    <dcterms:creator rdf:resource="http://symbolicdata.org/Data/Person/Corneli_J"/>
+    <dcterms:creator rdf:resource="http://symbolicdata.org/Data/Person/Ginev_D"/>
+    <dcterms:identifier rdf:resource="http://dx.doi.org/10.1007/978-3-319-08434-3_31"/>
+    <dcterms:title>NNexus Reloaded</dcterms:title>
+  </sd:Reference>
+  <sd:Reference rdf:about="http://cicm-conference.org/2014/rdf/Paper_1035">
+    <swc:relatedToEvent rdf:resource="http://cicm-conference.org/2014/rdf/track_SystemsAndProjects"/>
+    <dcterms:creator rdf:resource="http://symbolicdata.org/Data/Person/Ginev_D"/>
+    <dcterms:creator rdf:resource="http://symbolicdata.org/Data/Person/Miller_BR"/>
+    <dcterms:creator rdf:resource="http://symbolicdata.org/Data/Person/Oprea_S"/>
+    <dcterms:identifier rdf:resource="http://dx.doi.org/10.1007/978-3-319-08434-3_32"/>
+    <dcterms:title>E-books and Graphics with LaTeXML</dcterms:title>
+  </sd:Reference>
+  <sd:Reference rdf:about="http://cicm-conference.org/2014/rdf/Paper_1036">
+    <swc:relatedToEvent rdf:resource="http://cicm-conference.org/2014/rdf/track_SystemsAndProjects"/>
+    <dcterms:creator rdf:resource="http://symbolicdata.org/Data/Person/Iancu_M"/>
+    <dcterms:creator rdf:resource="http://symbolicdata.org/Data/Person/Jucovschi_C"/>
+    <dcterms:creator rdf:resource="http://symbolicdata.org/Data/Person/Kohlhase_M"/>
+    <dcterms:creator rdf:resource="http://symbolicdata.org/Data/Person/Wiesing_T"/>
+    <dcterms:identifier rdf:resource="http://dx.doi.org/10.1007/978-3-319-08434-3_33"/>
+    <dcterms:title>System Description: MathHub.info</dcterms:title>
+  </sd:Reference>
+  <sd:Reference rdf:about="http://cicm-conference.org/2014/rdf/Paper_1037">
+    <swc:relatedToEvent rdf:resource="http://cicm-conference.org/2014/rdf/track_SystemsAndProjects"/>
+    <dcterms:creator rdf:resource="http://symbolicdata.org/Data/Person/Geuvers_H"/>
+    <dcterms:creator rdf:resource="http://symbolicdata.org/Data/Person/Kaliszyk_C"/>
+    <dcterms:creator rdf:resource="http://symbolicdata.org/Data/Person/Urban_J"/>
+    <dcterms:creator rdf:resource="http://symbolicdata.org/Data/Person/Vyskocil_J"/>
+    <dcterms:identifier rdf:resource="http://dx.doi.org/10.1007/978-3-319-08434-3_34"/>
+    <dcterms:title>Developing Corpus-based Translation Methods between Informal and Formal Mathematics: Project Description</dcterms:title>
+  </sd:Reference>
+  <sd:Reference rdf:about="http://cicm-conference.org/2014/rdf/Paper_1038">
+    <swc:relatedToEvent rdf:resource="http://cicm-conference.org/2014/rdf/track_SystemsAndProjects"/>
+    <dcterms:creator rdf:resource="http://symbolicdata.org/Data/Person/Kohlhase_L"/>
+    <dcterms:creator rdf:resource="http://symbolicdata.org/Data/Person/Kohlhase_M"/>
+    <dcterms:identifier rdf:resource="http://dx.doi.org/10.1007/978-3-319-08434-3_35"/>
+    <dcterms:title>System Description: A Semantics-Aware LaTeX-to-Office Converter</dcterms:title>
+  </sd:Reference>
+  <sd:Reference rdf:about="http://cicm-conference.org/2014/rdf/Paper_1039">
+    <swc:relatedToEvent rdf:resource="http://cicm-conference.org/2014/rdf/track_SystemsAndProjects"/>
+    <dcterms:creator rdf:resource="http://symbolicdata.org/Data/Person/Liska_M"/>
+    <dcterms:creator rdf:resource="http://symbolicdata.org/Data/Person/Ruzicka_M"/>
+    <dcterms:creator rdf:resource="http://symbolicdata.org/Data/Person/Sojka_P"/>
+    <dcterms:identifier rdf:resource="http://dx.doi.org/10.1007/978-3-319-08434-3_36"/>
+    <dcterms:title>Math Indexer and Searcher Web Interface: Towards Fulfillment of Mathematicians' Information Needs</dcterms:title>
+    <sd:paperURL rdf:resource="http://arxiv.org/abs/1404.6476"/>
+    <sd:slidesURL rdf:resource="http://cicm-conference.org/2014/slides/webmias.pdf"/>
+  </sd:Reference>
+  <sd:Reference rdf:about="http://cicm-conference.org/2014/rdf/Paper_1040">
+    <swc:relatedToEvent rdf:resource="http://cicm-conference.org/2014/rdf/track_SystemsAndProjects"/>
+    <dcterms:creator rdf:resource="http://symbolicdata.org/Data/Person/Naumowicz_A"/>
+    <dcterms:identifier rdf:resource="http://dx.doi.org/10.1007/978-3-319-08434-3_37"/>
+    <dcterms:title>SAT-enhanced Mizar Proof Checking</dcterms:title>
+  </sd:Reference>
+  <sd:Reference rdf:about="http://cicm-conference.org/2014/rdf/Paper_1041">
+    <swc:relatedToEvent rdf:resource="http://cicm-conference.org/2014/rdf/track_SystemsAndProjects"/>
+    <dcterms:creator rdf:resource="http://symbolicdata.org/Data/Person/Siddique_U"/>
+    <dcterms:creator rdf:resource="http://symbolicdata.org/Data/Person/Tahar_S"/>
+    <dcterms:identifier rdf:resource="http://dx.doi.org/10.1007/978-3-319-08434-3_38"/>
+    <dcterms:title>A Framework for Formal Reasoning about Geometrical Optics</dcterms:title>
+  </sd:Reference>
+  <sd:Reference rdf:about="http://cicm-conference.org/2014/rdf/Paper_1042">
+    <swc:relatedToEvent rdf:resource="http://cicm-conference.org/2014/rdf/track_WorkInProgress"/>
+    <dcterms:creator rdf:resource="http://symbolicdata.org/Data/Person/Graebe_HG"/>
+    <dcterms:creator rdf:resource="http://symbolicdata.org/Data/Person/Johanning_S"/>
+    <dcterms:creator rdf:resource="http://symbolicdata.org/Data/Person/Nareike_A"/>
+    <dcterms:title>The SymbolicData Project - Towards a Computer Algebra Social Network</dcterms:title>
+    <sd:paperURL rdf:resource="http://ceur-ws.org/Vol-1186/paper-21.pdf"/>
+  </sd:Reference>
+  <sd:Reference rdf:about="http://cicm-conference.org/2014/rdf/Paper_1043">
+    <swc:relatedToEvent rdf:resource="http://cicm-conference.org/2014/rdf/track_WorkInProgress"/>
+    <dcterms:creator rdf:resource="http://symbolicdata.org/Data/Person/Pagel_R"/>
+    <dcterms:creator rdf:resource="http://symbolicdata.org/Data/Person/Schubotz_M"/>
+    <dcterms:title>Mathematical Language Processing Project</dcterms:title>
+    <sd:paperURL rdf:resource="http://ceur-ws.org/Vol-1186/paper-23.pdf"/>
+  </sd:Reference>
+  <sd:Reference rdf:about="http://cicm-conference.org/2014/rdf/Paper_1044">
+    <swc:relatedToEvent rdf:resource="http://cicm-conference.org/2014/rdf/track_WorkInProgress"/>
+    <dcterms:creator rdf:resource="http://symbolicdata.org/Data/Person/Kahle_R"/>
+    <dcterms:title>Towards the Structure of Mathematical Proof</dcterms:title>
+    <sd:paperURL rdf:resource="http://ceur-ws.org/Vol-1186/paper-22.pdf"/>
+  </sd:Reference>
+  <sd:Reference rdf:about="http://cicm-conference.org/2014/rdf/Paper_1045">
+    <swc:relatedToEvent rdf:resource="http://cicm-conference.org/2014/rdf/track_WorkInProgress"/>
+    <dcterms:creator rdf:resource="http://symbolicdata.org/Data/Person/Dumas_JG"/>
+    <dcterms:creator rdf:resource="http://symbolicdata.org/Data/Person/Duval_D"/>
+    <dcterms:creator rdf:resource="http://symbolicdata.org/Data/Person/Ekici_B"/>
+    <dcterms:creator rdf:resource="http://symbolicdata.org/Data/Person/Reynaud_JC"/>
+    <dcterms:title>Certified proofs in programs involving exceptions</dcterms:title>
+    <sd:paperURL rdf:resource="http://ceur-ws.org/Vol-1186/paper-20.pdf"/>
+  </sd:Reference>
+  <sd:Reference rdf:about="http://cicm-conference.org/2014/rdf/Paper_1046">
+    <swc:relatedToEvent rdf:resource="http://cicm-conference.org/2014/rdf/track_WorkInProgress"/>
+    <dcterms:creator rdf:resource="http://symbolicdata.org/Data/Person/Segundo_W"/>
+    <dcterms:creator rdf:resource="http://symbolicdata.org/Data/Person/Ventura_D"/>
+    <dcterms:creator rdf:resource="http://symbolicdata.org/Data/Person/deMoura_FLC"/>
+    <dcterms:title>Formalizing a Named Explicit Substitutions Calculus in Coq</dcterms:title>
+    <sd:paperURL rdf:resource="http://ceur-ws.org/Vol-1186/paper-19.pdf"/>
+  </sd:Reference>
+  <sd:Reference rdf:about="http://cicm-conference.org/2014/rdf/Paper_1047">
+    <swc:relatedToEvent rdf:resource="http://cicm-conference.org/2014/rdf/track_WorkInProgress"/>
+    <dcterms:creator rdf:resource="http://symbolicdata.org/Data/Person/Moral_J"/>
+    <dcterms:creator rdf:resource="http://symbolicdata.org/Data/Person/Quaresma_P"/>
+    <dcterms:creator rdf:resource="http://symbolicdata.org/Data/Person/Santos_V"/>
+    <dcterms:title>Reproducing a Geometric Working Session</dcterms:title>
+    <sd:paperURL rdf:resource="http://ceur-ws.org/Vol-1186/paper-24.pdf"/>
+  </sd:Reference>
+  <sd:Reference rdf:about="http://cicm-conference.org/2014/rdf/Paper_1048">
+    <swc:relatedToEvent rdf:resource="http://cicm-conference.org/2014/rdf/track_WorkInProgress"/>
+    <dcterms:creator rdf:resource="http://symbolicdata.org/Data/Person/Goedicke_M"/>
+    <dcterms:creator rdf:resource="http://symbolicdata.org/Data/Person/Schwinning_N"/>
+    <dcterms:creator rdf:resource="http://symbolicdata.org/Data/Person/Schypula_M"/>
+    <dcterms:creator rdf:resource="http://symbolicdata.org/Data/Person/Striewe_M"/>
+    <dcterms:title>Concepts and realisations of flexible exercise design and feedbackgeneration in an e-assessment system for mathematics</dcterms:title>
+    <sd:paperURL rdf:resource="http://ceur-ws.org/Vol-1186/paper-25.pdf"/>
+  </sd:Reference>
+  <sd:Reference rdf:about="http://cicm-conference.org/2014/rdf/Paper_1050">
+    <swc:relatedToEvent rdf:resource="http://cicm-conference.org/2014/rdf/track_MathUI"/>
+    <dcterms:abstract>The availability of mathematical knowledge on the Web changes mathematical practices. In a study of professional mathematicians' search behavior we identified ten behavioral patterns particular to mathematicians. In this paper, we present a set of design goals for mathematical search interfaces implied by these patterns and insights derived from them.</dcterms:abstract>
+    <dcterms:creator rdf:resource="http://symbolicdata.org/Data/Person/Kohlhase_A"/>
+    <dcterms:title>Design of Search Interfaces for Mathematicians</dcterms:title>
+    <sd:paperURL rdf:resource="http://ceur-ws.org/Vol-1186/paper-02.pdf"/>
+  </sd:Reference>
+  <sd:Reference rdf:about="http://cicm-conference.org/2014/rdf/Paper_1051">
+    <swc:relatedToEvent rdf:resource="http://cicm-conference.org/2014/rdf/track_MathUI"/>
+    <dcterms:abstract>A solid and distinctive online record of a scientist's research achievements is nowadays a must, in particular for a researcher at an early career stage looking for a better university position, applying for a grant or a promotion, or trying to establish new contacts and build partnerships and projects. In the global world of science there are already numerous services offering research profile sites, such as Google Scholar, Scopus or ORCID. In the field of mathematics, however, the community still relies a lot on the traditional services MathSciNet and zbMATH, which stand for a high level of quality control regarding data inclusion and assignment. However, the enormously growing number of mathematical publications and new mathematicians begs the question of how to design author profile pages for mathematicians which fit the new trends of communication in the era of social networks, while keeping (or better increasing) the existing level of reliability. In our contribution we plan to present some ideas from the development team of zbMATH addressing this topic.</dcterms:abstract>
+    <dcterms:creator rdf:resource="http://symbolicdata.org/Data/Person/MihaljevicBrandt_H"/>
+    <dcterms:creator rdf:resource="http://symbolicdata.org/Data/Person/Mueller_F"/>
+    <dcterms:creator rdf:resource="http://symbolicdata.org/Data/Person/Roy_N"/>
+    <dcterms:title>Author profile pages in zbMATH – improving accuracy through user</dcterms:title>
+    <sd:paperURL rdf:resource="http://ceur-ws.org/Vol-1186/paper-06.pdf"/>
+  </sd:Reference>
+  <sd:Reference rdf:about="http://cicm-conference.org/2014/rdf/Paper_1052">
+    <swc:relatedToEvent rdf:resource="http://cicm-conference.org/2014/rdf/track_MathUI"/>
+    <dcterms:abstract>A solid and distinctive online record of a scientist's research achievements is nowadays a must, in particular for a researcher at an early career stage looking for a better university position, applying for a grant or a promotion, or trying to establish new contacts and build partnerships and projects. In the global world of science there are already numerous services offering research profile sites, such as Google Scholar, Scopus or ORCID. In the field of mathematics, however, the community still relies a lot on the traditional services MathSciNet and zbMATH, which stand for a high level of quality control regarding data inclusion and assignment. However, the enormously growing number of mathematical publications and new mathematicians begs the question of how to design author profile pages for mathematicians which fit the new trends of communication in the era of social networks, while keeping (or better increasing) the existing level of reliability. In our contribution we plan to present some ideas from the development team of zbMATH addressing this topic.</dcterms:abstract>
+    <dcterms:creator rdf:resource="http://symbolicdata.org/Data/Person/Kokubu_M"/>
+    <dcterms:creator rdf:resource="http://symbolicdata.org/Data/Person/Yamamoto_O"/>
+    <dcterms:title>Visualization of Tangent Developables on a Volumetric Display</dcterms:title>
+    <sd:paperURL rdf:resource="http://ceur-ws.org/Vol-1186/paper-09.pdf"/>
+  </sd:Reference>
+  <sd:Reference rdf:about="http://cicm-conference.org/2014/rdf/Paper_1053">
+    <swc:relatedToEvent rdf:resource="http://cicm-conference.org/2014/rdf/track_MathUI"/>
+    <dcterms:abstract>A solid and distinctive online record of a scientist's research achievements is nowadays a must, in particular for a researcher at an early career stage looking for a better university position, applying for a grant or a promotion, or trying to establish new contacts and build partnerships and projects. In the global world of science there are already numerous services offering research profile sites, such as Google Scholar, Scopus or ORCID. In the field of mathematics, however, the community still relies a lot on the traditional services MathSciNet and zbMATH, which stand for a high level of quality control regarding data inclusion and assignment. However, the enormously growing number of mathematical publications and new mathematicians begs the question of how to design author profile pages for mathematicians which fit the new trends of communication in the era of social networks, while keeping (or better increasing) the existing level of reliability. In our contribution we plan to present some ideas from the development team of zbMATH addressing this topic.</dcterms:abstract>
+    <dcterms:creator rdf:resource="http://symbolicdata.org/Data/Person/Acevedo_C"/>
+    <dcterms:creator rdf:resource="http://symbolicdata.org/Data/Person/Kohlhase_M"/>
+    <dcterms:title>OpenMathMap: Interaction</dcterms:title>
+    <sd:paperURL rdf:resource="http://ceur-ws.org/Vol-1186/paper-01.pdf"/>
+  </sd:Reference>
+  <sd:Reference rdf:about="http://cicm-conference.org/2014/rdf/Paper_1054">
+    <swc:relatedToEvent rdf:resource="http://cicm-conference.org/2014/rdf/track_MathUI"/>
+    <dcterms:abstract>A solid and distinctive online record of a scientist's research achievements is nowadays a must, in particular for a researcher at an early career stage looking for a better university position, applying for a grant or a promotion, or trying to establish new contacts and build partnerships and projects. In the global world of science there are already numerous services offering research profile sites, such as Google Scholar, Scopus or ORCID. In the field of mathematics, however, the community still relies a lot on the traditional services MathSciNet and zbMATH, which stand for a high level of quality control regarding data inclusion and assignment. However, the enormously growing number of mathematical publications and new mathematicians begs the question of how to design author profile pages for mathematicians which fit the new trends of communication in the era of social networks, while keeping (or better increasing) the existing level of reliability. In our contribution we plan to present some ideas from the development team of zbMATH addressing this topic.</dcterms:abstract>
+    <dcterms:creator rdf:resource="http://symbolicdata.org/Data/Person/Kohlhase_A"/>
+    <dcterms:creator rdf:resource="http://symbolicdata.org/Data/Person/Toader_A"/>
+    <dcterms:title>FEncy: Spreadsheet Formulae Exploration</dcterms:title>
+    <sd:paperURL rdf:resource="http://ceur-ws.org/Vol-1186/paper-03.pdf"/>
+  </sd:Reference>
+  <sd:Reference rdf:about="http://cicm-conference.org/2014/rdf/Paper_1055">
+    <swc:relatedToEvent rdf:resource="http://cicm-conference.org/2014/rdf/track_MathUI"/>
+    <dcterms:abstract>Spreadsheets are widely used within Science, technology, engineering and maths education. Despite their widespread use, end-user spreadsheet errors are still extremely common and have been shown to have an adverse effect on learning. The textual representation of formulas can be particularly complex and error-prone, exacerbating barriers to dyslexic users. Our work focuses on the design and development of a visual language to graphically represent spreadsheet formulae, with the objective of making them easier to understand than their default textual form. This work contributes to a body of human factors research focused upon spreadsheets.</dcterms:abstract>
+    <dcterms:creator rdf:resource="http://symbolicdata.org/Data/Person/Leitao_R"/>
+    <dcterms:creator rdf:resource="http://symbolicdata.org/Data/Person/Roast_C"/>
+    <dcterms:title>Developing visualisations for spreadsheet formulae: towards increasing the accessibility of science, technology, engineering and maths subjects</dcterms:title>
+    <sd:paperURL rdf:resource="http://ceur-ws.org/Vol-1186/paper-04.pdf"/>
+  </sd:Reference>
+  <sd:Reference rdf:about="http://cicm-conference.org/2014/rdf/Paper_1056">
+    <swc:relatedToEvent rdf:resource="http://cicm-conference.org/2014/rdf/track_MathUI"/>
+    <dcterms:abstract>In this document, we describe recent work made by the Mozilla MathML team to help publishing scientific content using Web technologies. We focus on the Firefox OS platform currently being developed by Mozilla that provides a good framework to create mathematical user interfaces on mobile devices.</dcterms:abstract>
+    <dcterms:creator rdf:resource="http://symbolicdata.org/Data/Person/Silva_R"/>
+    <dcterms:creator rdf:resource="http://symbolicdata.org/Data/Person/Wang_F"/>
+    <dcterms:title>Firefox OS Web Apps for Science</dcterms:title>
+    <sd:paperURL rdf:resource="http://ceur-ws.org/Vol-1186/paper-08.pdf"/>
+  </sd:Reference>
+  <sd:Reference rdf:about="http://cicm-conference.org/2014/rdf/Paper_1057">
+    <swc:relatedToEvent rdf:resource="http://cicm-conference.org/2014/rdf/track_MathUI"/>
+    <dcterms:abstract>Formula collections are books used in several European countries to support the practice of mathematics of by its learners and later by its practitioners. They are compendia of mathematical formulæ that students employ during their studies, and which may be of use in later professional life. This research explores the opportunity of bringing the formula collection to the mobile phones of the school students. It is motivated by the fact that the formula collection may be one of the rare objects that pupils may refer to later in their lives, when mathematical knowledge needs to be recalled. Making it a mobile phone app makes it a zero weight object which is in easy reach. Technically, this app is realized by a set of HTML files compiled into a mobile application. This makes the formula collection a first class citizen that students can easily access. More importantly, this makes it an artifact that teachers can create themselves instead of relying on a publisher: using their notations and their selected content. The centerpoint of this research is to enable teachers in creating and delivering such an app to the mobile devices of their students.</dcterms:abstract>
+    <dcterms:creator rdf:resource="http://symbolicdata.org/Data/Person/Libbrecht_P"/>
+    <dcterms:creator rdf:resource="http://symbolicdata.org/Data/Person/Schneider_K"/>
+    <dcterms:title>Formula Collection Mobile Apps Realized by Teachers</dcterms:title>
+    <sd:paperURL rdf:resource="http://ceur-ws.org/Vol-1186/paper-05.pdf"/>
+  </sd:Reference>
+  <sd:Reference rdf:about="http://cicm-conference.org/2014/rdf/Paper_1058">
+    <swc:relatedToEvent rdf:resource="http://cicm-conference.org/2014/rdf/track_MathUI"/>
+    <dcterms:abstract>Rapid growth in mobile computing has given rise to a dramatic evolution in communication tools that have the potential to transform the educational experience. Because of the complexities of mathematical communication, however, progress towards the realization of that potential has been particularly slow in the mathematical sciences. We are addressing this by developing iCE (interface for Collaborative Equations), a multimodal mathematical communication environment for post-secondary mathematics and statistics courses. Based on our experiences with this, we discuss the user requirements and difficulties in building a universal interface – one that allows users, ranging from mathematical novices to experts, to intuitively communicate mathematics in real-time using a broad range of computing devices.</dcterms:abstract>
+    <dcterms:creator rdf:resource="http://symbolicdata.org/Data/Person/Cater_B"/>
+    <dcterms:creator rdf:resource="http://symbolicdata.org/Data/Person/Hooper_J"/>
+    <dcterms:creator rdf:resource="http://symbolicdata.org/Data/Person/Kang_S"/>
+    <dcterms:creator rdf:resource="http://symbolicdata.org/Data/Person/Pollanen_M"/>
+    <dcterms:title>Towards a Universal Interface for Real-Time Mathematical Communication</dcterms:title>
+    <sd:paperURL rdf:resource="http://ceur-ws.org/Vol-1186/paper-07.pdf"/>
+  </sd:Reference>
+  <sd:Reference rdf:about="http://cicm-conference.org/2014/rdf/Paper_1060">
+    <swc:relatedToEvent rdf:resource="http://cicm-conference.org/2014/rdf/track_OpenMath"/>
+    <dcterms:creator rdf:resource="http://symbolicdata.org/Data/Person/Hellstroem_L"/>
+    <dcterms:title>The eval symbol for axiomatising variadic functions</dcterms:title>
+    <sd:paperURL rdf:resource="http://ceur-ws.org/Vol-1186/paper-11.pdf"/>
+  </sd:Reference>
+  <sd:Reference rdf:about="http://cicm-conference.org/2014/rdf/Paper_1061">
+    <swc:relatedToEvent rdf:resource="http://cicm-conference.org/2014/rdf/track_OpenMath"/>
+    <dcterms:creator rdf:resource="http://symbolicdata.org/Data/Person/Kohlhase_M"/>
+    <dcterms:title>OpenMath Language Extensions</dcterms:title>
+    <sd:paperURL rdf:resource="http://ceur-ws.org/Vol-1186/paper-14.pdf"/>
+  </sd:Reference>
+  <sd:Reference rdf:about="http://cicm-conference.org/2014/rdf/Paper_1062">
+    <swc:relatedToEvent rdf:resource="http://cicm-conference.org/2014/rdf/track_OpenMath"/>
+    <dcterms:creator rdf:resource="http://symbolicdata.org/Data/Person/Kohlhase_M"/>
+    <dcterms:title>Extension Proposal: Records in Pragmatic OpenMath</dcterms:title>
+    <sd:paperURL rdf:resource="http://ceur-ws.org/Vol-1186/paper-13.pdf"/>
+  </sd:Reference>
+  <sd:Reference rdf:about="http://cicm-conference.org/2014/rdf/Paper_1063">
+    <swc:relatedToEvent rdf:resource="http://cicm-conference.org/2014/rdf/track_OpenMath"/>
+    <dcterms:creator rdf:resource="http://symbolicdata.org/Data/Person/Hellstroem_L"/>
+    <dcterms:title>Literate Sources for Content Dictionaries: a Progress Report</dcterms:title>
+    <sd:paperURL rdf:resource="http://ceur-ws.org/Vol-1186/paper-12.pdf"/>
+  </sd:Reference>
+  <sd:Reference rdf:about="http://cicm-conference.org/2014/rdf/Paper_1064">
+    <swc:relatedToEvent rdf:resource="http://cicm-conference.org/2014/rdf/track_OpenMath"/>
+    <dcterms:creator rdf:resource="http://symbolicdata.org/Data/Person/Rabe_F"/>
+    <dcterms:title>MMT Objects</dcterms:title>
+    <sd:paperURL rdf:resource="http://ceur-ws.org/Vol-1186/paper-15.pdf"/>
+    <sd:slidesURL rdf:resource="http://kwarc.info/frabe/Research/slides/rabe_mmtobjects_14.pdf"/>
+  </sd:Reference>
+  <sd:Reference rdf:about="http://cicm-conference.org/2014/rdf/Paper_1065">
+    <swc:relatedToEvent rdf:resource="http://cicm-conference.org/2014/rdf/track_OpenMath"/>
+    <dcterms:creator rdf:resource="http://symbolicdata.org/Data/Person/Davenport_JH"/>
+    <dcterms:title>Another Look at Formal Mathematical Properties</dcterms:title>
+    <sd:paperURL rdf:resource="http://ceur-ws.org/Vol-1186/paper-10.pdf"/>
+    <sd:slidesURL rdf:resource="http://staff.bath.ac.uk/masjhd/Slides/JHDOM2014.pdf"/>
+  </sd:Reference>
+  <sd:Reference rdf:about="http://cicm-conference.org/2014/rdf/Paper_1067">
+    <swc:relatedToEvent rdf:resource="http://cicm-conference.org/2014/rdf/track_ThEdu"/>
+    <dcterms:creator rdf:resource="http://symbolicdata.org/Data/Person/Gaspar_J"/>
+    <dcterms:title>Short introduction by example to Coq and Formalising ZF ⊆ ZF_ε in Coq</dcterms:title>
+    <sd:paperURL rdf:resource="http://ceur-ws.org/Vol-1186/paper-16.pdf"/>
+  </sd:Reference>
+  <sd:Reference rdf:about="http://cicm-conference.org/2014/rdf/Paper_1069">
+    <swc:relatedToEvent rdf:resource="http://cicm-conference.org/2014/rdf/track_ThEdu"/>
+    <dcterms:creator rdf:resource="http://symbolicdata.org/Data/Person/Petrovic_D"/>
+    <dcterms:title>Using Small-Step Refinement For Algorithm Verification In Computer Science Education</dcterms:title>
+    <sd:paperURL rdf:resource="http://ceur-ws.org/Vol-1186/paper-18.pdf"/>
+  </sd:Reference>
+  <sd:Reference rdf:about="http://cicm-conference.org/2014/rdf/Paper_1070">
+    <swc:relatedToEvent rdf:resource="http://cicm-conference.org/2014/rdf/track_ThEdu"/>
+    <dcterms:creator rdf:resource="http://symbolicdata.org/Data/Person/Neuper_W"/>
+    <dcterms:title>GCD — a Case Study on Lucas-Interpretation</dcterms:title>
+    <sd:paperURL rdf:resource="http://ceur-ws.org/Vol-1186/paper-17.pdf"/>
+  </sd:Reference>
+  <sd:Reference rdf:about="http://cicm-conference.org/2014/rdf/Paper_1071">
+    <swc:relatedToEvent rdf:resource="http://cicm-conference.org/2014/rdf/track_NotionOfProof"/>
+    <dcterms:abstract>Groundbreaking mathematics formalisation has been achieved in recent years with the reproduction of three significant mathematical results inside theorem provers: The Four Colour Theorem and the Feit-Thompson Lemma inside Coq, and the Kepler Conjecture inside HOL Light. These efforts have significantly increased the confidence in these results, each of which have substantial original proofs that run to a few hundred pages of mathematical text and, in the case of the Four Colour Theorem and the Kepler Conjecture, at least a few thousand lines of computer source code. However, it is a valid question to ask whether these formalisations have indeed established their claimed results, rather than to simply trust that the result has been proved. An inquisitive user can download the proof scripts for a given project, replay them through the theorem prover, and observe the output. However watching hundreds of screenloads of output whizz past is unlikely to be enlightening unless the user knows exactly what to look out for. We propose a rigorous process of independent assessment by an expert, that is as objective as possible and suitably sceptical, not assuming anything about the reputation of the people carrying out the formalisation, and taking into account the weaknesses of the theorem prover being used. We call this process a &amp;quot;proof audit&amp;quot;. Perhaps surprisingly to those outside the field of theorem proving, proof auditing is not generally carried out on large proof formalisations.</dcterms:abstract>
+    <dcterms:creator rdf:resource="http://symbolicdata.org/Data/Person/Adams_M"/>
+    <dcterms:title>Proof Auditing for Formalised Mathematics</dcterms:title>
+  </sd:Reference>
+  <sd:Reference rdf:about="http://cicm-conference.org/2014/rdf/Paper_1072">
+    <swc:relatedToEvent rdf:resource="http://cicm-conference.org/2014/rdf/track_NotionOfProof"/>
+    <dcterms:abstract>Mathematics is the process of creating, exploring, and interrelating mathematical models. Proving is the act of deriving logical consequences. It is the most powerful and most important tool for doing mathematics, particularly for exploring mathematical models. Proving is traditionally done with the aid of little more than pencil and paper. Performed with computers, computer proving has advantages over traditional proving that are very compelling. But can computer proving replace traditional proving? Our thesis is that computer proving in its current form cannot entirely replace traditional proving, but computer proving will in time, with suitable advances in mechanized mathematics, replace traditional proving just as text editing on a computer has replaced typing on a typewriter.</dcterms:abstract>
+    <dcterms:creator rdf:resource="http://symbolicdata.org/Data/Person/Farmer_WM"/>
+    <dcterms:title>Can Computer Proving Replace Traditional Proving?</dcterms:title>
+  </sd:Reference>
+  <sd:Reference rdf:about="http://cicm-conference.org/2014/rdf/Paper_1073">
+    <swc:relatedToEvent rdf:resource="http://cicm-conference.org/2014/rdf/track_NotionOfProof"/>
+    <dcterms:abstract>Proof assistants are computer programs that help mathematicians to prove theorems and to formally verify the correctness of proofs. Proof assistants are nowadays one of the more exciting areas in the intersection of mathematical logic and computer science. For example, one particularly exciting achievement is the formal verification of the proof of the four colour theorem using the proof assistant Coq. In this talk we give a very elementary introduction to Coq by means of a very simple example: the proofs of the theorems if ≤ is a non-strict partial order, then &amp;lt; defined by x &amp;lt; y ↔ x &amp;lt; y ∧ x ≠ y is a strict partial order; if &amp;lt; is a strict partial order, then ≤ defined by x ≤ y ↔ x &amp;lt; y ∨ x = y is a non-strict partial order. Then we end by discussing what is achieved with this kind of formal verification. We keep this talk short, simple and sweet.</dcterms:abstract>
+    <dcterms:creator rdf:resource="http://symbolicdata.org/Data/Person/Gaspar_J"/>
+    <dcterms:title>Short introduction by example to Coq</dcterms:title>
+  </sd:Reference>
+  <sd:Reference rdf:about="http://cicm-conference.org/2014/rdf/Paper_1074">
+    <swc:relatedToEvent rdf:resource="http://cicm-conference.org/2014/rdf/track_NotionOfProof"/>
+    <dcterms:abstract>Conjecture: Every mathematical proof can be presented as a sequence of gestalt switches, each obtained by a metaphor. A gestalt of a mathematical proof is the way the arrangement of its details is perceived. A gestalt switch occurs when a gestalt is replaced by another. A metaphor is a description of the way a gestalt switch is obtained. Metaphors and gestalts of a proof may contain both mathematical and non-mathematical notions. The gestalts and metaphors of a proof I call 'proof descriptors'. The search for the proof descriptors of a proof I call 'proof-processing'. Proof descriptors provide a way to compare proofs. The comparison of different proofs given to the same theorem may enrich its meaning. Shared proof descriptors in proofs to different theorems may suggest how the later proofs were won from previous proofs. Thus the notion of the internal history of mathematics emerges. Proofs influence the development of mathematics at least as much as theorems. Through proof descriptors proofs may obtain popular presentation. Proof descriptors may provide new links with non-mathematical works of art and poetry. There is room for idiosyncrasy in the generation of metaphors for proofs. The latter are especially of interest as they are rarely pointed out in mathematical texts, but are apparently used in informal discourse among peers. Gestalt signifies static elements of a proof, which are in general rather easy to identify, while metaphor signifies dynamic elements, i.e., constructions. Proof descriptors may relate only to parts of a proof. In fact, it is by its proof descriptors that a part is discerned. Descriptors may serve as mnemonics of repeated patterns. Descriptors are not necessarily verbal; they may include drawings or gestures. The informal character of proof descriptors is of their essence. Conjecture: Mathematicians always proof-process the proofs that they learn. Proof descriptors thus form the arsenal from which mathematicians draw their means for new proofs. The lecture will provide examples of proof descriptors, especially from the context of the Cantor-Bernstein Theorem and Bernstein Division Theorem.</dcterms:abstract>
+    <dcterms:creator rdf:resource="http://symbolicdata.org/Data/Person/Hinkis_A"/>
+    <dcterms:title>The representation of mathematical proof through gestalt and metaphors</dcterms:title>
+  </sd:Reference>
+  <sd:Reference rdf:about="http://cicm-conference.org/2014/rdf/Paper_1075">
+    <swc:relatedToEvent rdf:resource="http://cicm-conference.org/2014/rdf/track_NotionOfProof"/>
+    <dcterms:abstract>Since the turn of the millennium, there has been a slow but steady increase in the use of automated deduction software in different areas of algebra, such as lattice theory and semigroup theory. In this talk I will discuss how my collaborators and I have used automated deduction tools such as OTTER, Prover9 and Waldmeister to crack hitherto unsolved problems in quasigroup/loop theory. In the last couple of years, the problems we are attempting to attack are pushing the available software to its limits. I will close by discussing some of the implications of this for human understanding of proofs generated by software. No background in quasigroup/loop theory is needed or expected.</dcterms:abstract>
+    <dcterms:creator rdf:resource="http://symbolicdata.org/Data/Person/Kinyon_M"/>
+    <dcterms:title>Quasigroups, Loops and Automated Deduction, or How I Learned To Stop Worrying and Start Letting Computers Prove Theorems</dcterms:title>
+  </sd:Reference>
+  <sd:Reference rdf:about="http://cicm-conference.org/2014/rdf/Paper_1077">
+    <swc:relatedToEvent rdf:resource="http://cicm-conference.org/2014/rdf/track_NotionOfProof"/>
+    <dcterms:abstract>The computer is changing how mathematics is being done. I'll sketch an extreme system for doing mathematics by computer.</dcterms:abstract>
+    <dcterms:creator rdf:resource="http://symbolicdata.org/Data/Person/Wiedijk_F"/>
+    <dcterms:title>Extreme mathematics</dcterms:title>
+  </sd:Reference>
+  <sd:Reference rdf:about="http://cicm-conference.org/2014/rdf/Paper_1078">
+    <swc:relatedToEvent rdf:resource="http://cicm-conference.org/2014/rdf/track_DoctoralProgramme"/>
+    <dcterms:creator rdf:resource="http://symbolicdata.org/Data/Person/Evans_I"/>
+    <dcterms:title>Mathematical Document Classification via the Pachinko Allocation Model</dcterms:title>
+  </sd:Reference>
+  <sd:Reference rdf:about="http://cicm-conference.org/2014/rdf/Paper_1079">
+    <swc:relatedToEvent rdf:resource="http://cicm-conference.org/2014/rdf/track_DoctoralProgramme"/>
+    <dcterms:creator rdf:resource="http://symbolicdata.org/Data/Person/Ruzicka_M"/>
+    <dcterms:title>Maths Information Retrieval for Digital Libraries</dcterms:title>
+    <sd:slidesURL rdf:resource="http://cicm-conference.org/2014/slides/ruzickadoctoral.pdf"/>
+  </sd:Reference>
+  <sd:Reference rdf:about="http://cicm-conference.org/2014/rdf/Paper_1080">
+    <swc:relatedToEvent rdf:resource="http://cicm-conference.org/2014/rdf/track_DoctoralProgramme"/>
+    <dcterms:creator rdf:resource="http://symbolicdata.org/Data/Person/Schubotz_M"/>
+    <dcterms:title>Content Based Formula Search</dcterms:title>
+    <sd:slidesURL rdf:resource="http://cicm-conference.org/2014/slides/SchubotzCicmDp.pdf"/>
+  </sd:Reference>
+  <sd:Reference rdf:about="http://cicm-conference.org/2014/rdf/Paper_1081">
+    <swc:relatedToEvent rdf:resource="http://cicm-conference.org/2014/rdf/track_DoctoralProgramme"/>
+    <dcterms:creator rdf:resource="http://symbolicdata.org/Data/Person/Ahmed_W"/>
+    <dcterms:title>Formal Analysis of Reliability Block Diagrams</dcterms:title>
+  </sd:Reference>
+  <sd:Reference rdf:about="http://cicm-conference.org/2014/rdf/Paper_1082">
+    <swc:relatedToEvent rdf:resource="http://cicm-conference.org/2014/rdf/track_DoctoralProgramme"/>
+    <dcterms:creator rdf:resource="http://symbolicdata.org/Data/Person/Siddique_U"/>
+    <dcterms:title>Formal Analysis of Geometrical Optics in HOL</dcterms:title>
+  </sd:Reference>
+  <sd:Reference rdf:about="http://cicm-conference.org/2014/rdf/Paper_1083">
+    <swc:relatedToEvent rdf:resource="http://cicm-conference.org/2014/rdf/track_DoctoralProgramme"/>
+    <dcterms:creator rdf:resource="http://symbolicdata.org/Data/Person/Ekici_B"/>
+    <dcterms:title>Certification of programs with computational effects</dcterms:title>
+  </sd:Reference>
+  <sd:Reference rdf:about="http://cicm-conference.org/2014/rdf/Paper_1084">
+    <swc:relatedToEvent rdf:resource="http://cicm-conference.org/2014/rdf/track_DoctoralProgramme"/>
+    <dcterms:creator rdf:resource="http://symbolicdata.org/Data/Person/Segundo_W"/>
+    <dcterms:title>Formalizing a named calculus modulo alpha-equivalence</dcterms:title>
+  </sd:Reference>
+  <sd:Reference rdf:about="http://cicm-conference.org/2014/rdf/Paper_1085">
+    <swc:relatedToEvent rdf:resource="http://cicm-conference.org/2014/rdf/track_DoctoralProgramme"/>
+    <dcterms:creator rdf:resource="http://symbolicdata.org/Data/Person/Huang_Z"/>
+    <dcterms:title>Machine learning and computer algebra</dcterms:title>
+  </sd:Reference>
+  <sd:Reference rdf:about="http://cicm-conference.org/2014/rdf/Paper_1086">
+    <swc:relatedToEvent rdf:resource="http://cicm-conference.org/2014/rdf/track_DoctoralProgramme"/>
+    <dcterms:creator rdf:resource="http://symbolicdata.org/Data/Person/Torrao_D"/>
+    <dcterms:title>Algebraic Algorithms for Numerical Semigroups</dcterms:title>
+  </sd:Reference>
+  <swc:Role rdf:about="http://cicm-conference.org/2014/rdf/PublicityWorkshopChair">
+    <swc:heldBy rdf:resource="http://symbolicdata.org/Data/Person/Autexier_S"/>
+    <rdfs:label>Publicity and Workshop Chair</rdfs:label>
+  </swc:Role>
+  <swc:Chair rdf:about="http://cicm-conference.org/2014/rdf/SysProjects-Chair">
+    <swc:heldBy rdf:resource="http://symbolicdata.org/Data/Person/Sexton_AP"/>
+    <rdfs:label>SysProjects Chair</rdfs:label>
+  </swc:Chair>
+  <swc:Chair rdf:about="http://cicm-conference.org/2014/rdf/ThEdu-Chair">
+    <swc:heldBy rdf:resource="http://symbolicdata.org/Data/Person/Neuper_W"/>
+    <rdfs:label>ThEdu Chair</rdfs:label>
+  </swc:Chair>
+  <swc:TrackEvent rdf:about="http://cicm-conference.org/2014/rdf/track_Calculemus">
+    <swc:hasRole rdf:resource="http://cicm-conference.org/2014/rdf/Calculemus-Chair"/>
+    <rdfs:label>CICM-14 Calculemus Track</rdfs:label>
+  </swc:TrackEvent>
+  <swc:TrackEvent rdf:about="http://cicm-conference.org/2014/rdf/track_DML">
+    <swc:hasRole rdf:resource="http://cicm-conference.org/2014/rdf/DML-Chair"/>
+    <rdfs:label>CICM-14 Digital Math Libraries Track</rdfs:label>
+  </swc:TrackEvent>
+  <swc:TrackEvent rdf:about="http://cicm-conference.org/2014/rdf/track_DoctoralProgramme">
+    <swc:hasRole rdf:resource="http://cicm-conference.org/2014/rdf/DoctoralProgramme-Chair"/>
+    <rdfs:label>CICM-14 Doctoral Programme</rdfs:label>
+  </swc:TrackEvent>
+  <swc:TrackEvent rdf:about="http://cicm-conference.org/2014/rdf/track_InvitedTalks">
+    <rdfs:label>CICM-14 Invited Talks</rdfs:label>
+  </swc:TrackEvent>
+  <swc:TrackEvent rdf:about="http://cicm-conference.org/2014/rdf/track_MKM">
+    <swc:hasRole rdf:resource="http://cicm-conference.org/2014/rdf/MKM-Chair"/>
+    <rdfs:label>CICM-14 Mathematical Knowledge Management Track</rdfs:label>
+  </swc:TrackEvent>
+  <swc:TrackEvent rdf:about="http://cicm-conference.org/2014/rdf/track_MathUI">
+    <swc:hasRole rdf:resource="http://cicm-conference.org/2014/rdf/MathUI-Chair"/>
+    <rdfs:label>CICM-14 Workshop Math User Interfaces</rdfs:label>
+  </swc:TrackEvent>
+  <swc:TrackEvent rdf:about="http://cicm-conference.org/2014/rdf/track_NotionOfProof">
+    <rdfs:label>CICM-14 Workshop on The Notion of Proof</rdfs:label>
+  </swc:TrackEvent>
+  <swc:TrackEvent rdf:about="http://cicm-conference.org/2014/rdf/track_OpenMath">
+    <swc:hasRole rdf:resource="http://cicm-conference.org/2014/rdf/OpenMath-Chair"/>
+    <rdfs:label>CICM-14 OpenMath Workshop</rdfs:label>
+  </swc:TrackEvent>
+  <swc:TrackEvent rdf:about="http://cicm-conference.org/2014/rdf/track_SystemsAndProjects">
+    <swc:hasRole rdf:resource="http://cicm-conference.org/2014/rdf/SysProjects-Chair"/>
+    <rdfs:label>CICM-14 Track Systems and Projects</rdfs:label>
+  </swc:TrackEvent>
+  <swc:TrackEvent rdf:about="http://cicm-conference.org/2014/rdf/track_ThEdu">
+    <swc:hasRole rdf:resource="http://cicm-conference.org/2014/rdf/ThEdu-Chair"/>
+    <rdfs:label>CICM-14 Theorem proving components for Educational software (ThEdu) Track</rdfs:label>
+  </swc:TrackEvent>
+  <swc:TrackEvent rdf:about="http://cicm-conference.org/2014/rdf/track_WorkInProgress">
+    <rdfs:label>CICM-14 Work in Progress Track</rdfs:label>
+  </swc:TrackEvent>
+</rdf:RDF>

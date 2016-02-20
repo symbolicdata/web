@@ -1,0 +1,827 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+   xmlns:dcterms="http://purl.org/dc/terms/"
+   xmlns:foaf="http://xmlns.com/foaf/0.1/"
+   xmlns:ical="http://www.w3.org/2002/12/cal/ical#"
+   xmlns:owl="http://www.w3.org/2002/07/owl#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+   xmlns:sd="http://symbolicdata.org/Data/Model#"
+   xmlns:sdp="http://symbolicdata.org/Data/Person/"
+   xmlns:swc="http://data.semanticweb.org/ns/swc/ontology#"
+   xmlns:swrc="http://swrc.ontoware.org/ontology#"
+   xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+   xmlns="http://cicm-conference.org/2012/rdf/">
+  <swc:Chair rdf:about="http://cicm-conference.org/2012/rdf/AISC-Chair">
+    <swc:heldBy rdf:resource="http://symbolicdata.org/Data/Person/Campbell_JA"/>
+    <swc:heldBy rdf:resource="http://symbolicdata.org/Data/Person/Carette_J"/>
+    <rdfs:label>AISC Program Chair</rdfs:label>
+  </swc:Chair>
+  <swc:Chair rdf:about="http://cicm-conference.org/2012/rdf/Calculemus-Chair">
+    <swc:heldBy rdf:resource="http://symbolicdata.org/Data/Person/dosReis_G"/>
+    <rdfs:label>Calculemus Program Chair</rdfs:label>
+  </swc:Chair>
+  <swc:Chair rdf:about="http://cicm-conference.org/2012/rdf/DML-Chair">
+    <swc:heldBy rdf:resource="http://symbolicdata.org/Data/Person/Sojka_P"/>
+    <rdfs:label>DML Program Chair</rdfs:label>
+  </swc:Chair>
+  <swc:ConferenceEvent rdf:about="http://cicm-conference.org/2012/rdf/General">
+    <swc:hasAcronym>CICM 2012</swc:hasAcronym>
+    <swc:hasLocation rdf:resource="http://dbpedia.org/resource/Jacobs_University_Bremen"/>
+    <swc:hasProgramme rdf:resource="http://cicm-conference.org/2012/cicm.php?menu=talks"/>
+    <swc:hasRole rdf:resource="http://cicm-conference.org/2012/rdf/GeneralProgramChair"/>
+    <swc:hasRole rdf:resource="http://cicm-conference.org/2012/rdf/LocalArrangementsChair"/>
+    <swc:hasRole rdf:resource="http://cicm-conference.org/2012/rdf/PublicityWorkshopChair"/>
+    <swc:isSuperEventOf rdf:resource="http://cicm-conference.org/2012/rdf/track_aisc"/>
+    <swc:isSuperEventOf rdf:resource="http://cicm-conference.org/2012/rdf/track_calculemus"/>
+    <swc:isSuperEventOf rdf:resource="http://cicm-conference.org/2012/rdf/track_dml"/>
+    <swc:isSuperEventOf rdf:resource="http://cicm-conference.org/2012/rdf/track_docprog"/>
+    <swc:isSuperEventOf rdf:resource="http://cicm-conference.org/2012/rdf/track_invited"/>
+    <swc:isSuperEventOf rdf:resource="http://cicm-conference.org/2012/rdf/track_mathui"/>
+    <swc:isSuperEventOf rdf:resource="http://cicm-conference.org/2012/rdf/track_mir"/>
+    <swc:isSuperEventOf rdf:resource="http://cicm-conference.org/2012/rdf/track_mkm"/>
+    <swc:isSuperEventOf rdf:resource="http://cicm-conference.org/2012/rdf/track_openmath"/>
+    <swc:isSuperEventOf rdf:resource="http://cicm-conference.org/2012/rdf/track_regular"/>
+    <swc:isSuperEventOf rdf:resource="http://cicm-conference.org/2012/rdf/track_sysprojects"/>
+    <swc:isSuperEventOf rdf:resource="http://cicm-conference.org/2012/rdf/track_uitp"/>
+    <swc:isSuperEventOf rdf:resource="http://cicm-conference.org/2012/rdf/track_wip"/>
+    <rdfs:label>CICM 2012 - Conferences on Intelligent Computer Mathematics</rdfs:label>
+    <ical:description>As computers and communications technology advance, greater opportunities arise for intelligent mathematical computation. While computer algebra, automated deduction, mathematical publishing and novel user interfaces individually have long and successful histories, we are now seeing increasing opportunities for synergy among these areas. The  Conferences on  Intelligent  Computer Mathematics  (CICM) offer a venue for discussing these areas and their synergy.</ical:description>
+    <ical:dtend rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2012-07-13</ical:dtend>
+    <ical:dtstart rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2012-07-08</ical:dtstart>
+    <ical:location>Jacobs University Bremen, Germany</ical:location>
+    <ical:url rdf:resource="http://www.cicm-conference.org/2012"/>
+  </swc:ConferenceEvent>
+  <swc:Role rdf:about="http://cicm-conference.org/2012/rdf/GeneralProgramChair">
+    <swc:heldBy rdf:resource="http://symbolicdata.org/Data/Person/Jeuring_J"/>
+    <rdfs:label>General Program Chair</rdfs:label>
+  </swc:Role>
+  <swc:Role rdf:about="http://cicm-conference.org/2012/rdf/LocalArrangementsChair">
+    <swc:heldBy rdf:resource="http://symbolicdata.org/Data/Person/Autexier_S"/>
+    <swc:heldBy rdf:resource="http://symbolicdata.org/Data/Person/Kohlhase_M"/>
+    <rdfs:label>Local Arrangements Chair</rdfs:label>
+  </swc:Role>
+  <swc:Chair rdf:about="http://cicm-conference.org/2012/rdf/MIR-Chair">
+    <swc:heldBy rdf:resource="http://symbolicdata.org/Data/Person/Kohlhase_M"/>
+    <swc:heldBy rdf:resource="http://symbolicdata.org/Data/Person/Sojka_P"/>
+    <rdfs:label>MIR Program Chair</rdfs:label>
+  </swc:Chair>
+  <swc:Role rdf:about="http://cicm-conference.org/2012/rdf/MIR-PC">
+    <swc:heldBy rdf:resource="http://symbolicdata.org/Data/Person/Aizawa_A"/>
+    <swc:heldBy rdf:resource="http://symbolicdata.org/Data/Person/Galambos_L"/>
+    <swc:heldBy rdf:resource="http://symbolicdata.org/Data/Person/Kohlhase_M"/>
+    <swc:heldBy rdf:resource="http://symbolicdata.org/Data/Person/Ounis_I"/>
+    <swc:heldBy rdf:resource="http://symbolicdata.org/Data/Person/Sojka_P"/>
+    <rdfs:label>MIR Program Committee</rdfs:label>
+  </swc:Role>
+  <swc:Chair rdf:about="http://cicm-conference.org/2012/rdf/MKM-Chair">
+    <swc:heldBy rdf:resource="http://symbolicdata.org/Data/Person/Wenzel_M"/>
+    <rdfs:label>MKM Program Chair</rdfs:label>
+  </swc:Chair>
+  <swc:Chair rdf:about="http://cicm-conference.org/2012/rdf/MathUI-Chair">
+    <swc:heldBy rdf:resource="http://symbolicdata.org/Data/Person/Libbrecht_P"/>
+    <rdfs:label>MathUI Program Chair</rdfs:label>
+  </swc:Chair>
+  <swc:Role rdf:about="http://cicm-conference.org/2012/rdf/MathUI-PC">
+    <swc:heldBy rdf:resource="http://symbolicdata.org/Data/Person/Aspinall_D"/>
+    <swc:heldBy rdf:resource="http://symbolicdata.org/Data/Person/Cairns_P"/>
+    <swc:heldBy rdf:resource="http://symbolicdata.org/Data/Person/Caprotti_O"/>
+    <swc:heldBy rdf:resource="http://symbolicdata.org/Data/Person/Hoffkamp_A"/>
+    <swc:heldBy rdf:resource="http://symbolicdata.org/Data/Person/Libbrecht_P"/>
+    <swc:heldBy rdf:resource="http://symbolicdata.org/Data/Person/Smirnova_E"/>
+    <swc:heldBy rdf:resource="http://symbolicdata.org/Data/Person/Topping_P"/>
+    <rdfs:label>Math-UI Program Committee</rdfs:label>
+  </swc:Role>
+  <sd:Reference rdf:about="http://cicm-conference.org/2012/rdf/Paper_1001">
+    <swc:relatedToEvent rdf:resource="http://cicm-conference.org/2012/rdf/track_dml"/>
+    <swc:relatedToEvent rdf:resource="http://cicm-conference.org/2012/rdf/track_invited"/>
+    <dcterms:abstract>Up to now, flexiform mathematical text has mainly been processed with the intention of formalizing mathematical knowledge so that proof engines can be applied to it. This approach can be compared with the symbolic approach to natural language processing, where methods of logic and knowledge representation are used to analyze linguistic phenomena. In the last two decades, a new approach to natural language processing has emerged, based on statistical methods and, in particular, data mining. This method, called text mining, aims to process large text corpora, in order to detect tendencies, to extract information, to classify documents, etc. In this talk I will present math mining, namely the potential applications of text mining to mathematical texts. After reviewing some existing works heading in that direction, I will formulate and describe several roadmap suggestions for the use and applications of statistical methods to mathematical text processing: (1) using terms instead of words as the basic unit of text processing, (2) using topics instead of subjects (&amp;quot;topics&amp;quot; in the sense of &amp;quot;topic models&amp;quot; in natural language processing, and &amp;quot;subjects&amp;quot; in the sense of various mathematical subject classifications), (3) using and correlating various graphs extracted from mathematical corpora, (4) use paraphrastic redundancy, etc. The purpose of this talk is to give a glimpse on potential applications of the math mining approach on large mathematical corpora, such as arXiv.org.</dcterms:abstract>
+    <dcterms:creator rdf:resource="http://symbolicdata.org/Data/Person/Haralambous_Y"/>
+    <dcterms:title>Text Mining Methods Applied to Mathematical Texts</dcterms:title>
+    <sd:slidesURL rdf:resource="http://cicm-conference.org/2012/slides/YannisHaralambous.pdf"/>
+  </sd:Reference>
+  <sd:Reference rdf:about="http://cicm-conference.org/2012/rdf/Paper_1002">
+    <swc:relatedToEvent rdf:resource="http://cicm-conference.org/2012/rdf/track_calculemus"/>
+    <swc:relatedToEvent rdf:resource="http://cicm-conference.org/2012/rdf/track_invited"/>
+    <dcterms:abstract>Gödel’s Incompleteness theorems tell us that there are effective limitations on the capacity of logical systems to admit reasoning about themselves. However, there are solid pragmatic reasons for wanting to try: we can benefit considerably by demonstrating that systematic patterns of reasoning (and programming, of course) are admissible. It is very useful to treat goals as data in order to attack them with computation, adding certified automation to interactive proof tools, delivering the efficiency required to solve compute-intensive problems with no loss of trust.Dependent type theory provides a ready means of reflection: goals become types, and types may be computed from data. This technique has proven highly successful when tightly targeted on specific problem domains. But we may yet ask the bold question of how large a universe of problems we can effectively reflect: how much of our type theory can we encode within its own notion of data? To what extent can our type theory capture its own typing discipline? Might we construct a hierarchy of type theories where the whole of each lower level can be reflected at higher levels? In this talk, I shall outline grounds for modest optimism and propose a plan of campaign. The obstacles may turn out to be as fascinating as the objective. The reward, if we can reach it, is a flexible technology for certified automation in problem-solving, honestly articulating what at least computers can do.</dcterms:abstract>
+    <dcterms:creator rdf:resource="http://symbolicdata.org/Data/Person/McBride_C"/>
+    <dcterms:title>A Prospection for Reflection</dcterms:title>
+  </sd:Reference>
+  <sd:Reference rdf:about="http://cicm-conference.org/2012/rdf/Paper_1003">
+    <swc:relatedToEvent rdf:resource="http://cicm-conference.org/2012/rdf/track_calculemus"/>
+    <swc:relatedToEvent rdf:resource="http://cicm-conference.org/2012/rdf/track_invited"/>
+    <dcterms:abstract>Dependently typed languages promise an elegant environment for programming from specifications: the properties that a program should satisfy are expressed as logical formulas and encoded via the Curry-Howard isomorphism as a type, a candidate implementation should be a member of this type, and the type checker verifies whether this is indeed the case. But sometimes, the type checker demands ``too much'': in particular, in scientific programming, it often seems that one must formalize all of real analysis before writing a single line of useful code. Alternatively, one can use mechanisms provided by the language in order to circumvent the type checker, and confirm that ``real programmers can write Fortran in any language''. We present an example of navigating between these extremes in the case of economic modeling. At first, we use postulates in order to be able to reuse code, and achieve a kind of conditional correctness (for example, we can find a Walrasian equilibrium if we are able to solve a convex optimization problem). We then remove more and more of the postulates, replacing them with proofs of correctness, by using interval arithmetic methods.</dcterms:abstract>
+    <dcterms:creator rdf:resource="http://symbolicdata.org/Data/Person/Ionescu_C"/>
+    <dcterms:title>Increasingly correct scientific programming</dcterms:title>
+    <sd:slidesURL rdf:resource="http://cicm-conference.org/2012/slides/CezarIonescu.pdf"/>
+  </sd:Reference>
+  <sd:Reference rdf:about="http://cicm-conference.org/2012/rdf/Paper_1004">
+    <swc:relatedToEvent rdf:resource="http://cicm-conference.org/2012/rdf/track_invited"/>
+    <dcterms:creator rdf:resource="http://symbolicdata.org/Data/Person/Wolfram_S"/>
+    <dcterms:title>Special Address</dcterms:title>
+    <sd:slidesURL rdf:resource="http://cicm-conference.org/2012/slides/StephenWolfram.mov"/>
+  </sd:Reference>
+  <sd:Reference rdf:about="http://cicm-conference.org/2012/rdf/Paper_1005">
+    <swc:relatedToEvent rdf:resource="http://cicm-conference.org/2012/rdf/track_regular"/>
+    <swc:relatedToEvent rdf:resource="http://cicm-conference.org/2012/rdf/track_sysprojects"/>
+    <dcterms:creator rdf:resource="http://symbolicdata.org/Data/Person/Alama_J"/>
+    <dcterms:creator rdf:resource="http://symbolicdata.org/Data/Person/Bylinski_C"/>
+    <dcterms:identifier rdf:resource="http://dx.doi.org/10.1007/978-3-642-31374-5_30"/>
+    <dcterms:title>New developments in parsing Mizar</dcterms:title>
+    <sd:paperURL rdf:resource="http://arxiv.org/abs/1205.0170v1"/>
+  </sd:Reference>
+  <sd:Reference rdf:about="http://cicm-conference.org/2012/rdf/Paper_1006">
+    <swc:relatedToEvent rdf:resource="http://cicm-conference.org/2012/rdf/track_calculemus"/>
+    <swc:relatedToEvent rdf:resource="http://cicm-conference.org/2012/rdf/track_regular"/>
+    <dcterms:creator rdf:resource="http://symbolicdata.org/Data/Person/Heras_J"/>
+    <dcterms:creator rdf:resource="http://symbolicdata.org/Data/Person/Poza_M"/>
+    <dcterms:creator rdf:resource="http://symbolicdata.org/Data/Person/Rubio_J"/>
+    <dcterms:identifier rdf:resource="http://dx.doi.org/10.1007/978-3-642-31374-5_15"/>
+    <dcterms:title>Verifying an algorithm computing Discrete Vector Fields for digital imaging</dcterms:title>
+    <sd:paperURL rdf:resource="http://arxiv.org/abs/1207.3315"/>
+    <sd:slidesURL rdf:resource="http://cicm-conference.org/2012/slides/JonathanHeras.pdf"/>
+  </sd:Reference>
+  <sd:Reference rdf:about="http://cicm-conference.org/2012/rdf/Paper_1007">
+    <swc:relatedToEvent rdf:resource="http://cicm-conference.org/2012/rdf/track_regular"/>
+    <swc:relatedToEvent rdf:resource="http://cicm-conference.org/2012/rdf/track_sysprojects"/>
+    <dcterms:creator rdf:resource="http://symbolicdata.org/Data/Person/Hetzl_S"/>
+    <dcterms:identifier rdf:resource="http://dx.doi.org/10.1007/978-3-642-31374-5_32"/>
+    <dcterms:title>Project Presentation: Algorithmic Structuring and Compression of Proofs (ASCOP)</dcterms:title>
+  </sd:Reference>
+  <sd:Reference rdf:about="http://cicm-conference.org/2012/rdf/Paper_1008">
+    <swc:relatedToEvent rdf:resource="http://cicm-conference.org/2012/rdf/track_dml"/>
+    <swc:relatedToEvent rdf:resource="http://cicm-conference.org/2012/rdf/track_regular"/>
+    <dcterms:creator rdf:resource="http://symbolicdata.org/Data/Person/Kofler_K"/>
+    <dcterms:creator rdf:resource="http://symbolicdata.org/Data/Person/Neumaier_A"/>
+    <dcterms:identifier rdf:resource="http://dx.doi.org/10.1007/978-3-642-31374-5_26"/>
+    <dcterms:title>DynGenPar - A Dynamic Generalized Parser for Common Mathematical Language</dcterms:title>
+  </sd:Reference>
+  <sd:Reference rdf:about="http://cicm-conference.org/2012/rdf/Paper_1009">
+    <swc:relatedToEvent rdf:resource="http://cicm-conference.org/2012/rdf/track_mkm"/>
+    <swc:relatedToEvent rdf:resource="http://cicm-conference.org/2012/rdf/track_regular"/>
+    <dcterms:creator rdf:resource="http://symbolicdata.org/Data/Person/Asperti_A"/>
+    <dcterms:identifier rdf:resource="http://dx.doi.org/10.1007/978-3-642-31374-5_2"/>
+    <dcterms:title>Proof, message and certification</dcterms:title>
+    <sd:slidesURL rdf:resource="http://cicm-conference.org/2012/slides/AndreaAsperti.pdf"/>
+  </sd:Reference>
+  <sd:Reference rdf:about="http://cicm-conference.org/2012/rdf/Paper_1010">
+    <swc:relatedToEvent rdf:resource="http://cicm-conference.org/2012/rdf/track_calculemus"/>
+    <swc:relatedToEvent rdf:resource="http://cicm-conference.org/2012/rdf/track_regular"/>
+    <dcterms:creator rdf:resource="http://symbolicdata.org/Data/Person/Maric_F"/>
+    <dcterms:creator rdf:resource="http://symbolicdata.org/Data/Person/Vuckovic_B"/>
+    <dcterms:creator rdf:resource="http://symbolicdata.org/Data/Person/Zivkovic_M"/>
+    <dcterms:identifier rdf:resource="http://dx.doi.org/10.1007/978-3-642-31374-5_17"/>
+    <dcterms:title>Formalizing Frankl's Conjecture: FC-families</dcterms:title>
+    <sd:paperURL rdf:resource="http://arxiv.org/abs/1207.3604"/>
+    <sd:slidesURL rdf:resource="http://cicm-conference.org/2012/slides/FilipMaric.pdf"/>
+  </sd:Reference>
+  <sd:Reference rdf:about="http://cicm-conference.org/2012/rdf/Paper_1011">
+    <swc:relatedToEvent rdf:resource="http://cicm-conference.org/2012/rdf/track_calculemus"/>
+    <swc:relatedToEvent rdf:resource="http://cicm-conference.org/2012/rdf/track_regular"/>
+    <dcterms:creator rdf:resource="http://symbolicdata.org/Data/Person/Janicic_P"/>
+    <dcterms:creator rdf:resource="http://symbolicdata.org/Data/Person/Nikolic_M"/>
+    <dcterms:identifier rdf:resource="http://dx.doi.org/10.1007/978-3-642-31374-5_18"/>
+    <dcterms:title>CDCL-Based Abstract State Transition System for Coherent Logic</dcterms:title>
+    <sd:paperURL rdf:resource="http://argo.matf.bg.ac.rs/publications/2012/cdclcl.pdf"/>
+    <sd:slidesURL rdf:resource="http://cicm-conference.org/2012/slides/MladenNikolic.pdf"/>
+  </sd:Reference>
+  <sd:Reference rdf:about="http://cicm-conference.org/2012/rdf/Paper_1012">
+    <swc:relatedToEvent rdf:resource="http://cicm-conference.org/2012/rdf/track_mkm"/>
+    <swc:relatedToEvent rdf:resource="http://cicm-conference.org/2012/rdf/track_regular"/>
+    <dcterms:creator rdf:resource="http://symbolicdata.org/Data/Person/Herding_D"/>
+    <dcterms:creator rdf:resource="http://symbolicdata.org/Data/Person/Libbrecht_P"/>
+    <dcterms:creator rdf:resource="http://symbolicdata.org/Data/Person/Mueller_W"/>
+    <dcterms:creator rdf:resource="http://symbolicdata.org/Data/Person/Rebholz_S"/>
+    <dcterms:creator rdf:resource="http://symbolicdata.org/Data/Person/Tscheulin_F"/>
+    <dcterms:identifier rdf:resource="http://dx.doi.org/10.1007/978-3-642-31374-5_8"/>
+    <dcterms:title>Understanding the Learners' Actions when using Mathematics Learning Tools</dcterms:title>
+    <sd:paperURL rdf:resource="http://arxiv.org/abs/1207.2280"/>
+    <sd:slidesURL rdf:resource="http://cicm-conference.org/2012/slides/PaulLibbrecht.pdf"/>
+  </sd:Reference>
+  <sd:Reference rdf:about="http://cicm-conference.org/2012/rdf/Paper_1013">
+    <swc:relatedToEvent rdf:resource="http://cicm-conference.org/2012/rdf/track_regular"/>
+    <swc:relatedToEvent rdf:resource="http://cicm-conference.org/2012/rdf/track_sysprojects"/>
+    <dcterms:creator rdf:resource="http://symbolicdata.org/Data/Person/Kohlhase_M"/>
+    <dcterms:identifier rdf:resource="http://dx.doi.org/10.1007/978-3-642-31374-5_34"/>
+    <dcterms:title>The Planetary Project: Towards eMath3.0</dcterms:title>
+    <sd:paperURL rdf:resource="http://arxiv.org/abs/1206.5048"/>
+  </sd:Reference>
+  <sd:Reference rdf:about="http://cicm-conference.org/2012/rdf/Paper_1014">
+    <swc:relatedToEvent rdf:resource="http://cicm-conference.org/2012/rdf/track_calculemus"/>
+    <swc:relatedToEvent rdf:resource="http://cicm-conference.org/2012/rdf/track_regular"/>
+    <dcterms:creator rdf:resource="http://symbolicdata.org/Data/Person/Carette_J"/>
+    <dcterms:creator rdf:resource="http://symbolicdata.org/Data/Person/OConnor_R"/>
+    <dcterms:identifier rdf:resource="http://dx.doi.org/10.1007/978-3-642-31374-5_14"/>
+    <dcterms:title>Theory Expression Combinators</dcterms:title>
+    <sd:paperURL rdf:resource="http://arxiv.org/abs/1204.0053"/>
+    <sd:slidesURL rdf:resource="http://cicm-conference.org/2012/slides/JacquesCarette.pdf"/>
+  </sd:Reference>
+  <sd:Reference rdf:about="http://cicm-conference.org/2012/rdf/Paper_1015">
+    <swc:relatedToEvent rdf:resource="http://cicm-conference.org/2012/rdf/track_regular"/>
+    <swc:relatedToEvent rdf:resource="http://cicm-conference.org/2012/rdf/track_sysprojects"/>
+    <dcterms:creator rdf:resource="http://symbolicdata.org/Data/Person/Wenzel_M"/>
+    <dcterms:identifier rdf:resource="http://dx.doi.org/10.1007/978-3-642-31374-5_38"/>
+    <dcterms:title>Isabelle/jEdit -- a Prover IDE within the PIDE framework</dcterms:title>
+    <sd:paperURL rdf:resource="http://arxiv.org/abs/1207.3441"/>
+  </sd:Reference>
+  <sd:Reference rdf:about="http://cicm-conference.org/2012/rdf/Paper_1016">
+    <swc:relatedToEvent rdf:resource="http://cicm-conference.org/2012/rdf/track_regular"/>
+    <swc:relatedToEvent rdf:resource="http://cicm-conference.org/2012/rdf/track_sysprojects"/>
+    <dcterms:creator rdf:resource="http://symbolicdata.org/Data/Person/Kornilowicz_A"/>
+    <dcterms:identifier rdf:resource="http://dx.doi.org/10.1007/978-3-642-31374-5_35"/>
+    <dcterms:title>Tentative Experiments with Ellipsis in Mizar</dcterms:title>
+  </sd:Reference>
+  <sd:Reference rdf:about="http://cicm-conference.org/2012/rdf/Paper_1017">
+    <swc:relatedToEvent rdf:resource="http://cicm-conference.org/2012/rdf/track_mkm"/>
+    <swc:relatedToEvent rdf:resource="http://cicm-conference.org/2012/rdf/track_regular"/>
+    <dcterms:creator rdf:resource="http://symbolicdata.org/Data/Person/Bourke_T"/>
+    <dcterms:creator rdf:resource="http://symbolicdata.org/Data/Person/Daum_M"/>
+    <dcterms:creator rdf:resource="http://symbolicdata.org/Data/Person/Klein_G"/>
+    <dcterms:creator rdf:resource="http://symbolicdata.org/Data/Person/Kolanski_R"/>
+    <dcterms:identifier rdf:resource="http://dx.doi.org/10.1007/978-3-642-31374-5_3"/>
+    <dcterms:title>Challenges and Experiences in Managing Large-Scale Proofs</dcterms:title>
+    <sd:slidesURL rdf:resource="http://cicm-conference.org/2012/slides/MatthiasDaum.pdf"/>
+  </sd:Reference>
+  <sd:Reference rdf:about="http://cicm-conference.org/2012/rdf/Paper_1018">
+    <swc:relatedToEvent rdf:resource="http://cicm-conference.org/2012/rdf/track_mkm"/>
+    <swc:relatedToEvent rdf:resource="http://cicm-conference.org/2012/rdf/track_regular"/>
+    <dcterms:creator rdf:resource="http://symbolicdata.org/Data/Person/Echenim_M"/>
+    <dcterms:creator rdf:resource="http://symbolicdata.org/Data/Person/Peltier_N"/>
+    <dcterms:identifier rdf:resource="http://dx.doi.org/10.1007/978-3-642-31374-5_21"/>
+    <dcterms:title>Reasoning on Schemata of Formulae</dcterms:title>
+    <sd:paperURL rdf:resource="http://arxiv.org/abs/1204.2990"/>
+  </sd:Reference>
+  <sd:Reference rdf:about="http://cicm-conference.org/2012/rdf/Paper_1019">
+    <swc:relatedToEvent rdf:resource="http://cicm-conference.org/2012/rdf/track_regular"/>
+    <swc:relatedToEvent rdf:resource="http://cicm-conference.org/2012/rdf/track_sysprojects"/>
+    <dcterms:creator rdf:resource="http://symbolicdata.org/Data/Person/Khan_MT"/>
+    <dcterms:creator rdf:resource="http://symbolicdata.org/Data/Person/Schreiner_W"/>
+    <dcterms:identifier rdf:resource="http://dx.doi.org/10.1007/978-3-642-31374-5_33"/>
+    <dcterms:title>On Formal Specification of Maple Programs</dcterms:title>
+    <sd:paperURL rdf:resource="http://arxiv.org/abs/1207.2291"/>
+  </sd:Reference>
+  <sd:Reference rdf:about="http://cicm-conference.org/2012/rdf/Paper_1020">
+    <swc:relatedToEvent rdf:resource="http://cicm-conference.org/2012/rdf/track_calculemus"/>
+    <swc:relatedToEvent rdf:resource="http://cicm-conference.org/2012/rdf/track_regular"/>
+    <dcterms:creator rdf:resource="http://symbolicdata.org/Data/Person/Khan_MT"/>
+    <dcterms:creator rdf:resource="http://symbolicdata.org/Data/Person/Schreiner_W"/>
+    <dcterms:identifier rdf:resource="http://dx.doi.org/10.1007/978-3-642-31374-5_16"/>
+    <dcterms:title>Towards Formal Specification and Verification of Maple Programs</dcterms:title>
+    <sd:paperURL rdf:resource="http://arxiv.org/abs/1207.2300"/>
+    <sd:slidesURL rdf:resource="http://cicm-conference.org/2012/slides/MuhammadTaimoorKhan.pdf"/>
+  </sd:Reference>
+  <sd:Reference rdf:about="http://cicm-conference.org/2012/rdf/Paper_1021">
+    <swc:relatedToEvent rdf:resource="http://cicm-conference.org/2012/rdf/track_mkm"/>
+    <swc:relatedToEvent rdf:resource="http://cicm-conference.org/2012/rdf/track_regular"/>
+    <dcterms:creator rdf:resource="http://symbolicdata.org/Data/Person/David_C"/>
+    <dcterms:creator rdf:resource="http://symbolicdata.org/Data/Person/Jucovschi_C"/>
+    <dcterms:creator rdf:resource="http://symbolicdata.org/Data/Person/Kohlhase_A"/>
+    <dcterms:creator rdf:resource="http://symbolicdata.org/Data/Person/Kohlhase_M"/>
+    <dcterms:identifier rdf:resource="http://dx.doi.org/10.1007/978-3-642-31374-5_4"/>
+    <dcterms:title>Semantic Alliance: A Framework for Semantic Allies</dcterms:title>
+  </sd:Reference>
+  <sd:Reference rdf:about="http://cicm-conference.org/2012/rdf/Paper_1022">
+    <swc:relatedToEvent rdf:resource="http://cicm-conference.org/2012/rdf/track_regular"/>
+    <swc:relatedToEvent rdf:resource="http://cicm-conference.org/2012/rdf/track_sysprojects"/>
+    <dcterms:creator rdf:resource="http://symbolicdata.org/Data/Person/Asperti_A"/>
+    <dcterms:creator rdf:resource="http://symbolicdata.org/Data/Person/Ricciotti_W"/>
+    <dcterms:identifier rdf:resource="http://dx.doi.org/10.1007/978-3-642-31374-5_28"/>
+    <dcterms:title>A Web Interface for Matita</dcterms:title>
+    <sd:paperURL rdf:resource="http://arxiv.org/abs/1207.2892"/>
+    <sd:slidesURL rdf:resource="http://cicm-conference.org/2012/slides/AndreaAsperti.pdf"/>
+  </sd:Reference>
+  <sd:Reference rdf:about="http://cicm-conference.org/2012/rdf/Paper_1023">
+    <swc:relatedToEvent rdf:resource="http://cicm-conference.org/2012/rdf/track_mkm"/>
+    <swc:relatedToEvent rdf:resource="http://cicm-conference.org/2012/rdf/track_regular"/>
+    <dcterms:creator rdf:resource="http://symbolicdata.org/Data/Person/Lange_C"/>
+    <dcterms:creator rdf:resource="http://symbolicdata.org/Data/Person/Tankink_C"/>
+    <dcterms:creator rdf:resource="http://symbolicdata.org/Data/Person/Urban_J"/>
+    <dcterms:identifier rdf:resource="http://dx.doi.org/10.1007/978-3-642-31374-5_13"/>
+    <dcterms:title>Point-and-write -- Documenting Formal Mathematics by Reference</dcterms:title>
+    <sd:paperURL rdf:resource="http://arxiv.org/abs/1204.5094"/>
+    <sd:slidesURL rdf:resource="http://cicm-conference.org/2012/slides/CarstTankink.html"/>
+  </sd:Reference>
+  <sd:Reference rdf:about="http://cicm-conference.org/2012/rdf/Paper_1024">
+    <swc:relatedToEvent rdf:resource="http://cicm-conference.org/2012/rdf/track_dml"/>
+    <swc:relatedToEvent rdf:resource="http://cicm-conference.org/2012/rdf/track_regular"/>
+    <dcterms:creator rdf:resource="http://symbolicdata.org/Data/Person/Mazalov_V"/>
+    <dcterms:creator rdf:resource="http://symbolicdata.org/Data/Person/Watt_S"/>
+    <dcterms:identifier rdf:resource="http://dx.doi.org/10.1007/978-3-642-31374-5_27"/>
+    <dcterms:title>Writing on Clouds</dcterms:title>
+  </sd:Reference>
+  <sd:Reference rdf:about="http://cicm-conference.org/2012/rdf/Paper_1025">
+    <swc:relatedToEvent rdf:resource="http://cicm-conference.org/2012/rdf/track_mkm"/>
+    <swc:relatedToEvent rdf:resource="http://cicm-conference.org/2012/rdf/track_regular"/>
+    <dcterms:creator rdf:resource="http://symbolicdata.org/Data/Person/Jucovschi_C"/>
+    <dcterms:identifier rdf:resource="http://dx.doi.org/10.1007/978-3-642-31374-5_7"/>
+    <dcterms:title>Cost-Effective Integration of MKM Semantic Services into Editing Environments</dcterms:title>
+    <sd:slidesURL rdf:resource="http://cicm-conference.org/2012/slides/ConstantinJucovschi.pdf"/>
+  </sd:Reference>
+  <sd:Reference rdf:about="http://cicm-conference.org/2012/rdf/Paper_1026">
+    <swc:relatedToEvent rdf:resource="http://cicm-conference.org/2012/rdf/track_mkm"/>
+    <swc:relatedToEvent rdf:resource="http://cicm-conference.org/2012/rdf/track_regular"/>
+    <dcterms:creator rdf:resource="http://symbolicdata.org/Data/Person/Aspinall_D"/>
+    <dcterms:creator rdf:resource="http://symbolicdata.org/Data/Person/Grov_G"/>
+    <dcterms:creator rdf:resource="http://symbolicdata.org/Data/Person/Whiteside_I"/>
+    <dcterms:identifier rdf:resource="http://dx.doi.org/10.1007/978-3-642-31374-5_13"/>
+    <dcterms:title>An Essence of SSReflect</dcterms:title>
+  </sd:Reference>
+  <sd:Reference rdf:about="http://cicm-conference.org/2012/rdf/Paper_1027">
+    <swc:relatedToEvent rdf:resource="http://cicm-conference.org/2012/rdf/track_mkm"/>
+    <swc:relatedToEvent rdf:resource="http://cicm-conference.org/2012/rdf/track_regular"/>
+    <dcterms:creator rdf:resource="http://symbolicdata.org/Data/Person/Horozal_F"/>
+    <dcterms:creator rdf:resource="http://symbolicdata.org/Data/Person/Kohlhase_M"/>
+    <dcterms:creator rdf:resource="http://symbolicdata.org/Data/Person/Rabe_F"/>
+    <dcterms:identifier rdf:resource="http://dx.doi.org/10.1007/978-3-642-31374-5_5"/>
+    <dcterms:title>Extending MKM Formats at the Statement Level</dcterms:title>
+    <sd:slidesURL rdf:resource="http://cicm-conference.org/2012/slides/FulyaHorozal.pdf"/>
+  </sd:Reference>
+  <sd:Reference rdf:about="http://cicm-conference.org/2012/rdf/Paper_1028">
+    <swc:relatedToEvent rdf:resource="http://cicm-conference.org/2012/rdf/track_calculemus"/>
+    <swc:relatedToEvent rdf:resource="http://cicm-conference.org/2012/rdf/track_regular"/>
+    <dcterms:creator rdf:resource="http://symbolicdata.org/Data/Person/Bradford_R"/>
+    <dcterms:creator rdf:resource="http://symbolicdata.org/Data/Person/Davenport_JH"/>
+    <dcterms:creator rdf:resource="http://symbolicdata.org/Data/Person/Wilson_D"/>
+    <dcterms:identifier rdf:resource="http://dx.doi.org/10.1007/978-3-642-31374-5_19"/>
+    <dcterms:title>Speeding-up Cylindrical Algebraic Decomposition by Gröbner Bases</dcterms:title>
+    <sd:paperURL rdf:resource="http://arxiv.org/abs/1205.6285"/>
+    <sd:slidesURL rdf:resource="http://cicm-conference.org/2012/slides/JamesDavenport.pdf"/>
+  </sd:Reference>
+  <sd:Reference rdf:about="http://cicm-conference.org/2012/rdf/Paper_1029">
+    <swc:relatedToEvent rdf:resource="http://cicm-conference.org/2012/rdf/track_mkm"/>
+    <swc:relatedToEvent rdf:resource="http://cicm-conference.org/2012/rdf/track_regular"/>
+    <dcterms:creator rdf:resource="http://symbolicdata.org/Data/Person/Janicic_P"/>
+    <dcterms:creator rdf:resource="http://symbolicdata.org/Data/Person/Marinkovic_V"/>
+    <dcterms:identifier rdf:resource="http://dx.doi.org/10.1007/978-3-642-31374-5_9"/>
+    <dcterms:title>Towards Understanding Triangle Construction Problems</dcterms:title>
+    <sd:paperURL rdf:resource="http://arxiv.org/abs/1207.4432"/>
+    <sd:slidesURL rdf:resource="http://cicm-conference.org/2012/slides/VesnaMarinkovic.pdf"/>
+  </sd:Reference>
+  <sd:Reference rdf:about="http://cicm-conference.org/2012/rdf/Paper_1030">
+    <swc:relatedToEvent rdf:resource="http://cicm-conference.org/2012/rdf/track_regular"/>
+    <swc:relatedToEvent rdf:resource="http://cicm-conference.org/2012/rdf/track_sysprojects"/>
+    <dcterms:creator rdf:resource="http://symbolicdata.org/Data/Person/Antoniou_I"/>
+    <dcterms:creator rdf:resource="http://symbolicdata.org/Data/Person/Bratsas_C"/>
+    <dcterms:creator rdf:resource="http://symbolicdata.org/Data/Person/Corneli_J"/>
+    <dcterms:creator rdf:resource="http://symbolicdata.org/Data/Person/Dimou_A"/>
+    <dcterms:creator rdf:resource="http://symbolicdata.org/Data/Person/Ion_P"/>
+    <dcterms:creator rdf:resource="http://symbolicdata.org/Data/Person/Kohlhase_M"/>
+    <dcterms:creator rdf:resource="http://symbolicdata.org/Data/Person/Lange_C"/>
+    <dcterms:creator rdf:resource="http://symbolicdata.org/Data/Person/Sperber_W"/>
+    <dcterms:identifier rdf:resource="http://dx.doi.org/10.1007/978-3-642-31374-5_36"/>
+    <dcterms:title>Reimplementing the Mathematics Subject Classification (MSC) as a Linked Open Dataset</dcterms:title>
+    <sd:paperURL rdf:resource="http://arxiv.org/abs/1204.5086"/>
+  </sd:Reference>
+  <sd:Reference rdf:about="http://cicm-conference.org/2012/rdf/Paper_1031">
+    <swc:relatedToEvent rdf:resource="http://cicm-conference.org/2012/rdf/track_regular"/>
+    <swc:relatedToEvent rdf:resource="http://cicm-conference.org/2012/rdf/track_sysprojects"/>
+    <dcterms:creator rdf:resource="http://symbolicdata.org/Data/Person/Grueninger_M"/>
+    <dcterms:creator rdf:resource="http://symbolicdata.org/Data/Person/Kutz_O"/>
+    <dcterms:creator rdf:resource="http://symbolicdata.org/Data/Person/Lange_C"/>
+    <dcterms:creator rdf:resource="http://symbolicdata.org/Data/Person/Mossakowski_T"/>
+    <dcterms:identifier rdf:resource="http://dx.doi.org/10.1007/978-3-642-31374-5_37"/>
+    <dcterms:title>The Distributed Ontology Language (DOL): Ontology Integration and Interoperability Applied to Mathematical Formalization</dcterms:title>
+    <sd:paperURL rdf:resource="http://arxiv.org/abs/1204.5093"/>
+  </sd:Reference>
+  <sd:Reference rdf:about="http://cicm-conference.org/2012/rdf/Paper_1032">
+    <swc:relatedToEvent rdf:resource="http://cicm-conference.org/2012/rdf/track_mkm"/>
+    <swc:relatedToEvent rdf:resource="http://cicm-conference.org/2012/rdf/track_regular"/>
+    <dcterms:creator rdf:resource="http://symbolicdata.org/Data/Person/Iancu_M"/>
+    <dcterms:creator rdf:resource="http://symbolicdata.org/Data/Person/Rabe_F"/>
+    <dcterms:identifier rdf:resource="http://dx.doi.org/10.1007/978-3-642-31374-5_22"/>
+    <dcterms:title>Management of Change in Declarative Languages</dcterms:title>
+    <sd:slidesURL rdf:resource="http://cicm-conference.org/2012/slides/MihneaIancu.pdf"/>
+  </sd:Reference>
+  <sd:Reference rdf:about="http://cicm-conference.org/2012/rdf/Paper_1033">
+    <swc:relatedToEvent rdf:resource="http://cicm-conference.org/2012/rdf/track_mkm"/>
+    <swc:relatedToEvent rdf:resource="http://cicm-conference.org/2012/rdf/track_regular"/>
+    <dcterms:creator rdf:resource="http://symbolicdata.org/Data/Person/Passmore_G"/>
+    <dcterms:creator rdf:resource="http://symbolicdata.org/Data/Person/Paulson_L"/>
+    <dcterms:creator rdf:resource="http://symbolicdata.org/Data/Person/deMoura_L"/>
+    <dcterms:identifier rdf:resource="http://dx.doi.org/10.1007/978-3-642-31374-5_24"/>
+    <dcterms:title>Real Algebraic Strategies for MetiTarski Proofs</dcterms:title>
+    <sd:slidesURL rdf:resource="http://cicm-conference.org/2012/slides/GrantPassmore.pdf"/>
+  </sd:Reference>
+  <sd:Reference rdf:about="http://cicm-conference.org/2012/rdf/Paper_1034">
+    <swc:relatedToEvent rdf:resource="http://cicm-conference.org/2012/rdf/track_mkm"/>
+    <swc:relatedToEvent rdf:resource="http://cicm-conference.org/2012/rdf/track_regular"/>
+    <dcterms:creator rdf:resource="http://symbolicdata.org/Data/Person/Rabe_F"/>
+    <dcterms:identifier rdf:resource="http://dx.doi.org/10.1007/978-3-642-31374-5_10"/>
+    <dcterms:title>A Query Language for Formal Mathematical Libraries</dcterms:title>
+    <sd:paperURL rdf:resource="http://arxiv.org/abs/1204.4685"/>
+    <sd:slidesURL rdf:resource="http://cicm-conference.org/2012/http://kwarc.info/frabe/Research/slides/rabe_querying_12.pdf"/>
+  </sd:Reference>
+  <sd:Reference rdf:about="http://cicm-conference.org/2012/rdf/Paper_1035">
+    <swc:relatedToEvent rdf:resource="http://cicm-conference.org/2012/rdf/track_mkm"/>
+    <swc:relatedToEvent rdf:resource="http://cicm-conference.org/2012/rdf/track_regular"/>
+    <dcterms:creator rdf:resource="http://symbolicdata.org/Data/Person/Hu_R"/>
+    <dcterms:creator rdf:resource="http://symbolicdata.org/Data/Person/Mazalov_V"/>
+    <dcterms:creator rdf:resource="http://symbolicdata.org/Data/Person/Watt_S"/>
+    <dcterms:identifier rdf:resource="http://dx.doi.org/10.1007/978-3-642-31374-5_6"/>
+    <dcterms:title>A Streaming Digital Ink Framework for Multi-Party Collaboration</dcterms:title>
+  </sd:Reference>
+  <sd:Reference rdf:about="http://cicm-conference.org/2012/rdf/Paper_1036">
+    <swc:relatedToEvent rdf:resource="http://cicm-conference.org/2012/rdf/track_mkm"/>
+    <swc:relatedToEvent rdf:resource="http://cicm-conference.org/2012/rdf/track_regular"/>
+    <dcterms:creator rdf:resource="http://symbolicdata.org/Data/Person/Sexton_AP"/>
+    <dcterms:identifier rdf:resource="http://dx.doi.org/10.1007/978-3-642-31374-5_11"/>
+    <dcterms:title>Abramowitz and Stegun -- A Resource for Mathematical Document Analysis</dcterms:title>
+  </sd:Reference>
+  <sd:Reference rdf:about="http://cicm-conference.org/2012/rdf/Paper_1037">
+    <swc:relatedToEvent rdf:resource="http://cicm-conference.org/2012/rdf/track_mkm"/>
+    <swc:relatedToEvent rdf:resource="http://cicm-conference.org/2012/rdf/track_regular"/>
+    <dcterms:creator rdf:resource="http://symbolicdata.org/Data/Person/dosReis_G"/>
+    <dcterms:identifier rdf:resource="http://dx.doi.org/10.1007/978-3-642-31374-5_20"/>
+    <dcterms:title>A System for Axiomatic Programming</dcterms:title>
+  </sd:Reference>
+  <sd:Reference rdf:about="http://cicm-conference.org/2012/rdf/Paper_1038">
+    <swc:relatedToEvent rdf:resource="http://cicm-conference.org/2012/rdf/track_regular"/>
+    <swc:relatedToEvent rdf:resource="http://cicm-conference.org/2012/rdf/track_sysprojects"/>
+    <dcterms:creator rdf:resource="http://symbolicdata.org/Data/Person/Baker_J"/>
+    <dcterms:creator rdf:resource="http://symbolicdata.org/Data/Person/Sexton_AP"/>
+    <dcterms:creator rdf:resource="http://symbolicdata.org/Data/Person/Sorge_V"/>
+    <dcterms:identifier rdf:resource="http://dx.doi.org/10.1007/978-3-642-31374-5_29"/>
+    <dcterms:title>Maxtract: Converting PDF to LATEX, MathML and Text</dcterms:title>
+  </sd:Reference>
+  <sd:Reference rdf:about="http://cicm-conference.org/2012/rdf/Paper_1039">
+    <swc:relatedToEvent rdf:resource="http://cicm-conference.org/2012/rdf/track_mkm"/>
+    <swc:relatedToEvent rdf:resource="http://cicm-conference.org/2012/rdf/track_regular"/>
+    <dcterms:creator rdf:resource="http://symbolicdata.org/Data/Person/Fleuriot_J"/>
+    <dcterms:creator rdf:resource="http://symbolicdata.org/Data/Person/Scott_P"/>
+    <dcterms:identifier rdf:resource="http://dx.doi.org/10.1007/978-3-642-31374-5_25"/>
+    <dcterms:title>A Combinator Language for Theorem Discovery</dcterms:title>
+  </sd:Reference>
+  <sd:Reference rdf:about="http://cicm-conference.org/2012/rdf/Paper_1040">
+    <swc:relatedToEvent rdf:resource="http://cicm-conference.org/2012/rdf/track_mkm"/>
+    <swc:relatedToEvent rdf:resource="http://cicm-conference.org/2012/rdf/track_regular"/>
+    <dcterms:creator rdf:resource="http://symbolicdata.org/Data/Person/Alama_J"/>
+    <dcterms:creator rdf:resource="http://symbolicdata.org/Data/Person/Mamane_L"/>
+    <dcterms:creator rdf:resource="http://symbolicdata.org/Data/Person/Urban_J"/>
+    <dcterms:identifier rdf:resource="http://dx.doi.org/10.1007/978-3-642-31374-5_1"/>
+    <dcterms:title>Dependencies in Formal Mathematics: Applications and Extraction for Coq and Mizar</dcterms:title>
+    <sd:slidesURL rdf:resource="http://cicm-conference.org/2012/slides/JesseAlamaLionelMammane.pdf"/>
+  </sd:Reference>
+  <sd:Reference rdf:about="http://cicm-conference.org/2012/rdf/Paper_1041">
+    <swc:relatedToEvent rdf:resource="http://cicm-conference.org/2012/rdf/track_mkm"/>
+    <swc:relatedToEvent rdf:resource="http://cicm-conference.org/2012/rdf/track_regular"/>
+    <dcterms:creator rdf:resource="http://symbolicdata.org/Data/Person/Kohlhase_M"/>
+    <dcterms:creator rdf:resource="http://symbolicdata.org/Data/Person/Prodescu_CC"/>
+    <dcterms:identifier rdf:resource="http://dx.doi.org/10.1007/978-3-642-31374-5_23"/>
+    <dcterms:title>MathWebSearch 0.5 Scaling an Open Formula Search Engine</dcterms:title>
+    <sd:slidesURL rdf:resource="http://cicm-conference.org/2012/slides/MichaelKohlhase-aisc12.pdf"/>
+  </sd:Reference>
+  <sd:Reference rdf:about="http://cicm-conference.org/2012/rdf/Paper_1042">
+    <swc:relatedToEvent rdf:resource="http://cicm-conference.org/2012/rdf/track_regular"/>
+    <swc:relatedToEvent rdf:resource="http://cicm-conference.org/2012/rdf/track_sysprojects"/>
+    <dcterms:creator rdf:resource="http://symbolicdata.org/Data/Person/Chen_X"/>
+    <dcterms:creator rdf:resource="http://symbolicdata.org/Data/Person/Li_W"/>
+    <dcterms:creator rdf:resource="http://symbolicdata.org/Data/Person/Luo_J"/>
+    <dcterms:creator rdf:resource="http://symbolicdata.org/Data/Person/Wang_D"/>
+    <dcterms:identifier rdf:resource="http://dx.doi.org/10.1007/978-3-642-31374-5_31"/>
+    <dcterms:title>Open Geometry Textbook: A Case Study of Knowledge Acquisition via Collective Intelligence</dcterms:title>
+  </sd:Reference>
+  <sd:Reference rdf:about="http://cicm-conference.org/2012/rdf/Paper_1043">
+    <swc:relatedToEvent rdf:resource="http://cicm-conference.org/2012/rdf/track_mkm"/>
+    <swc:relatedToEvent rdf:resource="http://cicm-conference.org/2012/rdf/track_wip"/>
+    <dcterms:creator rdf:resource="http://symbolicdata.org/Data/Person/Quaresma_P"/>
+    <dcterms:title>A XML-Format for Conjectures in Geometry</dcterms:title>
+    <sd:paperURL rdf:resource="http://arxiv.org/abs/1207.2511"/>
+    <sd:slidesURL rdf:resource="http://cicm-conference.org/2012/slides/PedroQuaresma.pdf"/>
+  </sd:Reference>
+  <sd:Reference rdf:about="http://cicm-conference.org/2012/rdf/Paper_1044">
+    <swc:relatedToEvent rdf:resource="http://cicm-conference.org/2012/rdf/track_mkm"/>
+    <swc:relatedToEvent rdf:resource="http://cicm-conference.org/2012/rdf/track_wip"/>
+    <dcterms:creator rdf:resource="http://symbolicdata.org/Data/Person/Corneli_J"/>
+    <dcterms:creator rdf:resource="http://symbolicdata.org/Data/Person/Dumitru_MA"/>
+    <dcterms:title>PlanetMath/Planetary</dcterms:title>
+  </sd:Reference>
+  <sd:Reference rdf:about="http://cicm-conference.org/2012/rdf/Paper_1045">
+    <swc:relatedToEvent rdf:resource="http://cicm-conference.org/2012/rdf/track_sysprojects"/>
+    <swc:relatedToEvent rdf:resource="http://cicm-conference.org/2012/rdf/track_wip"/>
+    <dcterms:creator rdf:resource="http://symbolicdata.org/Data/Person/Windsteiger_W"/>
+    <dcterms:title>Theorema 2.0: A Graphical User Interface for a Mathematical Assistant System</dcterms:title>
+  </sd:Reference>
+  <sd:Reference rdf:about="http://cicm-conference.org/2012/rdf/Paper_1046">
+    <swc:relatedToEvent rdf:resource="http://cicm-conference.org/2012/rdf/track_dml"/>
+    <swc:relatedToEvent rdf:resource="http://cicm-conference.org/2012/rdf/track_wip"/>
+    <dcterms:creator rdf:resource="http://symbolicdata.org/Data/Person/Hatlapatka_R"/>
+    <dcterms:title>JBIG2 Supported by OCR</dcterms:title>
+    <sd:slidesURL rdf:resource="http://cicm-conference.org/2012/slides/RadimHatlapatka.pdf"/>
+  </sd:Reference>
+  <sd:Reference rdf:about="http://cicm-conference.org/2012/rdf/Paper_1047">
+    <swc:relatedToEvent rdf:resource="http://cicm-conference.org/2012/rdf/track_dml"/>
+    <swc:relatedToEvent rdf:resource="http://cicm-conference.org/2012/rdf/track_wip"/>
+    <dcterms:creator rdf:resource="http://symbolicdata.org/Data/Person/Formanek_D"/>
+    <dcterms:creator rdf:resource="http://symbolicdata.org/Data/Person/Liska_M"/>
+    <dcterms:creator rdf:resource="http://symbolicdata.org/Data/Person/Ruzicka_M"/>
+    <dcterms:creator rdf:resource="http://symbolicdata.org/Data/Person/Sojka_P"/>
+    <dcterms:title>Normalization of Digital Mathematics Library Content</dcterms:title>
+    <sd:paperURL rdf:resource="https://is.muni.cz/auth/publication/986146"/>
+  </sd:Reference>
+  <sd:Reference rdf:about="http://cicm-conference.org/2012/rdf/Paper_1050">
+    <swc:relatedToEvent rdf:resource="http://cicm-conference.org/2012/rdf/track_dml"/>
+    <dcterms:abstract>There are continuation efforts ongoing with the dream of WDML in mind: EuDML, recent Washington meeting, projects granted by Sloan, etc. However, these are not coordinated, some views how to proceed differ. Some decisions have already been done in ongoing projects like EuDML, and were discussed at DML panel last year. It is time now to stop for a while, and raise questions whether do we do well and ask for feedback from the community. So, are we on right track as far as a) business model (which strategies, methods, partners); b) digital infrastructures and tools and c) sustainability of WDML services and `librarianship' curation is concerned?</dcterms:abstract>
+    <dcterms:creator rdf:resource="http://symbolicdata.org/Data/Person/Ion_P"/>
+    <dcterms:creator rdf:resource="http://symbolicdata.org/Data/Person/Rakosnik_J"/>
+    <dcterms:creator rdf:resource="http://symbolicdata.org/Data/Person/Sexton_AP"/>
+    <dcterms:creator rdf:resource="http://symbolicdata.org/Data/Person/Sperber_W"/>
+    <dcterms:title>Towards World DML: Are We on the Right Track?</dcterms:title>
+    <sd:paperURL rdf:resource="http://www.informatik.uni-bremen.de/cicm2012/dml/DMLPS.html"/>
+  </sd:Reference>
+  <sd:Reference rdf:about="http://cicm-conference.org/2012/rdf/Paper_1051">
+    <swc:relatedToEvent rdf:resource="http://cicm-conference.org/2012/rdf/track_dml"/>
+    <dcterms:creator rdf:resource="http://symbolicdata.org/Data/Person/Kohlhase_M"/>
+    <dcterms:creator rdf:resource="http://symbolicdata.org/Data/Person/Sojka_P"/>
+    <dcterms:title>MIR wrap-up and overview</dcterms:title>
+    <sd:slidesURL rdf:resource="http://cicm-conference.org/2012/slides/MichaelKohlhase-mir12-wrapup.pdf"/>
+  </sd:Reference>
+  <sd:Reference rdf:about="http://cicm-conference.org/2012/rdf/Paper_1052">
+    <swc:relatedToEvent rdf:resource="http://cicm-conference.org/2012/rdf/track_invited"/>
+    <swc:relatedToEvent rdf:resource="http://cicm-conference.org/2012/rdf/track_mir"/>
+    <dcterms:creator rdf:resource="http://symbolicdata.org/Data/Person/Trott_M"/>
+    <dcterms:title>Mathematical Search</dcterms:title>
+  </sd:Reference>
+  <sd:Reference rdf:about="http://cicm-conference.org/2012/rdf/Paper_1053">
+    <swc:relatedToEvent rdf:resource="http://cicm-conference.org/2012/rdf/track_mir"/>
+    <swc:relatedToEvent rdf:resource="http://cicm-conference.org/2012/rdf/track_regular"/>
+    <dcterms:creator rdf:resource="http://symbolicdata.org/Data/Person/Murata_T"/>
+    <dcterms:creator rdf:resource="http://symbolicdata.org/Data/Person/Otagiri_K"/>
+    <dcterms:title>Searching and Ranking Mathematical Formulas</dcterms:title>
+    <sd:paperURL rdf:resource="http://www.informatik.uni-bremen.de/cicm2012/mir/mir2012_submission_2.pdf"/>
+  </sd:Reference>
+  <sd:Reference rdf:about="http://cicm-conference.org/2012/rdf/Paper_1054">
+    <swc:relatedToEvent rdf:resource="http://cicm-conference.org/2012/rdf/track_mir"/>
+    <swc:relatedToEvent rdf:resource="http://cicm-conference.org/2012/rdf/track_regular"/>
+    <dcterms:creator rdf:resource="http://symbolicdata.org/Data/Person/Aizawa_A"/>
+    <dcterms:creator rdf:resource="http://symbolicdata.org/Data/Person/Inui_N"/>
+    <dcterms:creator rdf:resource="http://symbolicdata.org/Data/Person/Kristianto_GY"/>
+    <dcterms:creator rdf:resource="http://symbolicdata.org/Data/Person/Nghiem_MQ"/>
+    <dcterms:creator rdf:resource="http://symbolicdata.org/Data/Person/Topic_G"/>
+    <dcterms:title>Annotating Mathematical Expression Definitions for Automatic Detection</dcterms:title>
+    <sd:paperURL rdf:resource="http://www.informatik.uni-bremen.de/cicm2012/mir/mir2012_submission_3.pdf"/>
+  </sd:Reference>
+  <sd:Reference rdf:about="http://cicm-conference.org/2012/rdf/Paper_1055">
+    <swc:relatedToEvent rdf:resource="http://cicm-conference.org/2012/rdf/track_mir"/>
+    <swc:relatedToEvent rdf:resource="http://cicm-conference.org/2012/rdf/track_regular"/>
+    <dcterms:creator rdf:resource="http://symbolicdata.org/Data/Person/Wolska_M"/>
+    <dcterms:title>Building a POS-annotated Corpus of Scientific Papers in Mathematics</dcterms:title>
+    <sd:paperURL rdf:resource="http://www.informatik.uni-bremen.de/cicm2012/mir/mir2012_submission_4.pdf"/>
+  </sd:Reference>
+  <sd:Reference rdf:about="http://cicm-conference.org/2012/rdf/Paper_1056">
+    <swc:relatedToEvent rdf:resource="http://cicm-conference.org/2012/rdf/track_mir"/>
+    <swc:relatedToEvent rdf:resource="http://cicm-conference.org/2012/rdf/track_regular"/>
+    <dcterms:creator rdf:resource="http://symbolicdata.org/Data/Person/Iancu_M"/>
+    <dcterms:creator rdf:resource="http://symbolicdata.org/Data/Person/Kohlhase_M"/>
+    <dcterms:title>Searching Induced Formulae; Get Out More Than You Put In!</dcterms:title>
+    <sd:paperURL rdf:resource="http://www.informatik.uni-bremen.de/cicm2012/mir/mir2012_submission_5.pdf"/>
+    <sd:slidesURL rdf:resource="http://cicm-conference.org/2012/slides/MichaelKohlhase-mir12.pdf"/>
+  </sd:Reference>
+  <sd:Reference rdf:about="http://cicm-conference.org/2012/rdf/Paper_1057">
+    <swc:relatedToEvent rdf:resource="http://cicm-conference.org/2012/rdf/track_mir"/>
+    <swc:relatedToEvent rdf:resource="http://cicm-conference.org/2012/rdf/track_regular"/>
+    <dcterms:creator rdf:resource="http://symbolicdata.org/Data/Person/Alkalai_MAI"/>
+    <dcterms:creator rdf:resource="http://symbolicdata.org/Data/Person/Sorge_V"/>
+    <dcterms:title>Issues in Mathematical Table Recognition</dcterms:title>
+    <sd:paperURL rdf:resource="http://www.informatik.uni-bremen.de/cicm2012/mir/mir2012_submission_6.pdf"/>
+  </sd:Reference>
+  <sd:Reference rdf:about="http://cicm-conference.org/2012/rdf/Paper_1058">
+    <swc:relatedToEvent rdf:resource="http://cicm-conference.org/2012/rdf/track_mir"/>
+    <dcterms:creator rdf:resource="http://symbolicdata.org/Data/Person/Aizawa_A"/>
+    <dcterms:creator rdf:resource="http://symbolicdata.org/Data/Person/Kohlhase_M"/>
+    <dcterms:creator rdf:resource="http://symbolicdata.org/Data/Person/Ounis_I"/>
+    <dcterms:title>An Overview of NTCIR-10 Math Pilot Task</dcterms:title>
+    <sd:paperURL rdf:resource="http://www.informatik.uni-bremen.de/cicm2012/mir/mir2012_submission_7.pdf"/>
+  </sd:Reference>
+  <sd:Reference rdf:about="http://cicm-conference.org/2012/rdf/Paper_1059">
+    <swc:relatedToEvent rdf:resource="http://cicm-conference.org/2012/rdf/track_mir"/>
+    <swc:relatedToEvent rdf:resource="http://cicm-conference.org/2012/rdf/track_regular"/>
+    <dcterms:creator rdf:resource="http://symbolicdata.org/Data/Person/Liska_M"/>
+    <dcterms:creator rdf:resource="http://symbolicdata.org/Data/Person/Ruzicka_M"/>
+    <dcterms:creator rdf:resource="http://symbolicdata.org/Data/Person/Sojka_P"/>
+    <dcterms:title>Latest Development of MIaS, Math Indexer and Searcher</dcterms:title>
+    <sd:paperURL rdf:resource="http://www.fi.muni.cz/usr/sojka/posters/sojka-liska-doceng2011.pdf"/>
+    <sd:slidesURL rdf:resource="http://cicm-conference.org/2012/https://mir.fi.muni.cz/public/2012-cicm-mir.pdf"/>
+  </sd:Reference>
+  <sd:Reference rdf:about="http://cicm-conference.org/2012/rdf/Paper_1060">
+    <swc:relatedToEvent rdf:resource="http://cicm-conference.org/2012/rdf/track_mir"/>
+    <swc:relatedToEvent rdf:resource="http://cicm-conference.org/2012/rdf/track_regular"/>
+    <dcterms:creator rdf:resource="http://symbolicdata.org/Data/Person/Schubotz_M"/>
+    <dcterms:title>Using LaTeXML and MathWeb Search to Make Enable Mathematical Search in MediaWiki</dcterms:title>
+  </sd:Reference>
+  <sd:Reference rdf:about="http://cicm-conference.org/2012/rdf/Paper_1061">
+    <swc:relatedToEvent rdf:resource="http://cicm-conference.org/2012/rdf/track_mir"/>
+    <dcterms:creator rdf:resource="http://symbolicdata.org/Data/Person/Sperber_W"/>
+    <dcterms:title>A Short Report about Information services of Zentralblatt Math</dcterms:title>
+    <sd:paperURL rdf:resource="http://www.informatik.uni-bremen.de/cicm2012/mir/mir2012_submission_9.pdf"/>
+  </sd:Reference>
+  <sd:Reference rdf:about="http://cicm-conference.org/2012/rdf/Paper_1063">
+    <swc:relatedToEvent rdf:resource="http://cicm-conference.org/2012/rdf/track_mir"/>
+    <swc:relatedToEvent rdf:resource="http://cicm-conference.org/2012/rdf/track_regular"/>
+    <dcterms:creator rdf:resource="http://symbolicdata.org/Data/Person/Sojka_P"/>
+    <dcterms:title>MIR.fi.muni.cz: Past, Present and Future</dcterms:title>
+    <sd:slidesURL rdf:resource="http://cicm-conference.org/2012/http://www.fi.muni.cz/usr/sojka/presentations/sojka-mir2012-pres.pdf"/>
+  </sd:Reference>
+  <sd:Reference rdf:about="http://cicm-conference.org/2012/rdf/Paper_1064">
+    <swc:relatedToEvent rdf:resource="http://cicm-conference.org/2012/rdf/track_mathui"/>
+    <dcterms:creator rdf:resource="http://symbolicdata.org/Data/Person/Cuypers_H"/>
+    <dcterms:creator rdf:resource="http://symbolicdata.org/Data/Person/Knopper_JW"/>
+    <dcterms:title>MathDox Select: A tool for creating SCORM packages from existing exercises</dcterms:title>
+    <sd:paperURL rdf:resource="http://www.cermat.org/events/MathUI/12/proc/Cuypers-Knopper-MathDox-Select.html"/>
+  </sd:Reference>
+  <sd:Reference rdf:about="http://cicm-conference.org/2012/rdf/Paper_1065">
+    <swc:relatedToEvent rdf:resource="http://cicm-conference.org/2012/rdf/track_mathui"/>
+    <dcterms:creator rdf:resource="http://symbolicdata.org/Data/Person/Kohlhase_A"/>
+    <dcterms:title>Navigation in Mathematical Documents</dcterms:title>
+    <sd:paperURL rdf:resource="http://www.cermat.org/events/MathUI/12/proc/Kohlhase-Math-Doc-Navigation.html"/>
+  </sd:Reference>
+  <sd:Reference rdf:about="http://cicm-conference.org/2012/rdf/Paper_1066">
+    <swc:relatedToEvent rdf:resource="http://cicm-conference.org/2012/rdf/track_mathui"/>
+    <dcterms:creator rdf:resource="http://symbolicdata.org/Data/Person/Libbrecht_P"/>
+    <dcterms:title>Skills Text Box A Tool to Access Resources by Mathematical Concepts</dcterms:title>
+    <sd:paperURL rdf:resource="http://www.cermat.org/events/MathUI/12/proc/Libbrecht-SkillsTextBox.html"/>
+  </sd:Reference>
+  <sd:Reference rdf:about="http://cicm-conference.org/2012/rdf/Paper_1067">
+    <swc:relatedToEvent rdf:resource="http://cicm-conference.org/2012/rdf/track_uitp"/>
+    <dcterms:creator rdf:resource="http://symbolicdata.org/Data/Person/Windsteiger_W"/>
+    <dcterms:title>Theorema 2.0: A Graphical User Interface for a Mathematical Assistant System</dcterms:title>
+    <sd:paperURL rdf:resource="file:///home/graebe/ComputerAlgebra/casn/Conferences/CICM-12/papers/UITP/paper-01.pdf"/>
+  </sd:Reference>
+  <sd:Reference rdf:about="http://cicm-conference.org/2012/rdf/Paper_1068">
+    <swc:relatedToEvent rdf:resource="http://cicm-conference.org/2012/rdf/track_uitp"/>
+    <dcterms:creator rdf:resource="http://symbolicdata.org/Data/Person/Wenzel_M"/>
+    <dcterms:title>READ-EVAL-PRINT in Parallel and Asynchronous Proof-checking</dcterms:title>
+    <sd:paperURL rdf:resource="file:///home/graebe/ComputerAlgebra/casn/Conferences/CICM-12/papers/UITP/paper-02.pdf"/>
+  </sd:Reference>
+  <sd:Reference rdf:about="http://cicm-conference.org/2012/rdf/Paper_1069">
+    <swc:relatedToEvent rdf:resource="http://cicm-conference.org/2012/rdf/track_uitp"/>
+    <dcterms:creator rdf:resource="http://symbolicdata.org/Data/Person/Dunchev_C"/>
+    <dcterms:creator rdf:resource="http://symbolicdata.org/Data/Person/Leitsch_A"/>
+    <dcterms:creator rdf:resource="http://symbolicdata.org/Data/Person/Libal_T"/>
+    <dcterms:creator rdf:resource="http://symbolicdata.org/Data/Person/Riener_M"/>
+    <dcterms:creator rdf:resource="http://symbolicdata.org/Data/Person/Rukhaia_M"/>
+    <dcterms:creator rdf:resource="http://symbolicdata.org/Data/Person/Weller_D"/>
+    <dcterms:creator rdf:resource="http://symbolicdata.org/Data/Person/WoltzenlogelPaleo_B"/>
+    <dcterms:title>ProofTool: GUI for the GAPT Framework</dcterms:title>
+    <sd:paperURL rdf:resource="file:///home/graebe/ComputerAlgebra/casn/Conferences/CICM-12/papers/UITP/paper-03.pdf"/>
+  </sd:Reference>
+  <sd:Reference rdf:about="http://cicm-conference.org/2012/rdf/Paper_1070">
+    <swc:relatedToEvent rdf:resource="http://cicm-conference.org/2012/rdf/track_uitp"/>
+    <dcterms:creator rdf:resource="http://symbolicdata.org/Data/Person/Rahli_V"/>
+    <dcterms:title>Interfacing with Proof Assistants for Domain Specific Programming Using EventML</dcterms:title>
+    <sd:paperURL rdf:resource="file:///home/graebe/ComputerAlgebra/casn/Conferences/CICM-12/papers/UITP/paper-04.pdf"/>
+  </sd:Reference>
+  <sd:Reference rdf:about="http://cicm-conference.org/2012/rdf/Paper_1071">
+    <swc:relatedToEvent rdf:resource="http://cicm-conference.org/2012/rdf/track_uitp"/>
+    <dcterms:creator rdf:resource="http://symbolicdata.org/Data/Person/Bassem_C"/>
+    <dcterms:creator rdf:resource="http://symbolicdata.org/Data/Person/Bestavros_A"/>
+    <dcterms:creator rdf:resource="http://symbolicdata.org/Data/Person/Kfoury_A"/>
+    <dcterms:creator rdf:resource="http://symbolicdata.org/Data/Person/Lapets_A"/>
+    <dcterms:creator rdf:resource="http://symbolicdata.org/Data/Person/Skowyra_R"/>
+    <dcterms:title>Towards an Infrastructure for Integrated Accessible Formal Reasoning Environments</dcterms:title>
+    <sd:paperURL rdf:resource="file:///home/graebe/ComputerAlgebra/casn/Conferences/CICM-12/papers/UITP/paper-05.pdf"/>
+  </sd:Reference>
+  <sd:Reference rdf:about="http://cicm-conference.org/2012/rdf/Paper_1072">
+    <swc:relatedToEvent rdf:resource="http://cicm-conference.org/2012/rdf/track_uitp"/>
+    <dcterms:creator rdf:resource="http://symbolicdata.org/Data/Person/Iancu_M"/>
+    <dcterms:creator rdf:resource="http://symbolicdata.org/Data/Person/Rabe_F"/>
+    <dcterms:title>An MMT-Based User-Interface</dcterms:title>
+    <sd:paperURL rdf:resource="file:///home/graebe/ComputerAlgebra/casn/Conferences/CICM-12/papers/UITP/paper-07.pdf"/>
+  </sd:Reference>
+  <sd:Reference rdf:about="http://cicm-conference.org/2012/rdf/Paper_1074">
+    <swc:relatedToEvent rdf:resource="http://cicm-conference.org/2012/rdf/track_openmath"/>
+    <dcterms:creator rdf:resource="http://symbolicdata.org/Data/Person/Reinhardt_H"/>
+    <dcterms:creator rdf:resource="http://symbolicdata.org/Data/Person/Wenzel_K"/>
+    <dcterms:title>Mathematical Computations for Linked Data Applications with OpenMath</dcterms:title>
+    <sd:paperURL rdf:resource="file:///home/graebe/ComputerAlgebra/casn/Conferences/CICM-12/papers/OM2012/paper_1.pdf"/>
+  </sd:Reference>
+  <sd:Reference rdf:about="http://cicm-conference.org/2012/rdf/Paper_1075">
+    <swc:relatedToEvent rdf:resource="http://cicm-conference.org/2012/rdf/track_openmath"/>
+    <dcterms:creator rdf:resource="http://symbolicdata.org/Data/Person/Caprotti_O"/>
+    <dcterms:creator rdf:resource="http://symbolicdata.org/Data/Person/Saludes_J"/>
+    <dcterms:title>The Gf Mathematical Grammar Library</dcterms:title>
+    <sd:paperURL rdf:resource="file:///home/graebe/ComputerAlgebra/casn/Conferences/CICM-12/papers/OM2012/paper_2.pdf"/>
+  </sd:Reference>
+  <sd:Reference rdf:about="http://cicm-conference.org/2012/rdf/Paper_1076">
+    <swc:relatedToEvent rdf:resource="http://cicm-conference.org/2012/rdf/track_openmath"/>
+    <dcterms:title>OpenMath Society Business Meeting (open to all workshop participants)</dcterms:title>
+  </sd:Reference>
+  <sd:Reference rdf:about="http://cicm-conference.org/2012/rdf/Paper_1077">
+    <swc:relatedToEvent rdf:resource="http://cicm-conference.org/2012/rdf/track_docprog"/>
+    <dcterms:creator rdf:resource="http://symbolicdata.org/Data/Person/Almomen_R"/>
+    <dcterms:title>Semantic Understanding of Mathematical Formulae in Documents</dcterms:title>
+  </sd:Reference>
+  <sd:Reference rdf:about="http://cicm-conference.org/2012/rdf/Paper_1078">
+    <swc:relatedToEvent rdf:resource="http://cicm-conference.org/2012/rdf/track_docprog"/>
+    <dcterms:creator rdf:resource="http://symbolicdata.org/Data/Person/Horozal_F"/>
+    <dcterms:title>Representing Declarative Languages and their Translations</dcterms:title>
+  </sd:Reference>
+  <sd:Reference rdf:about="http://cicm-conference.org/2012/rdf/Paper_1079">
+    <swc:relatedToEvent rdf:resource="http://cicm-conference.org/2012/rdf/track_docprog"/>
+    <dcterms:creator rdf:resource="http://symbolicdata.org/Data/Person/Hu_R"/>
+    <dcterms:title>Pen-Based Collaboration Tools for Mathematics</dcterms:title>
+  </sd:Reference>
+  <sd:Reference rdf:about="http://cicm-conference.org/2012/rdf/Paper_1080">
+    <swc:relatedToEvent rdf:resource="http://cicm-conference.org/2012/rdf/track_docprog"/>
+    <dcterms:creator rdf:resource="http://symbolicdata.org/Data/Person/Iacob_A"/>
+    <dcterms:title>Knowledge Management Integration in Computer-Aided Design</dcterms:title>
+  </sd:Reference>
+  <sd:Reference rdf:about="http://cicm-conference.org/2012/rdf/Paper_1081">
+    <swc:relatedToEvent rdf:resource="http://cicm-conference.org/2012/rdf/track_docprog"/>
+    <dcterms:creator rdf:resource="http://symbolicdata.org/Data/Person/Schubotz_M"/>
+    <dcterms:title>Content based Formula Search</dcterms:title>
+  </sd:Reference>
+  <sd:Reference rdf:about="http://cicm-conference.org/2012/rdf/Paper_1082">
+    <swc:relatedToEvent rdf:resource="http://cicm-conference.org/2012/rdf/track_docprog"/>
+    <dcterms:creator rdf:resource="http://symbolicdata.org/Data/Person/Wilson_D"/>
+    <dcterms:title>Real Geometry and Connectedness via Triangular Descriptions</dcterms:title>
+  </sd:Reference>
+  <swc:Role rdf:about="http://cicm-conference.org/2012/rdf/PublicityWorkshopChair">
+    <swc:heldBy rdf:resource="http://symbolicdata.org/Data/Person/Autexier_S"/>
+    <rdfs:label>Publicity and Workshop Chair</rdfs:label>
+  </swc:Role>
+  <swc:Role rdf:about="http://cicm-conference.org/2012/rdf/ResearchAdvisoryBoard">
+    <swc:heldBy rdf:resource="http://symbolicdata.org/Data/Person/Autexier_S"/>
+    <swc:heldBy rdf:resource="http://symbolicdata.org/Data/Person/Davenport_JH"/>
+    <swc:heldBy rdf:resource="http://symbolicdata.org/Data/Person/Ion_P"/>
+    <swc:heldBy rdf:resource="http://symbolicdata.org/Data/Person/Jeuring_J"/>
+    <swc:heldBy rdf:resource="http://symbolicdata.org/Data/Person/Kamareddine_F"/>
+    <swc:heldBy rdf:resource="http://symbolicdata.org/Data/Person/Sorge_V"/>
+    <swc:heldBy rdf:resource="http://symbolicdata.org/Data/Person/Windsteiger_W"/>
+    <rdfs:label>Research Advisory Board</rdfs:label>
+  </swc:Role>
+  <swc:Chair rdf:about="http://cicm-conference.org/2012/rdf/SysProjects-Chair">
+    <swc:heldBy rdf:resource="http://symbolicdata.org/Data/Person/Sorge_V"/>
+    <rdfs:label>SysProjects Chair</rdfs:label>
+  </swc:Chair>
+  <swc:Chair rdf:about="http://cicm-conference.org/2012/rdf/UITP-Chair">
+    <swc:heldBy rdf:resource="http://symbolicdata.org/Data/Person/Kaliszyk_C"/>
+    <swc:heldBy rdf:resource="http://symbolicdata.org/Data/Person/Lueth_C"/>
+    <rdfs:label>UITP Chair</rdfs:label>
+  </swc:Chair>
+  <swc:Role rdf:about="http://cicm-conference.org/2012/rdf/UITP-PC">
+    <swc:heldBy rdf:resource="http://symbolicdata.org/Data/Person/Autexier_S"/>
+    <swc:heldBy rdf:resource="http://symbolicdata.org/Data/Person/Benzmueller_C"/>
+    <swc:heldBy rdf:resource="http://symbolicdata.org/Data/Person/Geuvers_H"/>
+    <swc:heldBy rdf:resource="http://symbolicdata.org/Data/Person/Kaliszyk_C"/>
+    <swc:heldBy rdf:resource="http://symbolicdata.org/Data/Person/Lueth_C"/>
+    <swc:heldBy rdf:resource="http://symbolicdata.org/Data/Person/Naumowicz_A"/>
+    <swc:heldBy rdf:resource="http://symbolicdata.org/Data/Person/SacerdotiCoen_C"/>
+    <swc:heldBy rdf:resource="http://symbolicdata.org/Data/Person/Sutcliffe_G"/>
+    <swc:heldBy rdf:resource="http://symbolicdata.org/Data/Person/Tassi_E"/>
+    <swc:heldBy rdf:resource="http://symbolicdata.org/Data/Person/Urban_J"/>
+    <swc:heldBy rdf:resource="http://symbolicdata.org/Data/Person/Wenzel_M"/>
+    <rdfs:label>UITP Program Committee</rdfs:label>
+  </swc:Role>
+  <swc:TrackEvent rdf:about="http://cicm-conference.org/2012/rdf/track_aisc">
+    <swc:hasRole rdf:resource="http://cicm-conference.org/2012/rdf/AISC-Chair"/>
+    <rdfs:label>CICM-12 Track A: AISC</rdfs:label>
+  </swc:TrackEvent>
+  <swc:TrackEvent rdf:about="http://cicm-conference.org/2012/rdf/track_calculemus">
+    <swc:hasRole rdf:resource="http://cicm-conference.org/2012/rdf/Calculemus-Chair"/>
+    <rdfs:label>CICM-12 Track B: Calculemus</rdfs:label>
+  </swc:TrackEvent>
+  <swc:TrackEvent rdf:about="http://cicm-conference.org/2012/rdf/track_dml">
+    <swc:hasRole rdf:resource="http://cicm-conference.org/2012/rdf/DML-Chair"/>
+    <rdfs:label>CICM-12 Track C: DML</rdfs:label>
+  </swc:TrackEvent>
+  <swc:TrackEvent rdf:about="http://cicm-conference.org/2012/rdf/track_docprog">
+    <swc:hasRole rdf:resource="http://cicm-conference.org/2012/rdf/ResearchAdvisoryBoard"/>
+    <rdfs:label>CICM-12 Doctoral Programme</rdfs:label>
+  </swc:TrackEvent>
+  <swc:TrackEvent rdf:about="http://cicm-conference.org/2012/rdf/track_invited">
+    <rdfs:label>CICM-12 Invited Talks</rdfs:label>
+  </swc:TrackEvent>
+  <swc:TrackEvent rdf:about="http://cicm-conference.org/2012/rdf/track_mathui">
+    <swc:hasRole rdf:resource="http://cicm-conference.org/2012/rdf/MathUI-Chair"/>
+    <swc:hasRole rdf:resource="http://cicm-conference.org/2012/rdf/MathUI-PC"/>
+    <rdfs:label>CICM-12 Workshop on Math User Interfaces</rdfs:label>
+    <ical:url rdf:resource="http://www.cermat.org/events/MathUI/12/"/>
+  </swc:TrackEvent>
+  <swc:TrackEvent rdf:about="http://cicm-conference.org/2012/rdf/track_mir">
+    <swc:hasRole rdf:resource="http://cicm-conference.org/2012/rdf/MIR-Chair"/>
+    <swc:hasRole rdf:resource="http://cicm-conference.org/2012/rdf/MIR-PC"/>
+    <rdfs:label>MIR 2012 Workshop on Mathematics Information Retrieval</rdfs:label>
+  </swc:TrackEvent>
+  <swc:TrackEvent rdf:about="http://cicm-conference.org/2012/rdf/track_mkm">
+    <swc:hasRole rdf:resource="http://cicm-conference.org/2012/rdf/MKM-Chair"/>
+    <rdfs:label>CICM-12 Track D: MKM</rdfs:label>
+  </swc:TrackEvent>
+  <swc:TrackEvent rdf:about="http://cicm-conference.org/2012/rdf/track_openmath">
+    <rdfs:label>24th OpenMath Workshop</rdfs:label>
+  </swc:TrackEvent>
+  <swc:TrackEvent rdf:about="http://cicm-conference.org/2012/rdf/track_regular">
+    <rdfs:label>CICM-12 Regular Papers</rdfs:label>
+  </swc:TrackEvent>
+  <swc:TrackEvent rdf:about="http://cicm-conference.org/2012/rdf/track_sysprojects">
+    <swc:hasRole rdf:resource="http://cicm-conference.org/2012/rdf/SysProjects-Chair"/>
+    <rdfs:label>CICM-12 Track E: Systems and Projects</rdfs:label>
+  </swc:TrackEvent>
+  <swc:TrackEvent rdf:about="http://cicm-conference.org/2012/rdf/track_uitp">
+    <swc:hasRole rdf:resource="http://cicm-conference.org/2012/rdf/UITP-Chair"/>
+    <swc:hasRole rdf:resource="http://cicm-conference.org/2012/rdf/UITP-PC"/>
+    <rdfs:label>UITP-12 - 10th International Workshop On User Interfaces for Theorem Provers</rdfs:label>
+  </swc:TrackEvent>
+  <swc:TrackEvent rdf:about="http://cicm-conference.org/2012/rdf/track_wip">
+    <rdfs:label>CICM-12 Work in Progress Section</rdfs:label>
+  </swc:TrackEvent>
+</rdf:RDF>

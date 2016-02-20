@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+   xmlns:dcterms="http://purl.org/dc/terms/"
+   xmlns:ical="http://www.w3.org/2002/12/cal/ical#"
+   xmlns:owl="http://www.w3.org/2002/07/owl#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+   xmlns:sd="http://symbolicdata.org/Data/Model#"
+   xmlns:sdp="http://symbolicdata.org/Data/Person/"
+   xmlns:swc="http://data.semanticweb.org/ns/swc/ontology#"
+   xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+   xmlns="http://computeralgebra.de/BadBoll-2014/">
+  <swc:ConferenceEvent rdf:about="http://computeralgebra.de/BadBoll-2014/General">
+    <swc:hasLocation rdf:resource="http://de.dbpedia.org/resource/Evangelische_Akademie_Bad_Boll"/>
+    <swc:hasRole rdf:resource="http://computeralgebra.de/BadBoll-2014/LocalArrangementsChair"/>
+    <sd:relatesTo rdf:resource="http://symbolicdata.org/Data/Conference/BadBoll-2014"/>
+    <rdfs:label>BadBoll-2014: Annual conference of the DFG priority project SPP 1489</rdfs:label>
+    <ical:description>Annual conference of the DFG priority project SPP 1489</ical:description>
+    <ical:dtend rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2014-03-07</ical:dtend>
+    <ical:dtstart rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2014-03-03</ical:dtstart>
+    <ical:location>Evangelische Akademie Bad Boll, Germany</ical:location>
+    <ical:url rdf:resource="http://www.mathematik.uni-stuttgart.de/~geckmf/spp1489_2014"/>
+  </swc:ConferenceEvent>
+  <swc:Role rdf:about="http://computeralgebra.de/BadBoll-2014/LocalArrangementsChair">
+    <swc:heldBy rdf:resource="http://symbolicdata.org/Data/Person/Geck_M"/>
+    <swc:heldBy rdf:resource="http://symbolicdata.org/Data/Person/Kimmerle_W"/>
+    <swc:heldBy rdf:resource="http://symbolicdata.org/Data/Person/Koenig_S"/>
+    <swc:heldBy rdf:resource="http://symbolicdata.org/Data/Person/Shalile_A"/>
+    <swc:heldBy rdf:resource="http://symbolicdata.org/Data/Person/Thiel_U"/>
+    <rdfs:label>Local Arrangements Chair</rdfs:label>
+  </swc:Role>
+  <swc:TalkEvent rdf:about="http://computeralgebra.de/BadBoll-2014/Talk_1001">
+    <swc:relatedToEvent rdf:resource="http://computeralgebra.de/BadBoll-2014/General"/>
+    <dcterms:creator rdf:resource="http://symbolicdata.org/Data/Person/Decker_W"/>
+    <dcterms:title>Ein neues Journal für computational algebra</dcterms:title>
+    <sd:slidesURL rdf:resource="http://www.mathematik.uni-stuttgart.de/~geckmf/spp1489_2014/slides/jsag-BadBoll.pdf"/>
+  </swc:TalkEvent>
+  <swc:TalkEvent rdf:about="http://computeralgebra.de/BadBoll-2014/Talk_1002">
+    <swc:relatedToEvent rdf:resource="http://computeralgebra.de/BadBoll-2014/General"/>
+    <dcterms:creator rdf:resource="http://symbolicdata.org/Data/Person/Boeckle_G"/>
+    <dcterms:title>Modular parametrization and multiplicative integrals over function fields</dcterms:title>
+  </swc:TalkEvent>
+  <swc:TalkEvent rdf:about="http://computeralgebra.de/BadBoll-2014/Talk_1003">
+    <swc:relatedToEvent rdf:resource="http://computeralgebra.de/BadBoll-2014/General"/>
+    <dcterms:creator rdf:resource="http://symbolicdata.org/Data/Person/Boehm_J"/>
+    <dcterms:title>Tropical mirror symmetry for elliptic curves</dcterms:title>
+    <sd:slidesURL rdf:resource="http://www.mathematik.uni-stuttgart.de/~geckmf/spp1489_2014/slides/TropicalMirrorElliptic.pdf"/>
+  </swc:TalkEvent>
+  <swc:TalkEvent rdf:about="http://computeralgebra.de/BadBoll-2014/Talk_1004">
+    <swc:relatedToEvent rdf:resource="http://computeralgebra.de/BadBoll-2014/General"/>
+    <dcterms:creator rdf:resource="http://symbolicdata.org/Data/Person/Barakat_M"/>
+    <dcterms:title>On the Ext-computability of Serre quotient categories</dcterms:title>
+    <sd:slidesURL rdf:resource="http://www.mathematik.uni-stuttgart.de/~geckmf/spp1489_2014/slides/Barakat_ExtComputability_handout.pdf"/>
+  </swc:TalkEvent>
+  <swc:TalkEvent rdf:about="http://computeralgebra.de/BadBoll-2014/Talk_1005">
+    <swc:relatedToEvent rdf:resource="http://computeralgebra.de/BadBoll-2014/General"/>
+    <dcterms:creator rdf:resource="http://symbolicdata.org/Data/Person/Derenthal_U"/>
+    <dcterms:title>Cox rings and rational points</dcterms:title>
+  </swc:TalkEvent>
+  <swc:TalkEvent rdf:about="http://computeralgebra.de/BadBoll-2014/Talk_1006">
+    <swc:relatedToEvent rdf:resource="http://computeralgebra.de/BadBoll-2014/General"/>
+    <dcterms:creator rdf:resource="http://symbolicdata.org/Data/Person/vanLeeuwen_M"/>
+    <dcterms:title>The Atlas of Lie groups project</dcterms:title>
+  </swc:TalkEvent>
+  <swc:TalkEvent rdf:about="http://computeralgebra.de/BadBoll-2014/Talk_1007">
+    <swc:relatedToEvent rdf:resource="http://computeralgebra.de/BadBoll-2014/General"/>
+    <dcterms:creator rdf:resource="http://symbolicdata.org/Data/Person/Freitas_N"/>
+    <dcterms:title>The Fermat equation over totally real fields</dcterms:title>
+  </swc:TalkEvent>
+  <swc:TalkEvent rdf:about="http://computeralgebra.de/BadBoll-2014/Talk_1008">
+    <swc:relatedToEvent rdf:resource="http://computeralgebra.de/BadBoll-2014/General"/>
+    <dcterms:creator rdf:resource="http://symbolicdata.org/Data/Person/Stoll_M"/>
+    <dcterms:title>Most odd degree hyperelliptic curves have only one rational point</dcterms:title>
+    <sd:slidesURL rdf:resource="http://www.mathematik.uni-stuttgart.de/~geckmf/spp1489_2014/slides/StollBadBol.pdf"/>
+  </swc:TalkEvent>
+  <swc:TalkEvent rdf:about="http://computeralgebra.de/BadBoll-2014/Talk_1009">
+    <swc:relatedToEvent rdf:resource="http://computeralgebra.de/BadBoll-2014/General"/>
+    <dcterms:creator rdf:resource="http://symbolicdata.org/Data/Person/Graebe_HG"/>
+    <dcterms:title>The SymbolicData Project</dcterms:title>
+    <sd:slidesURL rdf:resource="http://symbolicdata.uni-leipzig.de/Presentations/BadBoll-14.pdf"/>
+  </swc:TalkEvent>
+  <swc:TalkEvent rdf:about="http://computeralgebra.de/BadBoll-2014/Talk_1010">
+    <swc:relatedToEvent rdf:resource="http://computeralgebra.de/BadBoll-2014/General"/>
+    <dcterms:creator rdf:resource="http://symbolicdata.org/Data/Person/Behrends_R"/>
+    <dcterms:title>Parallelization of Computer Algebra Systems: Experiences and Challenges</dcterms:title>
+  </swc:TalkEvent>
+  <swc:TalkEvent rdf:about="http://computeralgebra.de/BadBoll-2014/Talk_1011">
+    <swc:relatedToEvent rdf:resource="http://computeralgebra.de/BadBoll-2014/General"/>
+    <dcterms:creator rdf:resource="http://symbolicdata.org/Data/Person/Eder_C"/>
+    <dcterms:title>Signature-based Groebner basis algorithms</dcterms:title>
+    <sd:slidesURL rdf:resource="http://www.mathematik.uni-stuttgart.de/~geckmf/spp1489_2014/slides/eder-signature-based.pdf"/>
+  </swc:TalkEvent>
+  <swc:TalkEvent rdf:about="http://computeralgebra.de/BadBoll-2014/Talk_1012">
+    <swc:relatedToEvent rdf:resource="http://computeralgebra.de/BadBoll-2014/General"/>
+    <dcterms:creator rdf:resource="http://symbolicdata.org/Data/Person/Hart_WB"/>
+    <dcterms:title>Antics in Number Theory</dcterms:title>
+  </swc:TalkEvent>
+  <swc:TalkEvent rdf:about="http://computeralgebra.de/BadBoll-2014/Talk_1013">
+    <swc:relatedToEvent rdf:resource="http://computeralgebra.de/BadBoll-2014/General"/>
+    <dcterms:creator rdf:resource="http://symbolicdata.org/Data/Person/Kastner_L"/>
+    <dcterms:title>Toric geometry in polymake</dcterms:title>
+  </swc:TalkEvent>
+  <swc:TalkEvent rdf:about="http://computeralgebra.de/BadBoll-2014/Talk_1014">
+    <swc:relatedToEvent rdf:resource="http://computeralgebra.de/BadBoll-2014/General"/>
+    <dcterms:creator rdf:resource="http://symbolicdata.org/Data/Person/Rossmann_T"/>
+    <dcterms:title>Computing topological zeta functions of groups, rings and modules</dcterms:title>
+  </swc:TalkEvent>
+  <swc:TalkEvent rdf:about="http://computeralgebra.de/BadBoll-2014/Talk_1015">
+    <swc:relatedToEvent rdf:resource="http://computeralgebra.de/BadBoll-2014/General"/>
+    <dcterms:creator rdf:resource="http://symbolicdata.org/Data/Person/Conca_A"/>
+    <dcterms:title>Universal Groebner bases for ideals of maximal minors</dcterms:title>
+    <sd:slidesURL rdf:resource="http://www.mathematik.uni-stuttgart.de/~geckmf/spp1489_2014/slides/ConcaBadBoll.pdf"/>
+  </swc:TalkEvent>
+  <swc:TalkEvent rdf:about="http://computeralgebra.de/BadBoll-2014/Talk_1016">
+    <swc:relatedToEvent rdf:resource="http://computeralgebra.de/BadBoll-2014/General"/>
+    <dcterms:creator rdf:resource="http://symbolicdata.org/Data/Person/deWolff_T"/>
+    <dcterms:title>Amoebas, Nonnegative Polynomials and Sums of Squares Supported on Circuits</dcterms:title>
+  </swc:TalkEvent>
+  <swc:TalkEvent rdf:about="http://computeralgebra.de/BadBoll-2014/Talk_1017">
+    <swc:relatedToEvent rdf:resource="http://computeralgebra.de/BadBoll-2014/General"/>
+    <dcterms:creator rdf:resource="http://symbolicdata.org/Data/Person/Grigoriev_D"/>
+    <dcterms:title>Cluster algebras and subtraction-free computations of arborescences and Schur polynomials</dcterms:title>
+  </swc:TalkEvent>
+  <swc:TalkEvent rdf:about="http://computeralgebra.de/BadBoll-2014/Talk_1018">
+    <swc:relatedToEvent rdf:resource="http://computeralgebra.de/BadBoll-2014/General"/>
+    <dcterms:creator rdf:resource="http://symbolicdata.org/Data/Person/Braun_O"/>
+    <dcterms:creator rdf:resource="http://symbolicdata.org/Data/Person/Nebe_G"/>
+    <dcterms:creator rdf:resource="http://symbolicdata.org/Data/Person/Schoennenbeck_S"/>
+    <dcterms:title>On unit groups of orders</dcterms:title>
+    <sd:slidesURL rdf:resource="http://www.mathematik.uni-stuttgart.de/~geckmf/spp1489_2014/slides/BraunVor.pdf"/>
+  </swc:TalkEvent>
+  <swc:TalkEvent rdf:about="http://computeralgebra.de/BadBoll-2014/Talk_1019">
+    <swc:relatedToEvent rdf:resource="http://computeralgebra.de/BadBoll-2014/General"/>
+    <dcterms:creator rdf:resource="http://symbolicdata.org/Data/Person/vanGelder_I"/>
+    <dcterms:title>Algorithmic developments for units and idempotents in integral group rings</dcterms:title>
+    <sd:slidesURL rdf:resource="http://www.mathematik.uni-stuttgart.de/~geckmf/spp1489_2014/slides/VANGELDER.pdf"/>
+  </swc:TalkEvent>
+  <swc:TalkEvent rdf:about="http://computeralgebra.de/BadBoll-2014/Talk_1020">
+    <swc:relatedToEvent rdf:resource="http://computeralgebra.de/BadBoll-2014/General"/>
+    <dcterms:creator rdf:resource="http://symbolicdata.org/Data/Person/Baechle_A"/>
+    <dcterms:title>The HeLP method: a computational approach to torison units in group rings</dcterms:title>
+    <sd:slidesURL rdf:resource="http://www.mathematik.uni-stuttgart.de/~geckmf/spp1489_2014/slides/baechle_bad_boll_2014.pdf"/>
+  </swc:TalkEvent>
+  <swc:TalkEvent rdf:about="http://computeralgebra.de/BadBoll-2014/Talk_1021">
+    <swc:relatedToEvent rdf:resource="http://computeralgebra.de/BadBoll-2014/General"/>
+    <dcterms:creator rdf:resource="http://symbolicdata.org/Data/Person/Hofmann_T"/>
+    <dcterms:title>On the integrality of representations of finite groups</dcterms:title>
+  </swc:TalkEvent>
+  <swc:TalkEvent rdf:about="http://computeralgebra.de/BadBoll-2014/Talk_1022">
+    <swc:relatedToEvent rdf:resource="http://computeralgebra.de/BadBoll-2014/General"/>
+    <dcterms:creator rdf:resource="http://symbolicdata.org/Data/Person/Kirschmer_M"/>
+    <dcterms:title>Unimodular lattices with small mass</dcterms:title>
+    <sd:slidesURL rdf:resource="http://www.mathematik.uni-stuttgart.de/~geckmf/spp1489_2014/slides/kirschmer.pdf"/>
+  </swc:TalkEvent>
+  <swc:TalkEvent rdf:about="http://computeralgebra.de/BadBoll-2014/Talk_1023">
+    <swc:relatedToEvent rdf:resource="http://computeralgebra.de/BadBoll-2014/General"/>
+    <dcterms:creator rdf:resource="http://symbolicdata.org/Data/Person/Bruns_W"/>
+    <dcterms:title>Recent extensions of Normaliz</dcterms:title>
+    <sd:slidesURL rdf:resource="http://www.mathematik.uni-stuttgart.de/~geckmf/spp1489_2014/slides/BrunsBadBoll.pdf"/>
+  </swc:TalkEvent>
+  <swc:TalkEvent rdf:about="http://computeralgebra.de/BadBoll-2014/Talk_1024">
+    <swc:relatedToEvent rdf:resource="http://computeralgebra.de/BadBoll-2014/General"/>
+    <dcterms:creator rdf:resource="http://symbolicdata.org/Data/Person/King_S"/>
+    <dcterms:title>Potential applications of non-commutative F 5 algorithms</dcterms:title>
+  </swc:TalkEvent>
+  <swc:TalkEvent rdf:about="http://computeralgebra.de/BadBoll-2014/Talk_1025">
+    <swc:relatedToEvent rdf:resource="http://computeralgebra.de/BadBoll-2014/General"/>
+    <dcterms:creator rdf:resource="http://symbolicdata.org/Data/Person/Pieropan_M"/>
+    <dcterms:title>Integral models of generalised Del Pezzo surfaces and their universal torsors</dcterms:title>
+    <sd:slidesURL rdf:resource="http://www.mathematik.uni-stuttgart.de/~geckmf/spp1489_2014/slides/BadBoll2014_Pieropan.pdf"/>
+  </swc:TalkEvent>
+  <swc:TalkEvent rdf:about="http://computeralgebra.de/BadBoll-2014/Talk_1026">
+    <swc:relatedToEvent rdf:resource="http://computeralgebra.de/BadBoll-2014/General"/>
+    <dcterms:creator rdf:resource="http://symbolicdata.org/Data/Person/LangeHegermann_M"/>
+    <dcterms:title>Counting solutions of differential equations</dcterms:title>
+    <sd:slidesURL rdf:resource="http://www.mathematik.uni-stuttgart.de/~geckmf/spp1489_2014/slides/langehegermannbadboll.pdf"/>
+  </swc:TalkEvent>
+  <swc:TalkEvent rdf:about="http://computeralgebra.de/BadBoll-2014/Talk_1027">
+    <swc:relatedToEvent rdf:resource="http://computeralgebra.de/BadBoll-2014/General"/>
+    <dcterms:creator rdf:resource="http://symbolicdata.org/Data/Person/Greuel_GM"/>
+    <dcterms:title>Vorstellung von swMATH</dcterms:title>
+    <sd:slidesURL rdf:resource="http://www.mathematik.uni-stuttgart.de/~geckmf/spp1489_2014/slides/GMG_swMATH-Mar2014.pdf"/>
+  </swc:TalkEvent>
+  <swc:TalkEvent rdf:about="http://computeralgebra.de/BadBoll-2014/Talk_1028">
+    <swc:relatedToEvent rdf:resource="http://computeralgebra.de/BadBoll-2014/General"/>
+    <dcterms:creator rdf:resource="http://symbolicdata.org/Data/Person/Stump_C"/>
+    <dcterms:title>Computer-aided proof for Coxeter-Catalan structures</dcterms:title>
+    <sd:slidesURL rdf:resource="http://www.mathematik.uni-stuttgart.de/~geckmf/spp1489_2014/slides/ChristianStumpCoxeterCatalanCombinatorics.pdf"/>
+  </swc:TalkEvent>
+  <swc:TalkEvent rdf:about="http://computeralgebra.de/BadBoll-2014/Talk_1029">
+    <swc:relatedToEvent rdf:resource="http://computeralgebra.de/BadBoll-2014/General"/>
+    <dcterms:creator rdf:resource="http://symbolicdata.org/Data/Person/Amend_N"/>
+    <dcterms:title>Inductively free restrictions of reflection arrangements</dcterms:title>
+    <sd:slidesURL rdf:resource="http://www.mathematik.uni-stuttgart.de/~geckmf/spp1489_2014/slides/amend.pdf"/>
+  </swc:TalkEvent>
+  <swc:TalkEvent rdf:about="http://computeralgebra.de/BadBoll-2014/Talk_1030">
+    <swc:relatedToEvent rdf:resource="http://computeralgebra.de/BadBoll-2014/General"/>
+    <dcterms:creator rdf:resource="http://symbolicdata.org/Data/Person/Horn_M"/>
+    <dcterms:title>Symbolic computations with p-groups and Lie rings</dcterms:title>
+  </swc:TalkEvent>
+  <swc:TalkEvent rdf:about="http://computeralgebra.de/BadBoll-2014/Talk_1031">
+    <swc:relatedToEvent rdf:resource="http://computeralgebra.de/BadBoll-2014/General"/>
+    <dcterms:creator rdf:resource="http://symbolicdata.org/Data/Person/Moede_T"/>
+    <dcterms:title>Coclass theory for nilpotent associative algebras</dcterms:title>
+  </swc:TalkEvent>
+  <swc:TalkEvent rdf:about="http://computeralgebra.de/BadBoll-2014/Talk_1032">
+    <swc:relatedToEvent rdf:resource="http://computeralgebra.de/BadBoll-2014/General"/>
+    <dcterms:creator rdf:resource="http://symbolicdata.org/Data/Person/Distler_A"/>
+    <dcterms:title>Konstruktion von Gruppenerweiterungen mit besonderen Eigenschaften</dcterms:title>
+  </swc:TalkEvent>
+  <swc:TalkEvent rdf:about="http://computeralgebra.de/BadBoll-2014/Talk_1033">
+    <swc:relatedToEvent rdf:resource="http://computeralgebra.de/BadBoll-2014/General"/>
+    <dcterms:creator rdf:resource="http://symbolicdata.org/Data/Person/Keicher_S"/>
+    <dcterms:title>Computations with Mori dream spaces</dcterms:title>
+  </swc:TalkEvent>
+  <swc:TalkEvent rdf:about="http://computeralgebra.de/BadBoll-2014/Talk_1034">
+    <swc:relatedToEvent rdf:resource="http://computeralgebra.de/BadBoll-2014/General"/>
+    <dcterms:creator rdf:resource="http://symbolicdata.org/Data/Person/Lorenz_B"/>
+    <dcterms:title>Smooth Gorenstein polytypes of high index</dcterms:title>
+  </swc:TalkEvent>
+  <swc:TalkEvent rdf:about="http://computeralgebra.de/BadBoll-2014/Talk_1035">
+    <swc:relatedToEvent rdf:resource="http://computeralgebra.de/BadBoll-2014/General"/>
+    <dcterms:creator rdf:resource="http://symbolicdata.org/Data/Person/Husert_D"/>
+    <dcterms:title>Similarity of semi-simple integral matrices</dcterms:title>
+  </swc:TalkEvent>
+  <swc:TalkEvent rdf:about="http://computeralgebra.de/BadBoll-2014/Talk_1036">
+    <swc:relatedToEvent rdf:resource="http://computeralgebra.de/BadBoll-2014/General"/>
+    <dcterms:creator rdf:resource="http://symbolicdata.org/Data/Person/Roehrle_G"/>
+    <dcterms:title>Addition-Deletion Theorems for Factorisations of Orlik-Solomon Algebras and Nice Arrangements</dcterms:title>
+    <sd:slidesURL rdf:resource="http://www.mathematik.uni-stuttgart.de/~geckmf/spp1489_2014/slides/badboll-roehrle.pdf"/>
+  </swc:TalkEvent>
+</rdf:RDF>
