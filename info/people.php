@@ -1,0 +1,34 @@
+<?php
+/**
+ * User: Hans-Gert Gräbe
+ * Date: 2015-07-26
+ */
+
+include_once("layout.php");
+include_once("php/People.php");
+
+$content='      
+<div class="container">
+<h1 align="center">People</h1>
+
+<p>The following list of academic people working in Computer Algebra is
+extracted from the SymbolicData <a href="http://symbolicdata.org/Data/People/"
+>CASN People Database</a>.  </p>
+
+<p>The CASN Database contains more than 1000 instances of foaf:Person (as of
+Febr. 2016).  In 2013 we identified in a joint effort with ZBMath (Wolfram
+Sperber) the author strings of 347 persons within the author disambiguation
+system of the Zentralblatt.  </p>
+
+<p>For performance reasons the output is restricted to about 20 entries (100
+RDF triples).  Use HTTP Get Parameter as in
+<code>info/people.php?name=rixa&affil=obuv</code> to display available
+information about people with foaf:name containing the string "rixa" and
+sd:affiliation containing the string "obuv". </p>
+
+'.getPeople($_GET['name'],$_GET['affil']).'
+</div>
+';
+echo showPage($content);
+
+?>

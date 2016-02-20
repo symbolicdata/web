@@ -45,13 +45,16 @@ function pastConferences() {
   EasyRdf_Namespace::set('ical', 'http://www.w3.org/2002/12/cal/ical#');
   EasyRdf_Namespace::set('sd', 'http://symbolicdata.org/Data/Model#');
 
+  $jahr  = (empty($_GET['year']))  ? "2012" : $_GET['year'] ;
+  
   $query = '
 PREFIX sd: <http://symbolicdata.org/Data/Model#>
 PREFIX ical: <http://www.w3.org/2002/12/cal/ical#>
 construct { ?a ?b ?c . }
 from <http://symbolicdata.org/Data/PastConferences/>
-Where { ?a a sd:Event ; ?b ?c . } 
-';
+Where { ?a a sd:Event ; ?b ?c ; ical:dtstart ?d . 
+filter regex(?d, "'.$jahr.'")
+} ';
   
   $sparql = new EasyRdf_Sparql_Client('http://symbolicdata.org:8890/sparql');
   $result=$sparql->query($query); // a CONSTRUCT query returns an EasyRdf_Graph

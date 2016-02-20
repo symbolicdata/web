@@ -17,6 +17,10 @@ Database</a>. The heading of each conference entry links to the corresponding
 CASN Database entry that may contain more information (organizers, invited
 speakers, deadlines etc.) about the conference. </p>
 
+<p>The information is displayed for the year 2012. Use HTTP Get Parameter as in
+<code>info/pc.php?year=2002</code> to display available information for another
+year. </p>
+
 '.pastConferences().'
 </div>
 ';
