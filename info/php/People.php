@@ -14,8 +14,8 @@ Where {
 ?a a foaf:Person ; ?b ?c; foaf:name $n . 
 optional { ?a sd:affiliation $f . } 
 optional { ?a sd:hasZMathSearchString $z . } 
-filter regex(?n, "'.$name.'")
-filter regex(?f, "'.$affil.'")
+filter regex(?n, "'.$name.'","i")
+filter regex(?f, "'.$affil.'","i")
 }  
 LIMIT 100';
   

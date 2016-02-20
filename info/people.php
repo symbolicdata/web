@@ -22,9 +22,9 @@ system of the Zentralblatt.  </p>
 
 <p>For performance reasons the output is restricted to about 20 entries (100
 RDF triples).  Use HTTP Get Parameter as in
-<code>info/people.php?name=rixa&affil=obuv</code> to display available
-information about people with foaf:name containing the string "rixa" and
-sd:affiliation containing the string "obuv". </p>
+<code>info/people.php?name=G&affil=J</code> to display available information
+about people with foaf:name containing the string "G" and sd:affiliation
+containing the string "J". The search is case insensitive.</p>
 
 '.getPeople($_GET['name'],$_GET['affil']).'
 </div>
