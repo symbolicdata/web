@@ -1,4 +1,8 @@
 <?php 
+/**
+ * User: Hans-Gert Gräbe
+ * Date: 2016-02-20
+ */
 
 require_once("lib/EasyRdf.php");
 
