@@ -12,8 +12,9 @@ $content='
 <p>At this site we demonstrate how the RDF based information maintained within
 the CASN can be explored and included into a web page using small PHP scripts.
 Our demonstration site is based on the the <a href="http://getbootstrap.com"
->Bootstrap Framework</a> and the <a href="http://www.easyrdf.org/" >EasyRdf PHP
-library</a>.  The code will be available from our git repo soon. </p>
+>Bootstrap Framework</a> and the <a href="http://www.easyrdf.org/" >EasyRdf
+PHP library</a>.  The code is available from
+our <a href="https://github.com/symbolicdata/web">git repo</a>. </p>
 
 </div>
 ';
