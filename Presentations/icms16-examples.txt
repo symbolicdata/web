@@ -1,4 +1,4 @@
-# Example Queries
+# Example Queries at http://symbolicdata.org:8890/sparql
 
 # Fano Polytopes with lattice volume and number of facets bounds
 
