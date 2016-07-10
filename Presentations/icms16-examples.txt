@@ -1,0 +1,59 @@
+# Example Queries
+
+# Fano Polytopes with lattice volume and number of facets bounds
+
+PREFIX sd: <http://symbolicdata.org/Data/Model#> 
+select ?a ?v ?cd ?nfc ?fn
+from <http://symbolicdata.org/Data/FanoPolytopes/>
+where {
+?a a sd:FanoPolytope ;
+sd:cone_dim ?cd ; sd:n_facets ?nfc ; sd:hasFileName ?fn ; 
+sd:lattice_volume ?v . 
+filter ((xsd:integer(?v)<100) and (xsd:integer(?nfc)<7))
+}
+
+# Birkhoff Polytopes with 4 nodes and bounded number of vertices
+
+PREFIX sd: <http://symbolicdata.org/Data/Model#> 
+select ?n ?v ?fn
+from <http://symbolicdata.org/Data/BirkhoffPolytopes/>
+where {
+?a a sd:BirkhoffPolytope ;
+sd:hasNodes ?n ; sd:hasVertices ?v; sd:hasPolymakeFile ?fn . 
+filter ((xsd:integer(?n)=4) and (xsd:integer(?v)<20))
+}
+order by desc(xsd:integer(?v))
+
+# Nilpotent transitive groups of order 32
+
+PREFIX sd: <http://symbolicdata.org/Data/Model#> 
+select ?n ?o ?url
+from <http://symbolicdata.org/Data/TransitiveGroups/>
+where {
+?a a sd:TransitiveGroup ; 
+sd:hasProperty sd:nilpotent; sd:hasName ?n ; sd:hasOrder ?o ;
+sd:hasURL ?url .  
+filter (xsd:integer(?o)=32)
+}
+
+# Number of nilpotent transitive groups of given order (in the database)
+
+PREFIX sd: <http://symbolicdata.org/Data/Model#> 
+select ?o as order count(?n) as #
+from <http://symbolicdata.org/Data/TransitiveGroups/>
+where {
+?a a sd:TransitiveGroup ; 
+sd:hasProperty sd:nilpotent; sd:hasOrder ?o .  
+}
+
+# Inspect special examples
+
+PREFIX sd: <http://symbolicdata.org/Data/Model#> 
+select ?a 
+from <http://symbolicdata.org/Data/TransitiveGroups/>
+where {
+?a a sd:TransitiveGroup ; 
+sd:hasProperty sd:nilpotent; sd:hasOrder 162 .  
+}
+
+
