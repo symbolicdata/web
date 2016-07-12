@@ -1,3 +1,9 @@
+# Show dependence of the notion of degree list and length list upon the
+  interpretation of the ambient polynomial ring
+
+http://symbolicdata.org/Data/Ideal/Geometry.Butterfly_3
+
+
 # Example Queries at http://symbolicdata.org:8890/sparql
 
 # Fano Polytopes with lattice volume and number of facets bounds
@@ -55,5 +61,7 @@ where {
 ?a a sd:TransitiveGroup ; 
 sd:hasProperty sd:nilpotent; sd:hasOrder 162 .  
 }
+
+# Example from the CA People database:
 
 
