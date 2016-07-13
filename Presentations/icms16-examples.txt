@@ -45,7 +45,7 @@ filter (xsd:integer(?o)=32)
 # Number of nilpotent transitive groups of given order (in the database)
 
 PREFIX sd: <http://symbolicdata.org/Data/Model#> 
-select ?o as order count(?n) as #
+select ?o as ?order count(?a) as ?count
 from <http://symbolicdata.org/Data/TransitiveGroups/>
 where {
 ?a a sd:TransitiveGroup ; 
