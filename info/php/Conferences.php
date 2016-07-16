@@ -9,10 +9,12 @@ function upcomingConferences() {
   $query = '
 PREFIX sd: <http://symbolicdata.org/Data/Model#>
 PREFIX ical: <http://www.w3.org/2002/12/cal/ical#>
-construct { ?a ?b ?c . }
+construct { ?a ?b ?c . ?a sd:Series ?a2 . }
 from <http://symbolicdata.org/Data/UpcomingConferences/>
 from <http://symbolicdata.org/Data/ConferenceSeries/>
-Where { ?a a sd:UpcomingConference ; ?b ?c . } 
+Where { ?a a sd:UpcomingConference ; ?b ?c . 
+optional {?a sd:toConferenceSeries ?a1 . ?a1 rdfs:label ?a2 . }
+} 
 ';
   
   $sparql = new EasyRdf_Sparql_Client('http://symbolicdata.org:8890/sparql');
@@ -26,6 +28,7 @@ Where { ?a a sd:UpcomingConference ; ?b ?c . }
     $from=date_format(date_create($v->get('ical:dtstart')),"Y/m/d");
     $to=date_format(date_create($v->get('ical:dtend')),"Y/m/d");
     $loc=$v->get('ical:location');
+    $series=$v->get('sd:Series');
     $description=$v->get('ical:description');
     $out='
 <h2> <a href="'.$a.'">'.$label.'</a></h2>
@@ -35,6 +38,9 @@ Where { ?a a sd:UpcomingConference ; ?b ?c . }
     foreach($v->all('ical:url') as $url) {
 	$out.='<dd> Conference URL: <a href="'.$url.'">'.$url.'</a></dd>' ;
     }
+    if (!empty($series)) {
+	$out.='<dd> Conference Series: '.$series.'</dd>' ;
+    } 
     $out.='</dl>';
     $s["$from.$a"]=$out;
   }
