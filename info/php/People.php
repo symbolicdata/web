@@ -13,7 +13,7 @@ function getPeople($name,$affil) {
 PREFIX sd: <http://symbolicdata.org/Data/Model#>
 construct { ?a ?b ?c . }
 from <http://symbolicdata.org/Data/People/>
-from <http://symbolicdata.org/Data/ZBMathPeople/>
+from <http://symbolicdata.org/Data/AuthorIdentification/>
 from <http://symbolicdata.org/Data/PersonalProfiles/>
 from <http://symbolicdata.org/Data/BenchmarkReferences/>
 Where { 
@@ -34,7 +34,8 @@ LIMIT 100';
     $label=$v->get('foaf:name');
     $loc=$v->get('sd:affiliation');
     $hp=$v->get('foaf:homepage');
-    $zb=$v->get('sd:hasZMathSearchString');
+    $zb=$v->get('sd:hasZBMathAuthorID');
+    $mr=$v->get('sd:hasMRAuthorID');
     $bs=$v->get('sd:providesDataAt');
     $pp=$v->get('sd:hasPersonalProfile');
     $out='<p><dl> <dt><strong><a href="'.$a.'">'.$label.'</a></strong></dt>
@@ -43,6 +44,7 @@ LIMIT 100';
     if (!empty($hp)) { $out.='<dd>Homepage: <a href="'.$hp.'">'.$hp.'</a></dd>'; }
     if (!empty($pp)) { $out.='<dd>Personal FOAF Profile: <a href="'.$pp.'">'.$pp.'</a></dd>'; }
     if (!empty($zb)) { $out.='<dd>ZBMath Author Code: <a href="'.$zb.'">'.$zb.'</a></dd>'; }
+    if (!empty($mr)) { $out.='<dd>MR Author ID: <a href="'.$mr.'">'.$mr.'</a></dd>'; }
     if (!empty($bs)) { $out.='<dd>Provides Benchmark References at: <a href="'.$bs.'">'.$bs.'</a></dd>'; }
     $out.='</dl></p>';
     $s["$a"]=$out;
