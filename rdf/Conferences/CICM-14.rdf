@@ -144,7 +144,7 @@
     <dcterms:creator rdf:resource="http://symbolicdata.org/Data/Person/Davenport_JH"/>
     <dcterms:creator rdf:resource="http://symbolicdata.org/Data/Person/England_M"/>
     <dcterms:creator rdf:resource="http://symbolicdata.org/Data/Person/Huang_Z"/>
-    <dcterms:creator rdf:resource="http://symbolicdata.org/Data/Person/Paulson_LC"/>
+    <dcterms:creator rdf:resource="http://symbolicdata.org/Data/Person/Paulson_L"/>
     <dcterms:creator rdf:resource="http://symbolicdata.org/Data/Person/Wilson_D"/>
     <dcterms:identifier rdf:resource="http://dx.doi.org/10.1007/978-3-319-08434-3_8"/>
     <dcterms:title>Applying machine learning to the problem of choosing a heuristic to select the variable ordering for cylindrical algebraic decomposition</dcterms:title>

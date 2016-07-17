@@ -43,7 +43,7 @@
     <rdfs:label>General Program Chair</rdfs:label>
   </swc:Role>
   <swc:Role rdf:about="http://cicm-conference.org/2015/rdf/LocalArrangementsChair">
-    <swc:heldBy rdf:resource="http://symbolicdata.org/Data/Person/Miller_B"/>
+    <swc:heldBy rdf:resource="http://symbolicdata.org/Data/Person/Miller_BR"/>
     <swc:heldBy rdf:resource="http://symbolicdata.org/Data/Person/Youssef_A"/>
     <rdfs:label>Local Arrangements Chair</rdfs:label>
   </swc:Role>
@@ -151,7 +151,7 @@
   </sd:Reference>
   <sd:Reference rdf:about="http://cicm-conference.org/2015/rdf/Paper_1015">
     <swc:relatedToEvent rdf:resource="http://cicm-conference.org/2015/rdf/track_mkm"/>
-    <dcterms:creator rdf:resource="http://symbolicdata.org/Data/Person/Miller_B"/>
+    <dcterms:creator rdf:resource="http://symbolicdata.org/Data/Person/Miller_BR"/>
     <dcterms:identifier rdf:resource="http://dx.doi.org/10.1007/978-3-319-20615-8_13"/>
     <dcterms:title>Strategies for Parallel Markup</dcterms:title>
   </sd:Reference>
