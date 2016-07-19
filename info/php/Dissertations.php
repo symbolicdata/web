@@ -9,6 +9,29 @@ function dissertationen($atts) {
   EasyRdf_Namespace::set('bibo_degrees', 'http://purl.org/ontology/bibo/degrees/');
   EasyRdf_Namespace::set('sd', 'http://symbolicdata.org/Data/Model#');
   EasyRdf_Namespace::set('dct', 'http://purl.org/dc/terms/');
+  $dissertations=getDissertations();
+  $people=getPeople();
+  return displayAll($dissertations,$people);
+}
+
+function getPeople() {
+  $query = '
+PREFIX sd: <http://symbolicdata.org/Data/Model#>
+construct { ?a a foaf:Person; foaf:name ?name . }
+from <http://symbolicdata.org/Data/People/>
+Where {
+?a a foaf:Person; foaf:name ?name .
+} 
+LIMIT 20
+';
+  $sparql = new EasyRdf_Sparql_Client('http://symbolicdata.org:8890/sparql');
+  $result = $sparql->query($query); // a CONSTRUCT query returns an EasyRdf_Graph  
+  //echo $result->dump("turtle");
+  return $result ; 
+}
+
+function getDissertations() {
+
   $query = '
 PREFIX sd: <http://symbolicdata.org/Data/Model#>
 PREFIX bibo: <http://purl.org/ontology/bibo/>
@@ -18,34 +41,44 @@ construct {
 ?a a bibo:Thesis .
 ?a dct:creator ?c . 
 ?a dct:title ?title . 
+?a bibo:degree ?degree . 
+?a bibo:institution ?inst . 
 ?a dct:date ?year . 
 ?a sd:hasSupervisor ?s .
 ?a sd:hasReviewer ?r . 
+?a sd:hasURL ?url . 
 }
-from <http://symbolicdata.org/casn/Dissertationen/>
+from <http://symbolicdata.org/Data/Dissertations/>
 Where {
-?a a bibo:Thesis ; dct:creator ?c . 
-optional { ?a dct:title ?title . }
-optional { ?a dct:date ?year . }
+?a a bibo:Thesis ; dct:creator ?c ; dct:title ?title; 
+dct:date ?year; bibo:degree ?degree. 
+optional { ?a bibo:institution ?inst .}
 optional { ?a sd:hasSupervisor ?s .}
 optional { ?a sd:hasReviewer ?r . }
+optional { ?a sd:hasURL ?url . }
 } 
 ';
-  $people = new EasyRdf_Graph("http://fachgruppe-computeralgebra.de/rdf/People/");
-  $people->parseFile("http://fachgruppe-computeralgebra.de/rdf/People.rdf");
+  $sparql = new EasyRdf_Sparql_Client('http://symbolicdata.org:8890/sparql');
+  $result = $sparql->query($query); // a CONSTRUCT query returns an EasyRdf_Graph
+  //echo $result->dump("turtle");
+  return $result ; 
+}
 
-  $sparql = new EasyRdf_Sparql_Client('http://symbolicdata.org:8891/sparql');
-  $result=$sparql->query($query); // a CONSTRUCT query returns an EasyRdf_Graph
-  $a=array();
+function displayAll($result,$people) {
+  $a=array(); $b=array();
   foreach ($result->allOfType("bibo:Thesis") as $v) {  
     $year=$v->get('dct:date');
     $content=displayThesis($v,$people);
-    $a[]=array("location" => "$year", "content" => $content);
+    if ($v->get('bibo:degree') == 'bibo_degrees:habil') {
+      $a[]=array("location" => "$year", "content" => $content);
+    } else { 
+      $b[]=array("location" => "$year", "content" => $content);
+    }
   }  
   array_multisort($a, SORT_DESC);
-  $out=''; foreach($a as $v) { $out.=$v["content"]; }
-  return $out;
-
+  $out="<h3>Habilitations</h3>\n\n"; foreach($a as $v) { $out.=$v["content"]; }
+  array_multisort($b, SORT_DESC);
+  $out="<h3>Promotions</h3>\n\n"; foreach($b as $v) { $out.=$v["content"]; }
   return $out;
 }
 
