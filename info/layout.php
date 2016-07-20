@@ -39,6 +39,7 @@ function pageNavbar() {
             <li><a href="uc.php">Upcoming Conferences</a></li> 
             <li><a href="pc.php">Past Conferences</a></li> 
             <li><a href="people.php">CA People</a></li> 
+            <li><a href="dissertation.php">Dissertations</a></li> 
             <li><a href="news.php">News</a></li> 
           </ul>
         </div><!-- navbar end -->
