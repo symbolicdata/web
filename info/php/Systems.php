@@ -12,7 +12,7 @@ function casystems() {
   $people->parseFile("http://symbolicdata.org/rdf/People.rdf");
   //$people->parseFile("/home/graebe/git/SD/web/rdf/People.rdf");
   $systems = new EasyRdf_Graph("http://symbolicdata.org/Data/CA-Systems/");
-  $systems->parseFile("http://symbolicdata.org/rdf/People.rdf");
+  $systems->parseFile("http://symbolicdata.org/rdf/CA-Systems.rdf");
   //$systems->parseFile("/home/graebe/git/SD/web/rdf/CA-Systems.rdf");
   $out=displaySystems($systems,$people);
   return $out;
