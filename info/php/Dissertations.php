@@ -9,8 +9,8 @@ function dissertationen($atts) {
   EasyRdf_Namespace::set('sd', 'http://symbolicdata.org/Data/Model#');
   EasyRdf_Namespace::set('dct', 'http://purl.org/dc/terms/');
   $people = new EasyRdf_Graph("http://symbolicdata.org/Data/People/");
-  //$people->parseFile("http://symbolicdata.org/rdf/People.rdf");
-  $people->parseFile("/home/graebe/git/SD/web/rdf/People.rdf");
+  $people->parseFile("http://symbolicdata.org/rdf/People.rdf");
+  //$people->parseFile("/home/graebe/git/SD/web/rdf/People.rdf");
   $out="\n\n<h2 align=\"center\">Habilitationen</h2>\n\n";
   $out.=displayAll(getDissertations('habil'),$people);
   $out.="\n\n<h2 align=\"center\">Promotionen</h2>\n\n";
