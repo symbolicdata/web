@@ -4,8 +4,8 @@
  * Date: 2016-02-20
  */
 
-include_once("layout.php");
-include_once("php/People.php");
+require_once "layout.php";
+require_once "php/People.php";
 
 $content='      
 <div class="container">
@@ -26,7 +26,7 @@ RDF triples).  Use HTTP Get Parameter as in
 about people with foaf:name containing the string "G" and sd:affiliation
 containing the string "J". The search is case insensitive.</p>
 
-'.getPeople($_GET['name'],$_GET['affil']).'
+'.getPeople($_GET['name'], $_GET['affil']).'
 </div>
 ';
 echo showPage($content);

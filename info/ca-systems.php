@@ -4,8 +4,8 @@
  * Date: 2016-02-21
  */
 
-include_once("layout.php");
-include_once("php/Systems.php");
+require_once "layout.php";
+require_once "php/Systems.php";
 
 $content='      
 <div class="container">

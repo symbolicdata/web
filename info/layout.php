@@ -4,8 +4,9 @@
  * Date: 2015-07-26
  */
 
-function pageHeader() {
-  return '
+function pageHeader() 
+{
+    return '
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -27,8 +28,9 @@ function pageHeader() {
 ';
 }
 
-function pageNavbar() {
-  return '
+function pageNavbar() 
+{
+    return '
 
     <!-- Fixed navbar -->
     <nav class="navbar navbar-default" role="navigation">
@@ -48,8 +50,9 @@ function pageNavbar() {
     </nav>';
 }
 
-function generalContent() {
-  return '
+function generalContent() 
+{
+    return '
 <div class="container">
   <h1 align="center">The CASN Demonstration Site</h1>
 
@@ -67,8 +70,9 @@ href="http://symbolicdata.org">SymbolicData Project</a> 2015-2016 </p> </div>
 ';
 }
 
-function pageFooter() {
-  return '
+function pageFooter() 
+{
+    return '
 
     <!-- jQuery (necessary for Bootstrap JavaScript plugins) -->
     <script src="js/jquery.js"></script>
@@ -79,6 +83,7 @@ function pageFooter() {
 </html>';
 }
 
-function showPage($content) {
-  return pageHeader().generalContent().pageNavbar().($content).pageFooter();
+function showPage($content) 
+{
+    return pageHeader().generalContent().pageNavbar().($content).pageFooter();
 }

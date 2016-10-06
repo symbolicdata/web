@@ -4,8 +4,8 @@
  * Date: 2015-07-26
  */
 
-include_once("layout.php");
-include_once("php/Conferences.php");
+require_once "layout.php";
+require_once "php/Conferences.php";
 
 $content='      
 <div class="container">
