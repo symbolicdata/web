@@ -9,14 +9,14 @@ function showSystems() {
   EasyRdf_Namespace::set('dct', 'http://purl.org/dc/terms/');
   EasyRdf_Namespace::set('owl', 'http://www.w3.org/2002/07/owl#');
   $people = new EasyRdf_Graph("http://symbolicdata.org/Data/People/");
-  // $people->parseFile("http://symbolicdata.org/rdf/People.rdf");
-  $people->parseFile("/home/graebe/git/SD/web/rdf/People.rdf");
+  $people->parseFile("http://symbolicdata.org/rdf/People.rdf");
+  // $people->parseFile("/home/graebe/git/SD/web/rdf/People.rdf");
   $systems = new EasyRdf_Graph("http://symbolicdata.org/Data/Systems/");
-  // $systems->parseFile("http://symbolicdata.org/rdf/Systems.rdf");
-  $systems->parseFile("/home/graebe/git/SD/web/rdf/Systems.rdf");
+  $systems->parseFile("http://symbolicdata.org/rdf/Systems.rdf");
+  /// $systems->parseFile("/home/graebe/git/SD/web/rdf/Systems.rdf");
   $descriptions = new EasyRdf_Graph("http://symbolicdata.org/Data/SystemDescriptions/");
-  // $systemdescriptions->parseFile("http://symbolicdata.org/rdf/SystemDescriptions.rdf");
-  $descriptions->parseFile("/home/graebe/git/SD/web/rdf/SystemDescriptions.rdf");
+  $descriptions->parseFile("http://symbolicdata.org/rdf/SystemDescriptions.rdf");
+  // $descriptions->parseFile("/home/graebe/git/SD/web/rdf/SystemDescriptions.rdf");
   $out=displaySystems($systems,$descriptions,$people);
   return $out;
 }
