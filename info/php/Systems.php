@@ -9,39 +9,23 @@ function casystems() {
   EasyRdf_Namespace::set('dct', 'http://purl.org/dc/terms/');
   EasyRdf_Namespace::set('owl', 'http://www.w3.org/2002/07/owl#');
   $people = new EasyRdf_Graph("http://symbolicdata.org/Data/People/");
-  $people->parseFile("http://symbolicdata.org/rdf/People.rdf");
-  //$people->parseFile("/home/graebe/git/SD/web/rdf/People.rdf");
-  $systems = new EasyRdf_Graph("http://symbolicdata.org/Data/CA-Systems/");
-  $systems->parseFile("http://symbolicdata.org/rdf/CA-Systems.rdf");
-  //$systems->parseFile("/home/graebe/git/SD/web/rdf/CA-Systems.rdf");
-  $out=displaySystems($systems,$people);
+  // $people->parseFile("http://symbolicdata.org/rdf/People.rdf");
+  $people->parseFile("/home/graebe/git/SD/web/rdf/People.rdf");
+  $systems = new EasyRdf_Graph("http://symbolicdata.org/Data/Systems/");
+  // $systems->parseFile("http://symbolicdata.org/rdf/Systems.rdf");
+  $systems->parseFile("/home/graebe/git/SD/web/rdf/Systems.rdf");
+  $descriptions = new EasyRdf_Graph("http://symbolicdata.org/Data/SystemDescriptions/");
+  // $systemdescriptions->parseFile("http://symbolicdata.org/rdf/SystemDescriptions.rdf");
+  $descriptions->parseFile("/home/graebe/git/SD/web/rdf/SystemDescriptions.rdf");
+  $out=displaySystems($systems,$descriptions,$people);
   return $out;
 }
 
-function getSystems() {
-  $query = '
-PREFIX sd: <http://symbolicdata.org/Data/Model#>
-PREFIX dct: <http://purl.org/dc/terms/>
-construct {
-?a ?b ?c . ?d ?e ?f . 
-}
-from <http://symbolicdata.org/Data/CA-Systems/>
-Where {
-?a a sd:CAS ; ?b ?c; rdfs:seeAlso ?d .
-?d ?e ?f . 
-} 
-';
-  $sparql = new EasyRdf_Sparql_Client('http://symbolicdata.org:8890/sparql');
-  $result = $sparql->query($query); // a CONSTRUCT query returns an EasyRdf_Graph
-  //echo $result->dump("turtle");
-  return $result ; 
-}
-
-function displaySystems($result,$people) {
+function displaySystems($systems,$descriptions,$people) {
   $a=array(); 
-  foreach ($result->allOfType("sd:CAS") as $v) { 
+  foreach ($systems->allOfType("sd:CAS") as $v) { 
     $title=$v->get('rdfs:label');
-    $content=displaySystem($v,$people);
+    $content=displaySystem($v,$descriptions,$people);
     $a[]=array("link" => "$title", "content" => $content);
   }  
   array_multisort($a);
@@ -49,7 +33,7 @@ function displaySystems($result,$people) {
   return $out;
 }
 
-function displaySystem($v,$people) {
+function displaySystem($v,$descriptions,$people) {
   $title=$v->get('rdfs:label');
   $swmath=$v->get('owl:sameAs');
   $sigsamurl=$v->get('sd:hasSIGSAMURL');
@@ -69,6 +53,25 @@ function displaySystem($v,$people) {
     $out.='</dd>'; 
   }
   return $out.'</dl></p>' ; 	
+}
+
+function getSystems() {
+  $query = '
+PREFIX sd: <http://symbolicdata.org/Data/Model#>
+PREFIX dct: <http://purl.org/dc/terms/>
+construct {
+?a ?b ?c . ?d ?e ?f . 
+}
+from <http://symbolicdata.org/Data/CA-Systems/>
+Where {
+?a a sd:CAS ; ?b ?c; rdfs:seeAlso ?d .
+?d ?e ?f . 
+} 
+';
+  $sparql = new EasyRdf_Sparql_Client('http://symbolicdata.org:8890/sparql');
+  $result = $sparql->query($query); // a CONSTRUCT query returns an EasyRdf_Graph
+  //echo $result->dump("turtle");
+  return $result ; 
 }
 
 function additionalInformation($w,$people) {

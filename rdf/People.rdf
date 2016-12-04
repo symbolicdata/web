@@ -1682,6 +1682,10 @@
   <foaf:Person rdf:about="http://symbolicdata.org/Data/Person/Huesca_LDCG">
     <foaf:name>Lourdes Del Carmen González Huesca</foaf:name>
   </foaf:Person>
+  <foaf:Person rdf:about="http://symbolicdata.org/Data/Person/Huet_G">
+    <sd:affiliation>INRIA, Paris, France</sd:affiliation>
+    <foaf:name>Gérard Huet</foaf:name>
+  </foaf:Person>
   <foaf:Person rdf:about="http://symbolicdata.org/Data/Person/Huettemann_T">
     <sd:affiliation>Belfast</sd:affiliation>
     <foaf:name>Thomas Hüttemann</foaf:name>
@@ -2116,7 +2120,7 @@
     <foaf:name>Evgenii Kotelnikov</foaf:name>
   </foaf:Person>
   <foaf:Person rdf:about="http://symbolicdata.org/Data/Person/Kotsireas_IS">
-    <sd:affiliation>Univ. Western Ontario, Waterloo, Canada</sd:affiliation>
+    <sd:affiliation>Wilfrid Laurier University, Waterloo, Canada</sd:affiliation>
     <foaf:name>Ilias S. Kotsireas</foaf:name>
   </foaf:Person>
   <foaf:Person rdf:about="http://symbolicdata.org/Data/Person/Koutschan_C">
@@ -2697,6 +2701,10 @@
   </foaf:Person>
   <foaf:Person rdf:about="http://symbolicdata.org/Data/Person/Morton_J">
     <foaf:name>J. Morton</foaf:name>
+  </foaf:Person>
+  <foaf:Person rdf:about="http://symbolicdata.org/Data/Person/Mosbah_M">
+    <sd:affiliation>LaBRi Bordeaux, France</sd:affiliation>
+    <foaf:name>Mohamed Mosbah</foaf:name>
   </foaf:Person>
   <foaf:Person rdf:about="http://symbolicdata.org/Data/Person/Mossakowski_T">
     <foaf:homepage rdf:resource="http://www.dfki.de/sks/till"/>
