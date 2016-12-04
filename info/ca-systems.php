@@ -13,7 +13,7 @@ $content='
 
 <p>This is an experimental listing compiled from our store, part of swmath and from the SIGSAM system\'s page.  </p>
 
-'.casystems().'
+'.showSystems().'
 </div>
 ';
 echo showPage($content);

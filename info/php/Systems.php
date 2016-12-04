@@ -4,57 +4,54 @@
 
 require_once("lib/EasyRdf.php");
 
-function casystems() {
+function showSystems() {
   EasyRdf_Namespace::set('sd', 'http://symbolicdata.org/Data/Model#');
   EasyRdf_Namespace::set('dct', 'http://purl.org/dc/terms/');
   EasyRdf_Namespace::set('owl', 'http://www.w3.org/2002/07/owl#');
   $people = new EasyRdf_Graph("http://symbolicdata.org/Data/People/");
-  $people->parseFile("http://symbolicdata.org/rdf/People.rdf");
-  //$people->parseFile("/home/graebe/git/SD/web/rdf/People.rdf");
-  $systems = new EasyRdf_Graph("http://symbolicdata.org/Data/CA-Systems/");
-  $systems->parseFile("http://symbolicdata.org/rdf/CA-Systems.rdf");
-  //$systems->parseFile("/home/graebe/git/SD/web/rdf/CA-Systems.rdf");
-  $out=displaySystems($systems,$people);
+  // $people->parseFile("http://symbolicdata.org/rdf/People.rdf");
+  $people->parseFile("/home/graebe/git/SD/web/rdf/People.rdf");
+  $systems = new EasyRdf_Graph("http://symbolicdata.org/Data/Systems/");
+  // $systems->parseFile("http://symbolicdata.org/rdf/Systems.rdf");
+  $systems->parseFile("/home/graebe/git/SD/web/rdf/Systems.rdf");
+  $descriptions = new EasyRdf_Graph("http://symbolicdata.org/Data/SystemDescriptions/");
+  // $systemdescriptions->parseFile("http://symbolicdata.org/rdf/SystemDescriptions.rdf");
+  $descriptions->parseFile("/home/graebe/git/SD/web/rdf/SystemDescriptions.rdf");
+  $out=displaySystems($systems,$descriptions,$people);
   return $out;
 }
 
-function getSystems() {
-  $query = '
-PREFIX sd: <http://symbolicdata.org/Data/Model#>
-PREFIX dct: <http://purl.org/dc/terms/>
-construct {
-?a ?b ?c . ?d ?e ?f . 
-}
-from <http://symbolicdata.org/Data/CA-Systems/>
-Where {
-?a a sd:CAS ; ?b ?c; rdfs:seeAlso ?d .
-?d ?e ?f . 
-} 
-';
-  $sparql = new EasyRdf_Sparql_Client('http://symbolicdata.org:8890/sparql');
-  $result = $sparql->query($query); // a CONSTRUCT query returns an EasyRdf_Graph
-  //echo $result->dump("turtle");
-  return $result ; 
-}
-
-function displaySystems($result,$people) {
-  $a=array(); 
-  foreach ($result->allOfType("sd:CAS") as $v) { 
-    $title=$v->get('rdfs:label');
-    $content=displaySystem($v,$people);
-    $a[]=array("link" => "$title", "content" => $content);
-  }  
-  array_multisort($a);
-  $out=""; foreach($a as $v) { $out.=$v["content"]; }
-  return $out;
+function displaySystems($systems,$descriptions,$people) {
+    $a=array(); 
+    foreach ($descriptions->allOfType("sd:CASDescription") as $v) {
+      $cas=$v->get('sd:describes');
+      $a["$cas"][]=showDescription($v,$people);
+    }
+    // print_r($a);
+    //$a[]=array("link" => "$title", "content" => $content);
+    $b[]=array();
+    foreach ($systems->allOfType("sd:CAS") as $w) {
+        $title=$w->get('rdfs:label');
+        $content=displaySystem($w);
+        if (isset($a["$w"])) { 
+            $content.=join("\n\n",$a["$w"]);
+        } else { $content.=noDescriptionAvailable(); }
+        $b[]=array("link" => "$title", "content" => $content);
+    }
+    array_multisort($b);
+    $out=""; foreach($b as $v) { $out.=$v["content"]; }
+    return $out;
 }
 
-function displaySystem($v,$people) {
+function noDescriptionAvailable() {
+    return "\n<p>No description available</p>\n";
+}
+
+function displaySystem($v) {
   $title=$v->get('rdfs:label');
-  $swmath=$v->get('owl:sameAs');
-  $sigsamurl=$v->get('sd:hasSIGSAMURL');
+  $swmath=$v->get('owl:hasSWMathEntry');
+  $sigsamurl=$v->get('sd:hasSIGSAMEntry');
   $summary=$v->get('dct:summary');
-  $also=$v->all('rdfs:seeAlso');
   $out='<h3> <i>CA System:</i> '.$title.'</strong></h3><dl>';
   if (!empty($swmath)) { 
     $out.='<dd> <i>swmath Link:</i> <a href="'.$swmath.'">'.$swmath.'</a></dd>'; }
@@ -63,21 +60,25 @@ function displaySystem($v,$people) {
   if (!empty($summary)) { 
     $out.='<dd> <i>Summary:</i> '.$summary.'</dd>'; }
   $out.='<dd> <i>SD Entry:</i> <a href="'.$v.'">'.$v.'</a></dd>';
-  if (!empty($also)) { 
-    $out.='<dd> <i>Additional information:</i> ';
-    foreach($also as $w) { $out.=additionalInformation($w,$people); }
-    $out.='</dd>'; 
-  }
   return $out.'</dl></p>' ; 	
 }
 
-function additionalInformation($w,$people) {
-  $desc=$w->get('dct:description');
-  $autoren=getAutoren($w->all('dct:creator'),$people);
-  $out=$w ;
-  if (!empty($autoren)) { $out.='<br/> <strong>Author(s):</strong> '.$autoren; }
-  if (!empty($desc)) { $out.='<br/> <strong>Description:</strong> '.$desc; }
-  return '<blockquote>'.$out.'</blockquote>';
+function showDescription($v,$people) {
+    $description=$v->get('dct:description');
+    $source=$v->get('dct:source');
+    $autoren=getAutoren($v->all('dct:creator'),$people);
+    $institution=join("; ",$v->all('dct:institution'));
+    $out='<p><strong>Description:</strong> '.$description;
+    if (!empty($autoren)) {
+        $out.='<br/><strong>Author(s):</strong> '.$autoren;
+    }
+    if (!empty($institution)) {
+        $out.='<br/><strong>Produced by:</strong> '.$institution;
+    }
+    $out.='<br/><strong>Source:</strong> '.$source.'</p>
+
+'; 
+  return $out ; 	
 }
 
 function getAutoren($a,$people) {
@@ -89,6 +90,6 @@ function getAutoren($a,$people) {
   return join(", ",$b);
 }
 
-// echo '<meta charset="utf8">'.casystems();
+// echo '<meta charset="utf8">'.showSystems();
 
 ?>
