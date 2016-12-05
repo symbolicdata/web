@@ -93,6 +93,6 @@ function getAutoren($a,$people) {
   return join(", ",$b);
 }
 
-echo '<meta charset="utf8">'.showSystems();
+// echo '<meta charset="utf8">'.showSystems();
 
 ?>
