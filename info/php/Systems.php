@@ -28,7 +28,6 @@ function displaySystems($systems,$descriptions,$people) {
       $a["$cas"][]=showDescription($v,$people);
     }
     // print_r($a);
-    //$a[]=array("link" => "$title", "content" => $content);
     $b[]=array();
     foreach ($systems->allOfType("sd:CAS") as $w) {
         $title=$w->get('rdfs:label');
@@ -49,12 +48,12 @@ function noDescriptionAvailable() {
 
 function displaySystem($v) {
   $title=$v->get('rdfs:label');
-  $swmath=$v->get('owl:hasSWMathEntry');
+  $swmath=$v->get('sd:hasSWMathEntry');
   $sigsamurl=$v->get('sd:hasSIGSAMEntry');
   $summary=$v->get('dct:summary');
   $out='<h3> <i>CA System:</i> '.$title.'</strong></h3><dl>';
   if (!empty($swmath)) { 
-    $out.='<dd> <i>swmath Link:</i> <a href="'.$swmath.'">'.$swmath.'</a></dd>'; }
+    $out.='<dd> <i>swMath Link:</i> <a href="'.$swmath.'">'.$swmath.'</a></dd>'; }
   if (!empty($sigsamurl)) { 
     $out.='<dd> <i>SIGSAM Link:</i> <a href="'.$sigsamurl.'">'.$sigsamurl.'</a></dd>'; }
   if (!empty($summary)) { 
@@ -68,6 +67,7 @@ function showDescription($v,$people) {
     $source=$v->get('dct:source');
     $autoren=getAutoren($v->all('dct:creator'),$people);
     $institution=join("; ",$v->all('dct:institution'));
+    $url=$v->get('sd:hasURL');
     $out='<p><strong>Description:</strong> '.$description;
     if (!empty($autoren)) {
         $out.='<br/><strong>Author(s):</strong> '.$autoren;
@@ -75,7 +75,10 @@ function showDescription($v,$people) {
     if (!empty($institution)) {
         $out.='<br/><strong>Produced by:</strong> '.$institution;
     }
-    $out.='<br/><strong>Source:</strong> '.$source.'</p>
+    if (!empty($url)) {
+        $out.='<br/><strong>URL:</strong>  <a href="'.$url.'">'.$url.'</a>';
+    }
+    $out.='<br/><strong>Source:</strong> <a href="'.$source.'">'.$source.'</a></p>
 
 '; 
   return $out ; 	
@@ -90,6 +93,6 @@ function getAutoren($a,$people) {
   return join(", ",$b);
 }
 
-// echo '<meta charset="utf8">'.showSystems();
+echo '<meta charset="utf8">'.showSystems();
 
 ?>
