@@ -78,7 +78,7 @@ function showDescription($v,$people) {
     if (!empty($url)) {
         $out.='<br/><strong>URL:</strong>  <a href="'.$url.'">'.$url.'</a>';
     }
-    $out.='<br/><strong>Source:</strong> <a href="'.$source.'">'.$source.'</a></p>
+    $out.='<br/><strong>Source:</strong> '.$source.'</p>
 
 '; 
   return $out ; 	
