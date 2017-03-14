@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rdf:RDF
-   xmlns:cc="http://creativecommons.org/ns#"
+<rdf:RDF xmlns:cc="http://creativecommons.org/ns#"
    xmlns:dcterms="http://purl.org/dc/terms/"
    xmlns:foaf="http://xmlns.com/foaf/0.1/"
    xmlns:ical="http://www.w3.org/2002/12/cal/ical#"
@@ -1446,6 +1445,10 @@
     <foaf:homepage rdf:resource="http://omega.enstb.org/yannis/"/>
     <foaf:name>Yannis Haralambous</foaf:name>
   </foaf:Person>
+  <foaf:Person rdf:about="http://symbolicdata.org/Data/Person/Hardouin_C">
+    <sd:affiliation>Institut de mathematiques de Toulouse, Toulouse, France</sd:affiliation>
+    <foaf:name>Charlotte Hardouin</foaf:name>
+  </foaf:Person>
   <foaf:Person rdf:about="http://symbolicdata.org/Data/Person/Harlander_R">
     <foaf:name>R. Harlander</foaf:name>
   </foaf:Person>
@@ -1465,12 +1468,14 @@
     <foaf:name>Alexander Hartl</foaf:name>
   </foaf:Person>
   <foaf:Person rdf:about="http://symbolicdata.org/Data/Person/Hartmann_J">
-    <foaf:name>Julia Hartman</foaf:name>
+    <foaf:name>Julia Hartmann</foaf:name>
   </foaf:Person>
   <foaf:Person rdf:about="http://symbolicdata.org/Data/Person/Harvey_D">
     <foaf:name>David Harvey</foaf:name>
   </foaf:Person>
   <foaf:Person rdf:about="http://symbolicdata.org/Data/Person/Hasan_O">
+    <sd:affiliation>NUST Islamabad, Pakistan</sd:affiliation>
+    <foaf:homepage rdf:resource="http://ohasan.seecs.nust.edu.pk/"/>
     <foaf:name>Osman Hasan</foaf:name>
   </foaf:Person>
   <foaf:Person rdf:about="http://symbolicdata.org/Data/Person/Hasek_R">
@@ -1805,6 +1810,10 @@
   <foaf:Person rdf:about="http://symbolicdata.org/Data/Person/Johansson_M">
     <foaf:name>Moa Johansson</foaf:name>
   </foaf:Person>
+  <foaf:Person rdf:about="http://symbolicdata.org/Data/Person/Johnson_J">
+    <sd:affiliation>Drexel University, USA</sd:affiliation>
+    <foaf:name>Jeremy Johnson</foaf:name>
+  </foaf:Person>
   <foaf:Person rdf:about="http://symbolicdata.org/Data/Person/Joldes_M">
     <sd:affiliation>LAAS CNRS, Toulouse, France</sd:affiliation>
     <foaf:name>Mioara Joldes</foaf:name>
@@ -1890,6 +1899,10 @@
   </foaf:Person>
   <foaf:Person rdf:about="http://symbolicdata.org/Data/Person/Kang_S">
     <foaf:name>Sohee Kang</foaf:name>
+  </foaf:Person>
+  <foaf:Person rdf:about="http://symbolicdata.org/Data/Person/Kanwal_S">
+    <sd:affiliation>TU Kaiserslautern, Germany</sd:affiliation>
+    <foaf:name>Shamsa Kanwal</foaf:name>
   </foaf:Person>
   <foaf:Person rdf:about="http://symbolicdata.org/Data/Person/Kapur_D">
     <sd:affiliation>University of New Mexico, USA</sd:affiliation>
@@ -2168,6 +2181,10 @@
   <foaf:Person rdf:about="http://symbolicdata.org/Data/Person/Kronberg_M">
     <sd:affiliation>Uni Oldenburg, Germany</sd:affiliation>
     <foaf:name>Max Kronberg</foaf:name>
+  </foaf:Person>
+  <foaf:Person rdf:about="http://symbolicdata.org/Data/Person/Kuchen_H">
+    <sd:affiliation>University of Münster, Germany</sd:affiliation>
+    <foaf:name>Herbert Kuchen</foaf:name>
   </foaf:Person>
   <foaf:Person rdf:about="http://symbolicdata.org/Data/Person/Kueblbeck_S">
     <foaf:name>Sepp Küblbeck</foaf:name>
@@ -2918,6 +2935,10 @@
     <sd:affiliation>University of Glasgow, UK</sd:affiliation>
     <foaf:name>Iadh Ounis</foaf:name>
   </foaf:Person>
+  <foaf:Person rdf:about="http://symbolicdata.org/Data/Person/Ovchinnikov_A">
+    <sd:affiliation>CUNY Queens College, New York, USA</sd:affiliation>
+    <foaf:name>Alexey Ovchinnikov</foaf:name>
+  </foaf:Person>
   <foaf:Person rdf:about="http://symbolicdata.org/Data/Person/Paditz_L">
     <foaf:name>Ludwig Paditz</foaf:name>
   </foaf:Person>
@@ -3451,6 +3472,10 @@
     <sd:affiliation>University of Delaware, USA</sd:affiliation>
     <foaf:name>David Saunders</foaf:name>
   </foaf:Person>
+  <foaf:Person rdf:about="http://symbolicdata.org/Data/Person/Scanlon_T">
+    <sd:affiliation>University of California, Berkeley, USA</sd:affiliation>
+    <foaf:name>Thomas Scanlon</foaf:name>
+  </foaf:Person>
   <foaf:Person rdf:about="http://symbolicdata.org/Data/Person/Schaeffer_G">
     <foaf:name>George Schaeffer</foaf:name>
   </foaf:Person>
@@ -3764,6 +3789,7 @@
     <foaf:name>H.-M. Staudenmaier</foaf:name>
   </foaf:Person>
   <foaf:Person rdf:about="http://symbolicdata.org/Data/Person/Steel_A">
+    <sd:affiliation>University of Sydney, Australia</sd:affiliation>
     <foaf:name>Alan Steel</foaf:name>
   </foaf:Person>
   <foaf:Person rdf:about="http://symbolicdata.org/Data/Person/Steen_A">
@@ -3912,6 +3938,10 @@
   <foaf:Person rdf:about="http://symbolicdata.org/Data/Person/Tentukov_M">
     <foaf:name>M. Tentukov</foaf:name>
   </foaf:Person>
+  <foaf:Person rdf:about="http://symbolicdata.org/Data/Person/Teschke_O">
+    <sd:affiliation>HU Berlin, Germany</sd:affiliation>
+    <foaf:name>Olaf Teschke</foaf:name>
+  </foaf:Person>
   <foaf:Person rdf:about="http://symbolicdata.org/Data/Person/Tews_H">
     <sd:affiliation>TU Dresden, Germany</sd:affiliation>
     <foaf:name>Hendrik Tews</foaf:name>
@@ -3929,6 +3959,10 @@
   <foaf:Person rdf:about="http://symbolicdata.org/Data/Person/Thomas_RR">
     <sd:affiliation>University of Washington, Seattle, USA</sd:affiliation>
     <foaf:name>Rekha R. Thomas</foaf:name>
+  </foaf:Person>
+  <foaf:Person rdf:about="http://symbolicdata.org/Data/Person/Thome_E">
+    <sd:affiliation>INRIA Nancy, France</sd:affiliation>
+    <foaf:name>Emmanuel Thome</foaf:name>
   </foaf:Person>
   <foaf:Person rdf:about="http://symbolicdata.org/Data/Person/Tilouine_J">
     <foaf:name>Jacques Tilouine</foaf:name>
