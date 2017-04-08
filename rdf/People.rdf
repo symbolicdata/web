@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rdf:RDF xmlns:cc="http://creativecommons.org/ns#"
+<rdf:RDF
+   xmlns:cc="http://creativecommons.org/ns#"
    xmlns:dcterms="http://purl.org/dc/terms/"
    xmlns:foaf="http://xmlns.com/foaf/0.1/"
    xmlns:ical="http://www.w3.org/2002/12/cal/ical#"
@@ -181,6 +182,14 @@
     <sd:affiliation>DFKI, Bremen, Germany</sd:affiliation>
     <foaf:name>Serge Autexier</foaf:name>
   </foaf:Person>
+  <foaf:Person rdf:about="http://symbolicdata.org/Data/Person/Averkov_G">
+    <sd:affiliation>Univ. Magdeburg, Germany</sd:affiliation>
+    <foaf:name>Gennadiy Averkov</foaf:name>
+  </foaf:Person>
+  <foaf:Person rdf:about="http://symbolicdata.org/Data/Person/Avigad_J">
+    <sd:affiliation>Carnegie Mellon University, USA</sd:affiliation>
+    <foaf:name>Jeremy Avigad</foaf:name>
+  </foaf:Person>
   <foaf:Person rdf:about="http://symbolicdata.org/Data/Person/Baader_F">
     <sd:affiliation>TU Dresden, Germany</sd:affiliation>
     <foaf:name>Franz Baader</foaf:name>
@@ -232,6 +241,10 @@
   <foaf:Person rdf:about="http://symbolicdata.org/Data/Person/Barberousse_A">
     <sd:affiliation>Université Lille 1, France</sd:affiliation>
     <foaf:name>Anouk Barberousse</foaf:name>
+  </foaf:Person>
+  <foaf:Person rdf:about="http://symbolicdata.org/Data/Person/Barbosa_H">
+    <sd:affiliation>Inria Nancy and Université de Lorraine, France</sd:affiliation>
+    <foaf:name>Haniel Barbosa</foaf:name>
   </foaf:Person>
   <foaf:Person rdf:about="http://symbolicdata.org/Data/Person/Barkatou_M">
     <sd:affiliation>Université de Limoges, France</sd:affiliation>
@@ -710,6 +723,9 @@
   <foaf:Person rdf:about="http://symbolicdata.org/Data/Person/Claessen_K">
     <foaf:name>Koen Claessen</foaf:name>
   </foaf:Person>
+  <foaf:Person rdf:about="http://symbolicdata.org/Data/Person/Coates_T">
+    <foaf:name>Tom Coates</foaf:name>
+  </foaf:Person>
   <foaf:Person rdf:about="http://symbolicdata.org/Data/Person/Cohen_AM">
     <foaf:name>Arjeh M. Cohen</foaf:name>
   </foaf:Person>
@@ -865,6 +881,10 @@
   <foaf:Person rdf:about="http://symbolicdata.org/Data/Person/Devyatov_R">
     <sd:affiliation>FU Berlin, Germany</sd:affiliation>
     <foaf:name>Rostislav Devyatov</foaf:name>
+  </foaf:Person>
+  <foaf:Person rdf:about="http://symbolicdata.org/Data/Person/DiRocco_S">
+    <sd:affiliation>KTH Stockholm, Sweden</sd:affiliation>
+    <foaf:name>Sandra Di Rocco</foaf:name>
   </foaf:Person>
   <foaf:Person rdf:about="http://symbolicdata.org/Data/Person/Diamond_F">
     <foaf:name>Fred Diamond</foaf:name>
@@ -1645,6 +1665,10 @@
     <sd:affiliation>Osaka University, Japan</sd:affiliation>
     <foaf:name>Takayuki Hibi</foaf:name>
   </foaf:Person>
+  <foaf:Person rdf:about="http://symbolicdata.org/Data/Person/Higashitani_A">
+    <sd:affiliation>Kyoto Sangyo University, Japan</sd:affiliation>
+    <foaf:name>Akihiro Higashitani</foaf:name>
+  </foaf:Person>
   <foaf:Person rdf:about="http://symbolicdata.org/Data/Person/Hille_L">
     <sd:affiliation>Uni Münster, Germany</sd:affiliation>
     <foaf:name>Lutz Hille</foaf:name>
@@ -1674,6 +1698,10 @@
   <foaf:Person rdf:about="http://symbolicdata.org/Data/Person/Hofmann_T">
     <sd:affiliation>TU Kaiserslautern</sd:affiliation>
     <foaf:name>Tommy Hofmann</foaf:name>
+  </foaf:Person>
+  <foaf:Person rdf:about="http://symbolicdata.org/Data/Person/Hofscheier_J">
+    <sd:affiliation>Univ. Magdeburg, Germany</sd:affiliation>
+    <foaf:name>Johannes Hofscheier</foaf:name>
   </foaf:Person>
   <foaf:Person rdf:about="http://symbolicdata.org/Data/Person/Hoge_T">
     <sd:affiliation>Ruhr-Universität Bochum</sd:affiliation>
@@ -1963,6 +1991,10 @@
     <sd:affiliation>University of Waterloo, Canada</sd:affiliation>
     <foaf:name>Lila Kari</foaf:name>
   </foaf:Person>
+  <foaf:Person rdf:about="http://symbolicdata.org/Data/Person/Kasprzyk_AM">
+    <sd:affiliation>University of Nottingham, UK</sd:affiliation>
+    <foaf:name>Alexander M. Kasprzyk</foaf:name>
+  </foaf:Person>
   <foaf:Person rdf:about="http://symbolicdata.org/Data/Person/Kastner_L">
     <sd:affiliation>FU Berlin</sd:affiliation>
     <foaf:name>Lars Kastner</foaf:name>
@@ -1971,7 +2003,7 @@
     <foaf:name>W. Katsura</foaf:name>
   </foaf:Person>
   <foaf:Person rdf:about="http://symbolicdata.org/Data/Person/Katthaen_L">
-    <sd:affiliation>Universität Osnabrück</sd:affiliation>
+    <sd:affiliation>Minnesota, USA</sd:affiliation>
     <foaf:name>Lukas Katthän</foaf:name>
   </foaf:Person>
   <foaf:Person rdf:about="http://symbolicdata.org/Data/Person/Kauers_M">
@@ -2070,6 +2102,10 @@
   <foaf:Person rdf:about="http://symbolicdata.org/Data/Person/Kiraly_FJ">
     <sd:affiliation>University College London, UK</sd:affiliation>
     <foaf:name>Franz J. Király</foaf:name>
+  </foaf:Person>
+  <foaf:Person rdf:about="http://symbolicdata.org/Data/Person/Kiritchenko_V">
+    <sd:affiliation>Moscow Higher School of Economics, Russia</sd:affiliation>
+    <foaf:name>Valentina Kiritchenko</foaf:name>
   </foaf:Person>
   <foaf:Person rdf:about="http://symbolicdata.org/Data/Person/Kirschmer_M">
     <sd:affiliation>RWTH Aachen, Germany</sd:affiliation>
@@ -2668,8 +2704,8 @@
     <foaf:name>Marc Mezzarobba</foaf:name>
   </foaf:Person>
   <foaf:Person rdf:about="http://symbolicdata.org/Data/Person/Michalek_M">
-    <sd:affiliation>Polish Academy of Sciences, Poland</sd:affiliation>
-    <foaf:name>Mateusz Michalek</foaf:name>
+    <sd:affiliation>MPI MIS Leipzig, Germany</sd:affiliation>
+    <foaf:name>Mateusz Michałek</foaf:name>
   </foaf:Person>
   <foaf:Person rdf:about="http://symbolicdata.org/Data/Person/Michel_J">
     <sd:affiliation>Mathématiques Jussieu</sd:affiliation>
@@ -2819,6 +2855,10 @@
     <sd:affiliation>Carl von Ossietzky Universität Oldenburg, Germany</sd:affiliation>
     <foaf:name>Jan Steffen Müller</foaf:name>
   </foaf:Person>
+  <foaf:Person rdf:about="http://symbolicdata.org/Data/Person/Mueller_Jennifer">
+    <sd:affiliation>MPI Informatics, Saarbrücken, Germany</sd:affiliation>
+    <foaf:name>Jennifer Müller</foaf:name>
+  </foaf:Person>
   <foaf:Person rdf:about="http://symbolicdata.org/Data/Person/Mueller_P">
     <foaf:name>Peter Müller</foaf:name>
   </foaf:Person>
@@ -2881,6 +2921,10 @@
     <sd:affiliation>West University of Timisoara, Romania</sd:affiliation>
     <foaf:name>Viorel Negru</foaf:name>
   </foaf:Person>
+  <foaf:Person rdf:about="http://symbolicdata.org/Data/Person/Neubauer_F">
+    <sd:affiliation>University of Freiburg, Germany</sd:affiliation>
+    <foaf:name>Felix Neubauer</foaf:name>
+  </foaf:Person>
   <foaf:Person rdf:about="http://symbolicdata.org/Data/Person/Neumaier_A">
     <foaf:homepage rdf:resource="http://www.univie.ac.at/~neum"/>
     <foaf:name>Arnold Neumaier</foaf:name>
@@ -2923,6 +2967,10 @@
   </foaf:Person>
   <foaf:Person rdf:about="http://symbolicdata.org/Data/Person/Nikolic_M">
     <foaf:name>Mladen Nikolic</foaf:name>
+  </foaf:Person>
+  <foaf:Person rdf:about="http://symbolicdata.org/Data/Person/Nill_B">
+    <sd:affiliation>Univ. Magdeburg, Germany</sd:affiliation>
+    <foaf:name>Benjamin Nill</foaf:name>
   </foaf:Person>
   <foaf:Person rdf:about="http://symbolicdata.org/Data/Person/Nipkow_T">
     <foaf:name>Tobias Nipkow</foaf:name>
@@ -3175,11 +3223,9 @@
     <foaf:name>Jim Pitman</foaf:name>
   </foaf:Person>
   <foaf:Person rdf:about="http://symbolicdata.org/Data/Person/Plesken_W">
+    <sd:affiliation>RWTH Aachen, Germany</sd:affiliation>
     <foaf:name>Wilhelm Plesken</foaf:name>
   </foaf:Person>
-  <rdf:Description rdf:about="http://symbolicdata.org/Data/Person/Plesken_w">
-    <sd:affiliation>RWTH Aachen, Germany</sd:affiliation>
-  </rdf:Description>
   <foaf:Person rdf:about="http://symbolicdata.org/Data/Person/Pletsch_B">
     <foaf:name>Bill Pletsch</foaf:name>
   </foaf:Person>
@@ -3975,6 +4021,10 @@
     <sd:affiliation>Griffith University, Australia</sd:affiliation>
     <foaf:name>Kaile Su</foaf:name>
   </foaf:Person>
+  <foaf:Person rdf:about="http://symbolicdata.org/Data/Person/Suess_H">
+    <sd:affiliation>Manchester, UK</sd:affiliation>
+    <foaf:name>Hendrik Süß</foaf:name>
+  </foaf:Person>
   <foaf:Person rdf:about="http://symbolicdata.org/Data/Person/Sullivant_S">
     <foaf:name>S. Sullivant</foaf:name>
   </foaf:Person>
@@ -4145,6 +4195,10 @@
   </foaf:Person>
   <foaf:Person rdf:about="http://symbolicdata.org/Data/Person/Tscheulin_F">
     <foaf:name>Felix Tscheulin</foaf:name>
+  </foaf:Person>
+  <foaf:Person rdf:about="http://symbolicdata.org/Data/Person/Tveiten_K">
+    <sd:affiliation>Uppsala, Sweden</sd:affiliation>
+    <foaf:name>Ketil Tveiten</foaf:name>
   </foaf:Person>
   <foaf:Person rdf:about="http://symbolicdata.org/Data/Person/Tyomkin_I">
     <sd:affiliation>Hebrew University, Jerusalem, Israel</sd:affiliation>
