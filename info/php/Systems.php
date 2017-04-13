@@ -49,11 +49,18 @@ function noDescriptionAvailable() {
 function displaySystem($v) {
   $title=$v->get('rdfs:label');
   $swmath=$v->get('sd:hasSWMathEntry');
+  $dom=new DOMDocument;
+  $dom->loadXML(file_get_contents(str_replace('software','export',$swmath)));
+  $papers=displayPapers($dom); 
+  $related=displayRelated(file_get_contents(str_replace('software','related',$swmath))); 
   $sigsamurl=$v->get('sd:hasSIGSAMEntry');
   $summary=$v->get('dct:summary');
   $out='<h3> <i>CA System:</i> '.$title.'</strong></h3><dl>';
   if (!empty($swmath)) { 
-    $out.='<dd> <i>swMath Link:</i> <a href="'.$swmath.'">'.$swmath.'</a></dd>'; }
+    $out.='<dd> <i>swMath Link:</i> <a href="'.$swmath.'">'.$swmath.'</a></dd>'; 
+    $out.='<dd> <i>Related Papers:</i> '.$papers.'</dd>'; 
+    $out.='<dd> <i>Related Software:</i> '.$related.'</dd>'; 
+  }
   if (!empty($sigsamurl)) { 
     $out.='<dd> <i>SIGSAM Link:</i> <a href="'.$sigsamurl.'">'.$sigsamurl.'</a></dd>'; }
   if (!empty($summary)) { 
@@ -93,6 +100,24 @@ function getAutoren($a,$people) {
   return join(", ",$b);
 }
 
-// echo '<meta charset="utf8">'.showSystems();
+function displayPapers($dom) {
+    $entries=$dom->getElementsByTagName("entry");
+    $b=array();
+    foreach ($entries as $v) {
+        $b[]=str_replace(array("entry", "zbmath_url"),array("a", "href"),$dom->saveHTML($v));
+    }
+    return "<ul><li>".join("</li><li>",$b)."</li></ul>";
+}
+
+function displayRelated($related) { 
+    $b=array();
+    foreach (explode(";",$related) as $v) {
+        $a=explode(":",$v);
+        $id=$a[0]; $name=$a[1];
+        $b[]="<a href=\"http://www.swmath.org/software/$id\">$name</a>";
+    }
+    return join(", ",$b); }
+
+ echo '<meta charset="utf8">'.showSystems();
 
 ?>
