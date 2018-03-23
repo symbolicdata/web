@@ -116,8 +116,9 @@ function displayRelated($related) {
         $id=$a[0]; $name=$a[1];
         $b[]="<a href=\"http://www.swmath.org/software/$id\">$name</a>";
     }
-    return join(", ",$b); }
+    return join(", ",$b);
+}
 
- echo '<meta charset="utf8">'.showSystems();
+// echo '<meta charset="utf8">'.showSystems();
 
 ?>
