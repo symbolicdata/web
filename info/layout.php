@@ -55,13 +55,13 @@ function generalContent()
 <div class="container">
   <h1 align="center">The CASN Demonstration Site</h1>
 
-<p> Within the <a href="http://symbolicdata.org">SymbolicData Project</a>
-we started the <strong>CASN subproject</strong> &ndash; Computer Algebra Social
-Network &ndash; as a germ of a “Facebook like“ communication infrastructure
+<p> Within the <a href="http://symbolicdata.org">SymbolicData Project</a> the
+<strong>CASN subproject</strong> &ndash; Computer Algebra Social Network
+&ndash; is a first pitch of a “Facebook like“ communication infrastructure
 about the scientific activities within the CA community using a modern RDF
 based "Web 2.0" approach.  We refer to our wiki for <a
 href="http://symbolicdata.github.io/CASN" >more information about CASN goal and
-concepts</a>.</p> </div> 
+concepts</a>.</p> </div>
 
 <div class="footer"> <div class="container"> <p class="text-muted">&copy; <a
 href="http://symbolicdata.org">SymbolicData Project</a> 2015-2018 </p> </div>

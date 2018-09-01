@@ -19,7 +19,7 @@ speakers, deadlines etc.) about the conference. </p>
 
 <p>The information is displayed for the year 2012. Use HTTP Get Parameter as in
 <code>info/pc.php?year=2002</code> to display available information for another
-year. </p>
+year.  Conference records are available until 2018. </p>
 
 '.pastConferences().'
 </div>
