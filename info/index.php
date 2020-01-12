@@ -16,6 +16,9 @@ Our demonstration site is based on the the <a href="http://getbootstrap.com"
 PHP library</a>.  The code is available from
 our <a href="https://github.com/symbolicdata/web">git repo</a>. </p>
 
+<p>Addendum 2020: Most of the code does no more work since it uses EasyRdf
+CONSTRUCT queries that conflict with PHP 7. </p>
+
 </div>
 ';
 echo showPage($content);

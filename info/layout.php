@@ -37,7 +37,6 @@ function pageNavbar()
         <div id="navbar" class="collapse navbar-collapse">
           <ul class="nav navbar-nav">
             <li><a href="index.php">Index</a></li> 
-            <li><a href="uc.php">Upcoming Conferences</a></li> 
             <li><a href="pc.php">Past Conferences</a></li> 
             <li><a href="people.php">CA People</a></li> 
             <li><a href="dissertation.php">Dissertations</a></li> 
